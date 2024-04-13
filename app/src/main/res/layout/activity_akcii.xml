@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AkciiActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/ak_to_mag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ak_to_mag_clicked"
+            android:text="Магазины4" />
+        <Button
+            android:id="@+id/ak_to_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ak_to_cat_clicked"
+            android:text="Каталог" />
+        <Button
+            android:id="@+id/ak_to_kor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ak_to_kor_clicked"
+            android:text="Корзина" />
+        <Button
+            android:id="@+id/ak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Акции" />
+        <Button
+            android:id="@+id/ak_to_prof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ak_to_prof_clicked"
+            android:text="Профиль" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
