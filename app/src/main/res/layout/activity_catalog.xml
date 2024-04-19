@@ -52,9 +52,77 @@
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="614dp"
+        android:layout_height="60dp"
         android:gravity="top|center"
         android:orientation="vertical">
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="345dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/searchbackground"
+            android:queryHint="Поиск"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="right"
+            android:layout_marginEnd="30dp">
+            <Button
+                android:layout_width="171dp"
+                android:layout_height="83dp"
+                android:background="#9FDC61"
+                android:gravity="left|center"
+                android:text="Выберите адрес...."
+                android:drawableRight="@drawable/target"
+                android:drawablePadding="-10dp"
+                android:textColor="#000000"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="171dp"
+                android:layout_height="37dp"
+                android:background="#8D8D8D"
+                android:gravity="center"
+                android:text="Ваш недавний заказ"
+                android:layout_marginEnd="10dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"/>
+            <Button
+                android:layout_width="171dp"
+                android:layout_height="46dp"
+                android:background="#9FDC61"
+                android:gravity="center"
+                android:text="Повторить"
+                android:layout_marginEnd="10dp"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
