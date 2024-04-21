@@ -173,7 +173,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="mag_to_ak_clicked"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"

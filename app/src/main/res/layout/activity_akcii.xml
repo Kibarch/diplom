@@ -49,12 +49,200 @@
             android:layout_weight="1"
             android:src="@drawable/chat"/>
     </LinearLayout>
-    <LinearLayout
-
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/five"
         android:layout_width="match_parent"
-        android:layout_height="614dp"
-        android:gravity="top|center"
-        android:orientation="vertical">
+        android:layout_height="120dp"
+        android:layout_marginTop="5dp"
+        android:columnCount="5"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пятерочка:"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_row="0"
+            android:layout_column="1"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="right|bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Показать все акции"
+                android:textSize="10sp"
+                android:clickable="true"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="4"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#9FDC61"
+                android:text="кефир -50% скидки"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#9FDC61"
+                android:text="молоко -30% скидки"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#9FDC61"
+                android:text="молоко -30% скидки"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </GridLayout>
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/magnit"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:columnCount="5"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Магнит:"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_row="0"
+            android:layout_column="1"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#9FDC61"
+                android:text="йогурт -40% скидки"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="#9FDC61"
+                android:text="и т.д."
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="369dp">
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,7 +262,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:onClick="cat_to_mag_clicked"
+                android:onClick="ak_to_mag_clicked"
                 android:clickable="true"
                 android:src="@drawable/map"/>
             <TextView
@@ -100,7 +288,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_cat_clicked"
+                android:onClick="ak_to_cat_clicked"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -112,7 +300,6 @@
                 android:textSize="10sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -124,7 +311,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="ak_to_kor_clicked"
                 android:clickable="true"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -137,7 +324,6 @@
                 android:textSize="10sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -171,7 +357,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_prof_clicked"
+                android:onClick="ak_to_prof_clicked"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"

@@ -231,7 +231,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:onClick="cat_to_mag_clicked"
+                android:onClick="prof_to_mag_clicked"
                 android:clickable="true"
                 android:src="@drawable/map"/>
             <TextView
@@ -258,7 +258,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_cat_clicked"
+                android:onClick="prof_to_cat_clicked"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -283,7 +283,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="prof_to_kor_clicked"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -308,7 +308,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="prof_to_ak_clicked"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"

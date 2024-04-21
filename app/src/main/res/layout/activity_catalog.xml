@@ -75,6 +75,7 @@
             android:gravity="right"
             android:layout_marginEnd="30dp">
             <Button
+                android:id="@+id/adres"
                 android:layout_width="171dp"
                 android:layout_height="83dp"
                 android:background="#9FDC61"
@@ -105,6 +106,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"/>
             <Button
+                android:id="@+id/povtor"
                 android:layout_width="171dp"
                 android:layout_height="46dp"
                 android:background="#9FDC61"
@@ -116,14 +118,344 @@
                 android:textStyle="bold"/>
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Big"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:gravity="top|center"
+        android:layout_height="130dp"
+        android:columnCount="5"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="////////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Крупные сети:"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_row="0"
+            android:layout_column="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="////////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="4"/>
+        <ImageView
+            android:id="@+id/piat"
+            android:clickable="true"
+            android:src="@drawable/piat"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_row="1"
+            android:layout_column="1"/>
+        <ImageView
+            android:id="@+id/magnit"
+            android:clickable="true"
+            android:src="@drawable/magnit"
+            android:layout_row="1"
+            android:layout_column="2"/>
+        <ImageView
+            android:id="@+id/okey"
+            android:clickable="true"
+            android:src="@drawable/okey"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_row="1"
+            android:layout_column="3"/>
+        <ImageView
+            android:id="@+id/flaver"
+            android:clickable="true"
+            android:src="@drawable/flaver"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:layout_column="1"/>
+        <ImageView
+            android:id="@+id/perekrest"
+            android:clickable="true"
+            android:src="@drawable/perekrest"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:layout_column="2"/>
+        <ImageView
+            android:id="@+id/ashan"
+            android:clickable="true"
+            android:src="@drawable/ashan"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:layout_column="3"/>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/prodact1"
+                    android:layout_width="55dp"
+                    android:layout_height="63dp"
+                    android:clickable="true"
+                    android:src="@drawable/prodact1"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="#9FDC61"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Рис Макфа 100 рублей"
+                android:lines="2"
+                android:textSize="9sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/prodact2"
+                    android:layout_width="55dp"
+                    android:layout_height="63dp"
+                    android:clickable="true"
+                    android:src="@drawable/prodact2"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="#9FDC61"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Энергетический напиток 330 рублей"
+                android:lines="3"
+                android:textSize="9sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:background="#ffffff">
+                <ImageView
+                    android:id="@+id/prodact3"
+                    android:layout_width="55dp"
+                    android:layout_height="63dp"
+                    android:clickable="true"
+                    android:src="@drawable/prodact3"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="#9FDC61"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="Шоколадный завтрак Nesquick 120 рублей"
+                android:lines="3"
+                android:textSize="8sp"
+                android:textStyle="bold"/>
+        </LinearLayout><LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="130dp"
+        android:gravity="center"
         android:orientation="vertical">
-
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="#ffffff">
+            <ImageView
+                android:id="@+id/prodact4"
+                android:layout_width="55dp"
+                android:layout_height="63dp"
+                android:clickable="true"
+                android:src="@drawable/prodact4"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="#9FDC61"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="Шоколадный Батончик MilkyWay 120 рублей"
+            android:lines="4"
+            android:textSize="8sp"
+            android:textStyle="bold"/>
     </LinearLayout>
+    </LinearLayout>
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cake"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:columnCount="5"
+        android:rowCount="2"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кондитерские:"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_row="0"
+            android:layout_column="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/////"
+            android:textColor="#3D3D3D"
+            android:layout_row="0"
+            android:layout_column="4"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/kolos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/kolos"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/vanlav"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/vanlav"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#000000"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/keks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/keks"/>
+        </LinearLayout>
+    </GridLayout>
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/alko"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:columnCount="5"
+        android:rowCount="2"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/////"
+        android:textColor="#3D3D3D"
+        android:layout_row="0"
+        android:layout_column="0"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Алкомаркеты:"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_row="0"
+        android:layout_column="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/////"
+        android:textColor="#3D3D3D"
+        android:layout_row="0"
+        android:layout_column="4"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#ffffff"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/simplewine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:src="@drawable/simplewine"/>
+        </LinearLayout>
+    </GridLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="68dp"
@@ -191,7 +523,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="cat_to_kor_clicked"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -216,7 +548,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="cat_to_ak_clicked"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
@@ -239,7 +571,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_prof_clicked"
+                android:onClick="cat_to_prof_clicked"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"

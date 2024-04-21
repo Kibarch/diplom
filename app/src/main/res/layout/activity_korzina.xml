@@ -11,7 +11,6 @@
 
 
     <LinearLayout
-
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -51,12 +50,487 @@
             android:src="@drawable/chat"/>
     </LinearLayout>
     <LinearLayout
-
         android:layout_width="match_parent"
-        android:layout_height="614dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="25dp"
         android:gravity="top|center"
         android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="#8D8D8D">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Пятерочка:"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="#8D8D8D">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Адрес магазина"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="94dp"
+            android:layout_height="120dp"
+            android:background="#8D8D8D"
+            android:orientation="vertical"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="товар1"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="товар2"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="товар3"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="62dp"
+                android:layout_height="120dp"
+                android:background="#8D8D8D"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="шт/кг"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="шт/кг"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="шт/кг"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="120dp"
+                android:background="#9FDC61"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="стоимость1"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="стоимость2"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="стоимость3"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="#8D8D8D"
+                android:text="Итог:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="#9FDC61"
+                android:text="Сумма"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="25dp"
+        android:gravity="top|center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="#8D8D8D">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Магнит:"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:background="#8D8D8D">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Адрес магазина"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="120dp"
+                android:background="#8D8D8D"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="товар1"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="товар2"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="товар3"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="62dp"
+                android:layout_height="120dp"
+                android:background="#8D8D8D"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="шт/кг"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="шт/кг"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="шт/кг"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="94dp"
+                android:layout_height="120dp"
+                android:background="#9FDC61"
+                android:orientation="vertical"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="стоимость1"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="стоимость2"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="стоимость3"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="#8D8D8D"
+                android:text="Итог:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="10"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="#9FDC61"
+                android:text="Сумма"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp">
+    </LinearLayout>
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="68dp"
@@ -75,7 +549,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
-                android:onClick="cat_to_mag_clicked"
+                android:onClick="kor_to_mag_clicked"
                 android:clickable="true"
                 android:src="@drawable/map"/>
             <TextView
@@ -101,7 +575,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_cat_clicked"
+                android:onClick="kor_to_cat_clicked"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -113,7 +587,6 @@
                 android:textSize="10sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -136,7 +609,6 @@
                 android:textSize="10sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
@@ -149,7 +621,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="kor_to_ak_clicked"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
@@ -172,7 +644,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:onClick="mag_to_prof_clicked"
+                android:onClick="kor_to_prof_clicked"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
@@ -185,5 +657,4 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>
