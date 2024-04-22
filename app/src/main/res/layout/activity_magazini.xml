@@ -23,8 +23,10 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:clickable="true"
+            android:focusable="true"
             android:scaleX="-1"
             android:layout_weight="1"
+            android:contentDescription="NULL"
             android:src="@drawable/arrow"/>
         <TextView
             android:id="@+id/titleM"
@@ -46,45 +48,36 @@
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:clickable="true"
+            android:focusable="true"
             android:layout_weight="1"
+            android:contentDescription="NULL"
             android:src="@drawable/chat"/>
     </LinearLayout>
 
-    <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:gravity="top|center"
-        android:orientation="vertical">
-        <SearchView
+    <SearchView
             android:id="@+id/searchView"
             android:layout_width="326dp"
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/searchbackground"
-            android:queryHint="Поиск"/>
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="15dp"
+            android:queryHint="Поиск" />
 
-    </LinearLayout>
-
-    <LinearLayout
-
+    <WebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="544dp"
-        android:gravity="top|center"
-        android:orientation="vertical">
-        <WebView
-            android:id="@+id/webView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+        android:layout_height="555dp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:background="#616161"
         android:orientation="horizontal"
-        android:layout_gravity="bottom">
+        android:layout_gravity="end">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -98,6 +91,8 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="NULL"
                 android:src="@drawable/map"/>
             <TextView
                 android:id="@+id/textMap"
@@ -107,7 +102,7 @@
                 android:layout_marginTop="-10dp"
                 android:textColor="#000000"
                 android:text="Магазины"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -123,7 +118,9 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="mag_to_cat_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -132,7 +129,7 @@
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Каталог"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -148,7 +145,9 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="mag_to_kor_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -157,7 +156,7 @@
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Корзина"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -173,7 +172,9 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="mag_to_ak_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
@@ -182,7 +183,7 @@
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Акции"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -197,7 +198,9 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="mag_to_prof_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
@@ -206,9 +209,10 @@
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Профиль"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

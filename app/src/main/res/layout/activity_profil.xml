@@ -23,8 +23,10 @@ xmlns:tools="http://schemas.android.com/tools"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:clickable="true"
+            android:focusable="true"
             android:scaleX="-1"
             android:layout_weight="1"
+            android:contentDescription="NULL"
             android:src="@drawable/arrow"/>
         <TextView
             android:id="@+id/titleM"
@@ -46,15 +48,17 @@ xmlns:tools="http://schemas.android.com/tools"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:clickable="true"
+            android:focusable="true"
             android:layout_weight="1"
+            android:contentDescription="NULL"
             android:src="@drawable/chat"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:gravity="left"
-        android:layout_gravity="right"
+        android:gravity="start"
+        android:layout_gravity="end"
         android:layout_marginTop="5dp"
         android:orientation="horizontal">
         
@@ -63,6 +67,7 @@ xmlns:tools="http://schemas.android.com/tools"
             android:layout_height="144dp"
             android:layout_marginStart="35dp"
             android:layout_marginEnd="21dp"
+            android:contentDescription="NULL"
             android:src="@drawable/image1"/>
 
         <TextView
@@ -233,6 +238,8 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_gravity="center"
                 android:onClick="prof_to_mag_clicked"
                 android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="NULL"
                 android:src="@drawable/map"/>
             <TextView
                 android:id="@+id/textMap"
@@ -242,7 +249,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_marginTop="-10dp"
                 android:textColor="#000000"
                 android:text="Магазины"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -258,7 +265,9 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="prof_to_cat_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -267,7 +276,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Каталог"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -283,7 +292,9 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="prof_to_kor_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -292,7 +303,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Корзина"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -308,7 +319,9 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:focusable="true"
                 android:onClick="prof_to_ak_clicked"
+                android:contentDescription="NULL"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
@@ -317,7 +330,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Акции"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -331,6 +344,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
@@ -339,7 +353,7 @@ xmlns:tools="http://schemas.android.com/tools"
                 android:layout_gravity="center"
                 android:textColor="#000000"
                 android:text="Профиль"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
