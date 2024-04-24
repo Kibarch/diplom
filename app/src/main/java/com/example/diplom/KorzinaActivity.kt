@@ -33,5 +33,10 @@ class KorzinaActivity : ComponentActivity()
         val intent = Intent(this, ProfilActivity::class.java)
         startActivity(intent)
     }
+    fun tech_clicked(view: View)
+    {
+        val intent = Intent(this, TechSupportActivity::class.java)
+        startActivity(intent)
+    }
 
 }

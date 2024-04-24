@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">diplom</string>
+    <string name="kartaurl">https://www.google.ru</string>
+    <string name="karta_api">AIzaSyC707BrcLUDlHNBxQHp06ommRVSp-BjRYM</string>
 </resources>
