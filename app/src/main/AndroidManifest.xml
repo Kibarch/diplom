@@ -16,7 +16,7 @@
         <activity
             android:name=".MagaziniActivity"
             android:exported="true"
-            android:label="magazini"
+            android:label="Магазины"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
         <activity
             android:name=".CatalogActivity"
             android:exported="true"
-            android:label="catalog"
+            android:label="Каталог"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -38,7 +38,7 @@
         <activity
             android:name=".KorzinaActivity"
             android:exported="true"
-            android:label="korzina"
+            android:label="Корзина"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -49,7 +49,7 @@
         <activity
             android:name=".AkciiActivity"
             android:exported="true"
-            android:label="akcii"
+            android:label="Акции"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -60,7 +60,7 @@
         <activity
             android:name=".ProfilActivity"
             android:exported="true"
-            android:label="profil"
+            android:label="Профиль"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -71,7 +71,106 @@
         <activity
             android:name=".TechSupportActivity"
             android:exported="true"
-            android:label="profil"
+            android:label="Тех.поддержка"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutPrilActivity"
+            android:exported="true"
+            android:label="О приложении"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdresaDostavokActivity"
+            android:exported="true"
+            android:label="Адреса доставок"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalendarDostActivity"
+            android:exported="true"
+            android:label="Календарь доставок"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HideMagaziniActivity"
+            android:exported="true"
+            android:label="Скрытые магазины"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoForClientActivity"
+            android:exported="true"
+            android:label="Информация для клиентов"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyKartiActivity"
+            android:exported="true"
+            android:label="Мои карты"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyOtziviActivity"
+            android:exported="true"
+            android:label="Мои отзывы"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyZakaziActivity"
+            android:exported="true"
+            android:label="Мои заказы"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="Настройки"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
