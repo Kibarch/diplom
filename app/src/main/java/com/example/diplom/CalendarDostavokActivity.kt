@@ -1,16 +1,16 @@
 package com.example.diplom
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
 import android.content.Intent
+import android.os.Bundle
 import android.view.View
+import androidx.activity.ComponentActivity
 
-class KorzinaActivity : ComponentActivity()
+class CalendarDostavokActivity: ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_korzina)
+        setContentView(R.layout.calendar_dostavok)
     }
 
     fun mag_clicked(view: View)
@@ -43,5 +43,4 @@ class KorzinaActivity : ComponentActivity()
         val intent = Intent(this, TechSupportActivity::class.java)
         startActivity(intent)
     }
-
 }

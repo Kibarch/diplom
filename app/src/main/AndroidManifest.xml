@@ -16,7 +16,7 @@
         <activity
             android:name=".MagaziniActivity"
             android:exported="true"
-            android:label="Магазины"
+            android:label="@string/magazini_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
         <activity
             android:name=".CatalogActivity"
             android:exported="true"
-            android:label="Каталог"
+            android:label="@string/catalog_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -38,7 +38,7 @@
         <activity
             android:name=".KorzinaActivity"
             android:exported="true"
-            android:label="Корзина"
+            android:label="@string/korzina_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -49,7 +49,7 @@
         <activity
             android:name=".AkciiActivity"
             android:exported="true"
-            android:label="Акции"
+            android:label="@string/akcii_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -60,7 +60,7 @@
         <activity
             android:name=".ProfilActivity"
             android:exported="true"
-            android:label="Профиль"
+            android:label="@string/profil_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -71,7 +71,7 @@
         <activity
             android:name=".TechSupportActivity"
             android:exported="true"
-            android:label="Тех.поддержка"
+            android:label="@string/techsupport_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -82,7 +82,7 @@
         <activity
             android:name=".AboutPrilActivity"
             android:exported="true"
-            android:label="О приложении"
+            android:label="@string/aboutpril_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -93,7 +93,7 @@
         <activity
             android:name=".AdresaDostavokActivity"
             android:exported="true"
-            android:label="Адреса доставок"
+            android:label="@string/adresadostavok_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -102,9 +102,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CalendarDostActivity"
+            android:name=".CalendarDostavokActivity"
             android:exported="true"
-            android:label="Календарь доставок"
+            android:label="@string/calendardostavok_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -115,7 +115,7 @@
         <activity
             android:name=".HideMagaziniActivity"
             android:exported="true"
-            android:label="Скрытые магазины"
+            android:label="@string/hidemagazini_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -126,7 +126,7 @@
         <activity
             android:name=".InfoForClientActivity"
             android:exported="true"
-            android:label="Информация для клиентов"
+            android:label="@string/infoforclient_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -137,7 +137,7 @@
         <activity
             android:name=".MyKartiActivity"
             android:exported="true"
-            android:label="Мои карты"
+            android:label="@string/mykarti_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -148,7 +148,7 @@
         <activity
             android:name=".MyOtziviActivity"
             android:exported="true"
-            android:label="Мои отзывы"
+            android:label="@string/myotzivi_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -159,7 +159,7 @@
         <activity
             android:name=".MyZakaziActivity"
             android:exported="true"
-            android:label="Мои заказы"
+            android:label="@string/myzakazi_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -170,7 +170,7 @@
         <activity
             android:name=".SettingsActivity"
             android:exported="true"
-            android:label="Настройки"
+            android:label="@string/settings_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

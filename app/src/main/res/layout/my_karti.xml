@@ -29,13 +29,14 @@
             android:scaleX="-1"
             android:layout_weight="1"
             android:contentDescription="NULL"
+            android:onClick="prof_clicked"
             android:src="@drawable/arrow"/>
         <TextView
             android:id="@+id/titleM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Карта магазинов"
+            android:text="@string/mykarti_name"
             android:textSize="20sp"
             android:textColor="#FFFFFF"
             android:shadowColor="#000000"
@@ -53,6 +54,7 @@
             android:focusable="true"
             android:layout_weight="1"
             android:contentDescription="NULL"
+            android:onClick="tech_clicked"
             android:src="@drawable/chat"/>
     </LinearLayout>
 
@@ -70,17 +72,18 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:layout_marginEnd="15dp"
-            android:background="#9FDC61"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:focusable="true"
                 android:contentDescription="NULL"
-                android:src="@drawable/map"/>
+                android:focusable="true"
+                android:onClick="mag_clicked"
+                android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
@@ -88,7 +91,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
                 android:textColor="#000000"
-                android:text="Магазины"
+                android:text="@string/magazini_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -106,7 +109,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_cat_clicked"
+                android:onClick="cat_clicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/catalog"/>
             <TextView
@@ -115,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Каталог"
+                android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -133,7 +136,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="kor_clicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -142,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Корзина"
+                android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -160,7 +163,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_ak_clicked"
+                android:onClick="ak_clicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/akzii"/>
             <TextView
@@ -169,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Акции"
+                android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -186,7 +189,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_prof_clicked"
+                android:onClick="prof_clicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView
@@ -195,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Профиль"
+                android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>

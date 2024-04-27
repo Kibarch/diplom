@@ -13,22 +13,27 @@ class MagaziniActivity: ComponentActivity()
         setContentView(R.layout.activity_magazini)
 
     }
-    fun mag_to_cat_clicked(view: View)
+    fun mag_clicked(view: View)
+    {
+        val intent = Intent(this, MagaziniActivity::class.java)
+        startActivity(intent)
+    }
+    fun cat_clicked(view: View)
     {
         val intent = Intent(this, CatalogActivity::class.java)
         startActivity(intent)
     }
-    fun mag_to_kor_clicked(view: View)
+    fun kor_clicked(view: View)
     {
         val intent = Intent(this, KorzinaActivity::class.java)
         startActivity(intent)
     }
-    fun mag_to_ak_clicked(view: View)
+    fun ak_clicked(view: View)
     {
         val intent = Intent(this, AkciiActivity::class.java)
         startActivity(intent)
     }
-    fun mag_to_prof_clicked(view: View)
+    fun prof_clicked(view: View)
     {
         val intent = Intent(this, ProfilActivity::class.java)
         startActivity(intent)

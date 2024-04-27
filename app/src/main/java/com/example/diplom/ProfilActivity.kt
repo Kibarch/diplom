@@ -13,24 +13,29 @@ class ProfilActivity : ComponentActivity()
         setContentView(R.layout.activity_profil)
     }
 
-    fun prof_to_mag_clicked(view: View)
+    fun mag_clicked(view: View)
     {
         val intent = Intent(this, MagaziniActivity::class.java)
         startActivity(intent)
     }
-    fun prof_to_cat_clicked(view: View)
+    fun cat_clicked(view: View)
     {
         val intent = Intent(this, CatalogActivity::class.java)
         startActivity(intent)
     }
-    fun prof_to_kor_clicked(view: View)
+    fun kor_clicked(view: View)
     {
         val intent = Intent(this, KorzinaActivity::class.java)
         startActivity(intent)
     }
-    fun prof_to_ak_clicked(view: View)
+    fun ak_clicked(view: View)
     {
         val intent = Intent(this, AkciiActivity::class.java)
+        startActivity(intent)
+    }
+    fun prof_clicked(view: View)
+    {
+        val intent = Intent(this, ProfilActivity::class.java)
         startActivity(intent)
     }
     fun tech_clicked(view: View)

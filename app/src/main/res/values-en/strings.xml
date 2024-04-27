@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">diplom</string>
+    <string name="aboutpril_name">About</string>
+    <string name="akcii_name">Stocks</string>
+    <string name="catalog_name">Catalog</string>
+    <string name="korzina_name">Basket</string>
+    <string name="magazini_name">Shops</string>
+    <string name="profil_name">Profile</string>
+    <string name="adresadostavok_name">Delivery adresses</string>
+    <string name="calendardostavok_name">Delivery calendar</string>
+    <string name="hidemagazini_name">Hidden shops</string>
+    <string name="infoforclient_name">Information for clients</string>
+    <string name="mykarti_name">My cards</string>
+    <string name="myotzivi_name">My feedbacks</string>
+    <string name="myzakazi_name">My orders</string>
+    <string name="settings_name">Settings</string>
+    <string name="techsupport_name">Technical support</string>
+</resources>

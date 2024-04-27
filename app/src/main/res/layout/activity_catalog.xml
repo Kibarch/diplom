@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Каталог"
+            android:text="@string/catalog_name"
             android:textSize="20sp"
             android:textColor="#FFFFFF"
             android:shadowColor="#000000"
@@ -42,16 +42,18 @@
             android:shadowRadius="10"
             android:layout_weight="2"
             android:textStyle="bold"/>
+
         <ImageView
             android:id="@+id/chat"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="1"
+            android:clickable="true"
             android:contentDescription="NULL"
-            android:src="@drawable/chat"/>
+            android:focusable="true"
+            android:onClick="tech_clicked"
+            android:src="@drawable/chat" />
     </LinearLayout>
 
     <SearchView
@@ -472,27 +474,29 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:background="#616161"
         android:orientation="horizontal"
-        android:layout_gravity="bottom">
+        android:layout_gravity="end">
+
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="cat_to_mag_clicked"
                 android:clickable="true"
+                android:contentDescription="NULL"
                 android:focusable="true"
-                android:src="@drawable/map"
-                android:contentDescription="NULL"/>
+                android:onClick="mag_clicked"
+                android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
@@ -500,7 +504,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
                 android:textColor="#000000"
-                android:text="Магазины"
+                android:text="@string/magazini_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -517,15 +521,18 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:src="@drawable/catalog"
-                android:contentDescription="NULL"/>
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="NULL"
+                android:onClick="cat_clicked"
+                android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Каталог"
+                android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -543,16 +550,16 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="cat_to_kor_clicked"
-                android:src="@drawable/korzina"
-                android:contentDescription="NULL"/>
+                android:onClick="mag_to_kor_clicked"
+                android:contentDescription="NULL"
+                android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Корзина"
+                android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -570,16 +577,16 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="cat_to_ak_clicked"
-                android:src="@drawable/akzii"
-                android:contentDescription="NULL"/>
+                android:onClick="mag_to_ak_clicked"
+                android:contentDescription="NULL"
+                android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Акции"
+                android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -596,16 +603,16 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="cat_to_prof_clicked"
-                android:src="@drawable/profile"
-                android:contentDescription="NULL"/>
+                android:onClick="mag_to_prof_clicked"
+                android:contentDescription="NULL"
+                android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Профиль"
+                android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
