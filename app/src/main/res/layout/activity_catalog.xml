@@ -76,7 +76,7 @@
             android:id="@+id/adres"
             android:layout_width="171dp"
             android:layout_height="83dp"
-            android:background="#9FDC61"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             android:gravity="center_horizontal|center"
             android:text="Выберите адрес...."
             android:drawableEnd="@drawable/target"
@@ -109,7 +109,7 @@
                 android:id="@+id/povtor"
                 android:layout_width="171dp"
                 android:layout_height="46dp"
-                android:background="#9FDC61"
+                android:background="@drawable/bottomcornersdarkthemeroundedbackground"
                 android:gravity="center"
                 android:text="Повторить"
                 android:layout_marginEnd="10dp"
@@ -236,7 +236,7 @@
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:background="#9FDC61"
+                android:background="@drawable/bottomcornersdarkthemeroundedbackground"
                 android:layout_marginBottom="0dp"
                 android:gravity="center"
                 android:textColor="#000000"
@@ -269,7 +269,7 @@
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:background="#9FDC61"
+                android:background="@drawable/bottomcornersdarkthemeroundedbackground"
                 android:layout_marginBottom="0dp"
                 android:gravity="center"
                 android:textColor="#000000"
@@ -302,7 +302,7 @@
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:background="#9FDC61"
+                android:background="@drawable/bottomcornersdarkthemeroundedbackground"
                 android:layout_marginBottom="0dp"
                 android:gravity="center"
                 android:textColor="#000000"
@@ -334,7 +334,7 @@
         <TextView
             android:layout_width="70dp"
             android:layout_height="50dp"
-            android:background="#9FDC61"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
             android:layout_marginBottom="0dp"
             android:gravity="center"
             android:textColor="#000000"
@@ -514,7 +514,7 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:layout_marginEnd="15dp"
-            android:background="#9FDC61"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/mag_to_cat"

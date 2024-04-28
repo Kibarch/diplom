@@ -112,12 +112,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="5dp"
-            android:background="#ffffff"
             android:layout_gravity="center">
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:background="#9FDC61"
+                android:background="@drawable/allcornersdarkthemeroundedbackground"
                 android:text="кефир -50% скидки"
                 android:clickable="true"
                 android:focusable="true"
@@ -135,12 +134,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="5dp"
-            android:background="#ffffff"
             android:layout_gravity="center">
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:background="#9FDC61"
+                android:background="@drawable/allcornersdarkthemeroundedbackground"
                 android:text="молоко -30% скидки"
                 android:clickable="true"
                 android:focusable="true"
@@ -158,12 +156,11 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="5dp"
-            android:background="#ffffff"
             android:layout_gravity="center">
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:background="#9FDC61"
+                android:background="@drawable/allcornersdarkthemeroundedbackground"
                 android:text="хлеб -30% скидки"
                 android:clickable="true"
                 android:focusable="true"
@@ -219,7 +216,7 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:background="#9FDC61"
+                android:background="@drawable/allcornersdarkthemeroundedbackground"
                 android:text="йогурт -40% скидки"
                 android:clickable="true"
                 android:focusable="true"
@@ -240,7 +237,7 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:background="#9FDC61"
+                android:background="@drawable/allcornersdarkthemeroundedbackground"
                 android:text="колбаса -20% скидки"
                 android:clickable="true"
                 android:focusable="true"
@@ -348,7 +345,7 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:layout_marginEnd="15dp"
-            android:background="#9FDC61"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             android:orientation="vertical">
             <ImageView
                 android:id="@+id/mag_to_ak"
