@@ -52,7 +52,7 @@
             android:clickable="true"
             android:contentDescription="NULL"
             android:focusable="true"
-            android:onClick="tech_clicked"
+            android:onClick="techClicked"
             android:src="@drawable/chat" />
     </LinearLayout>
 
@@ -495,7 +495,7 @@
                 android:clickable="true"
                 android:contentDescription="NULL"
                 android:focusable="true"
-                android:onClick="mag_clicked"
+                android:onClick="magClicked"
                 android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
@@ -524,7 +524,6 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:contentDescription="NULL"
-                android:onClick="cat_clicked"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -550,7 +549,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="korClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -577,7 +576,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_ak_clicked"
+                android:onClick="akClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/akzii"/>
             <TextView
@@ -603,7 +602,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_prof_clicked"
+                android:onClick="profClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView

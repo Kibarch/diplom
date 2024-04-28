@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#3D3D3D"
     android:gravity="fill"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="UseCompoundDrawables"
     tools:context=".AkciiActivity">
 
     <LinearLayout
-
+        android:id="@+id/Linear1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
         android:background="#616161"
         android:orientation="horizontal"
         android:layout_gravity="top">
@@ -53,7 +53,7 @@
             android:clickable="true"
             android:contentDescription="NULL"
             android:focusable="true"
-            android:onClick="tech_clicked"
+            android:onClick="techClicked"
             android:src="@drawable/chat" />
     </LinearLayout>
 
@@ -64,7 +64,7 @@
         android:layout_marginTop="5dp"
         android:columnCount="5"
         android:rowCount="3"
-        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Linear1"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
@@ -181,7 +181,7 @@
         android:layout_height="120dp"
         android:columnCount="5"
         android:rowCount="3"
-        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/five"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
@@ -255,7 +255,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
         android:orientation="horizontal"
         android:layout_gravity="end">
@@ -275,7 +275,7 @@
                 android:clickable="true"
                 android:contentDescription="NULL"
                 android:focusable="true"
-                android:onClick="mag_clicked"
+                android:onClick="magClicked"
                 android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
@@ -302,7 +302,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="cat_clicked"
+                android:onClick="catClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/catalog"/>
             <TextView
@@ -329,7 +329,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="kor_clicked"
+                android:onClick="korClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -382,7 +382,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="prof_clicked"
+                android:onClick="profClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView
@@ -398,4 +398,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

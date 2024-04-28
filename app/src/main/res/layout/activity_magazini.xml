@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#3D3D3D"
     android:gravity="fill"
@@ -54,7 +53,7 @@
             android:clickable="true"
             android:contentDescription="NULL"
             android:focusable="true"
-            android:onClick="tech_clicked"
+            android:onClick="techClicked"
             android:src="@drawable/chat" />
     </LinearLayout>
 
@@ -75,8 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="550dp"
         android:src="@drawable/karta"
-        android:contentDescription="NULL"
-        android:background="#FFFFFF"/>
+        android:contentDescription="NULL" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -128,7 +126,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="cat_clicked"
+                android:onClick="catClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/catalog"/>
             <TextView
@@ -155,7 +153,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_kor_clicked"
+                android:onClick="korClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -182,7 +180,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_ak_clicked"
+                android:onClick="akClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/akzii"/>
             <TextView
@@ -208,7 +206,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="mag_to_prof_clicked"
+                android:onClick="profClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView
