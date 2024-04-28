@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">diplom</string>
-    <string name="kartaurl">https://www.google.ru</string>
-    <string name="karta_api">AIzaSyC707BrcLUDlHNBxQHp06ommRVSp-BjRYM</string>
+    <string name="kartaurl" translatable="false">https://www.google.ru</string>
+    <string name="karta_api" translatable="false">AIzaSyC707BrcLUDlHNBxQHp06ommRVSp-BjRYM</string>
+    <string name="aboutpril_name">О приложении</string>
+    <string name="akcii_name">Акции</string>
+    <string name="catalog_name">Каталог</string>
+    <string name="korzina_name">Корзина</string>
+    <string name="magazini_name">Магазины</string>
+    <string name="profil_name">Профиль</string>
+    <string name="adresadostavok_name">Адреса доставок</string>
+    <string name="calendardostavok_name">Календарь доставок</string>
+    <string name="hidemagazini_name">Скрытые магазины</string>
+    <string name="infoforclient_name">Информация для клиентов</string>
+    <string name="mykarti_name">Мои карты</string>
+    <string name="myotzivi_name">Мои отзывы</string>
+    <string name="myzakazi_name">Мои заказы</string>
+    <string name="settings_name">Настройки</string>
+    <string name="techsupport_name">Техническая поддержка</string>
+
 </resources>

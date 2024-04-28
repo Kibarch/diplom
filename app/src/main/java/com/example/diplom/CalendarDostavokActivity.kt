@@ -1,16 +1,16 @@
 package com.example.diplom
 
-import android.os.Bundle
-import androidx.activity.ComponentActivity
 import android.content.Intent
+import android.os.Bundle
 import android.view.View
+import androidx.activity.ComponentActivity
 
-class TechSupportActivity : ComponentActivity()
+class CalendarDostavokActivity: ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tech_support)
+        setContentView(R.layout.calendar_dostavok)
     }
 
     fun magClicked(view: View)
@@ -38,5 +38,9 @@ class TechSupportActivity : ComponentActivity()
         val intent = Intent(this, ProfilActivity::class.java)
         startActivity(intent)
     }
-
+    fun techClicked(view: View)
+    {
+        val intent = Intent(this, TechSupportActivity::class.java)
+        startActivity(intent)
+    }
 }

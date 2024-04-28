@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Карта магазинов"
+            android:text="@string/profil_name"
             android:textSize="20sp"
             android:textColor="#FFFFFF"
             android:shadowColor="#000000"
@@ -43,16 +43,18 @@
             android:shadowRadius="10"
             android:layout_weight="2"
             android:textStyle="bold"/>
+
         <ImageView
             android:id="@+id/chat"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_weight="1"
+            android:clickable="true"
             android:contentDescription="NULL"
-            android:src="@drawable/chat"/>
+            android:focusable="true"
+            android:onClick="techClicked"
+            android:src="@drawable/chat" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,7 +99,7 @@
             <Button
                 android:layout_width="329dp"
                 android:layout_height="55dp"
-                android:text="Мои Заказы"
+                android:text="@string/myzakazi_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -105,11 +107,12 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="myZakaziClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="45dp"
-                android:text="Мои Отзывы"
+                android:text="@string/myotzivi_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -117,11 +120,12 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="myOtziviClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="50dp"
-                android:text="Мои Карты"
+                android:text="@string/mykarti_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -129,6 +133,7 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="myKartiClicked"
                 android:background="#8D8D8D" />
         </LinearLayout>
 
@@ -141,7 +146,7 @@
             <Button
                 android:layout_width="329dp"
                 android:layout_height="55dp"
-                android:text="Календарь доставок"
+                android:text="@string/calendardostavok_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -149,11 +154,12 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="calendarDostavokClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="45dp"
-                android:text="Скрытые магазины"
+                android:text="@string/hidemagazini_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -161,11 +167,12 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="hideMagaziniClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="50dp"
-                android:text="Адреса Доставок"
+                android:text="@string/adresadostavok_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -173,6 +180,7 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="adresaDostavokClicked"
                 android:background="#8D8D8D" />
         </LinearLayout>
         <LinearLayout
@@ -184,7 +192,7 @@
             <Button
                 android:layout_width="329dp"
                 android:layout_height="55dp"
-                android:text="Настройки"
+                android:text="@string/settings_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -192,11 +200,12 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="settingsClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="45dp"
-                android:text="О Приложении"
+                android:text="@string/aboutpril_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -204,11 +213,12 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="aboutPrilClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="50dp"
-                android:text="Информация для клиентов"
+                android:text="@string/infoforclient_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:textColor="#FFFFFF"
@@ -216,17 +226,18 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
+                android:onClick="infoForClientClicked"
                 android:background="#8D8D8D" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:background="#616161"
         android:orientation="horizontal"
-        android:layout_gravity="bottom">
+        android:layout_gravity="end">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -234,16 +245,17 @@
             android:gravity="center"
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="prof_to_mag_clicked"
                 android:clickable="true"
-                android:focusable="true"
                 android:contentDescription="NULL"
-                android:src="@drawable/map"/>
+                android:focusable="true"
+                android:onClick="magClicked"
+                android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
@@ -251,7 +263,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
                 android:textColor="#000000"
-                android:text="Магазины"
+                android:text="@string/magazini_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -269,7 +281,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="prof_to_cat_clicked"
+                android:onClick="catClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/catalog"/>
             <TextView
@@ -278,7 +290,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Каталог"
+                android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -296,7 +308,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="prof_to_kor_clicked"
+                android:onClick="korClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -305,7 +317,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Корзина"
+                android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -323,7 +335,7 @@
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="prof_to_ak_clicked"
+                android:onClick="akClicked"
                 android:contentDescription="NULL"
                 android:src="@drawable/akzii"/>
             <TextView
@@ -332,7 +344,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Акции"
+                android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -348,6 +360,8 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
                 android:contentDescription="NULL"
                 android:src="@drawable/profile"/>
             <TextView
@@ -356,7 +370,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#000000"
-                android:text="Профиль"
+                android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
