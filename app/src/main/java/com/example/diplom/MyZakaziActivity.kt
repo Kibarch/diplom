@@ -11,11 +11,6 @@ class MyZakaziActivity: ComponentActivity()
         setContentView(R.layout.my_zakazi)
     }
 
-    fun mag_clicked(view: View)
-    {
-        val intent = Intent(this, MagaziniActivity::class.java)
-        startActivity(intent)
-    }
     fun magClicked(view: View)
     {
         val intent = Intent(this, MagaziniActivity::class.java)
@@ -39,11 +34,6 @@ class MyZakaziActivity: ComponentActivity()
     fun profClicked(view: View)
     {
         val intent = Intent(this, ProfilActivity::class.java)
-        startActivity(intent)
-    }
-    fun techClicked(view: View)
-    {
-        val intent = Intent(this, TechSupportActivity::class.java)
         startActivity(intent)
     }
 }

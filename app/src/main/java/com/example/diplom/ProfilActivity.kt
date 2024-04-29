@@ -78,9 +78,4 @@ class ProfilActivity : ComponentActivity()
         val intent = Intent(this, InfoForClientActivity::class.java)
         startActivity(intent)
     }
-    fun techClicked(view: View)
-    {
-        val intent = Intent(this, TechSupportActivity::class.java)
-        startActivity(intent)
-    }
 }
