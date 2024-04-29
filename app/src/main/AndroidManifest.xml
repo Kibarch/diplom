@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
 
     <application
         android:allowBackup="true"
@@ -16,7 +20,7 @@
         <activity
             android:name=".MagaziniActivity"
             android:exported="true"
-            android:label="magazini"
+            android:label="@string/magazini_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +31,7 @@
         <activity
             android:name=".CatalogActivity"
             android:exported="true"
-            android:label="catalog"
+            android:label="@string/catalog_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -38,7 +42,7 @@
         <activity
             android:name=".KorzinaActivity"
             android:exported="true"
-            android:label="korzina"
+            android:label="@string/korzina_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -49,7 +53,7 @@
         <activity
             android:name=".AkciiActivity"
             android:exported="true"
-            android:label="akcii"
+            android:label="@string/akcii_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -60,7 +64,7 @@
         <activity
             android:name=".ProfilActivity"
             android:exported="true"
-            android:label="profil"
+            android:label="@string/profil_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -71,7 +75,106 @@
         <activity
             android:name=".TechSupportActivity"
             android:exported="true"
-            android:label="profil"
+            android:label="@string/techsupport_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutPrilActivity"
+            android:exported="true"
+            android:label="@string/aboutpril_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdresaDostavokActivity"
+            android:exported="true"
+            android:label="@string/adresadostavok_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalendarDostavokActivity"
+            android:exported="true"
+            android:label="@string/calendardostavok_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HideMagaziniActivity"
+            android:exported="true"
+            android:label="@string/hidemagazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InfoForClientActivity"
+            android:exported="true"
+            android:label="@string/infoforclient_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyKartiActivity"
+            android:exported="true"
+            android:label="@string/mykarti_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyOtziviActivity"
+            android:exported="true"
+            android:label="@string/myotzivi_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyZakaziActivity"
+            android:exported="true"
+            android:label="@string/myzakazi_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/settings_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -81,7 +184,8 @@
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="${MAPS_API_KEY}" />
+            android:value="@string/karta_api" >
+        </meta-data>
 
     </application>
 

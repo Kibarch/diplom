@@ -92,26 +92,13 @@
             android:layout_height="match_parent"
             android:layout_gravity="end"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="171dp"
-                android:layout_height="37dp"
-                android:background="@drawable/topcornerslightggrayroundedbackground"
-                android:gravity="center"
-                android:text="Ваш недавний заказ"
-                android:layout_marginEnd="10dp"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"/>
             <Button
                 android:id="@+id/povtor"
                 android:layout_width="171dp"
-                android:layout_height="46dp"
-                android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+                android:layout_height="83dp"
+                android:background="@drawable/allcornersdarkthemeroundedbackground"
                 android:gravity="center"
-                android:text="Повторить"
+                android:text="Повторить заказ"
                 android:layout_marginEnd="10dp"
                 android:textSize="24sp"
                 android:textColor="#000000"
@@ -222,7 +209,7 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:gravity="center"
-                android:background="#FFFFFF">
+                android:background="@color/white">
                 <ImageView
                     android:id="@+id/prodact1"
                     android:layout_width="55dp"
@@ -256,7 +243,7 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:gravity="center"
-                android:background="#FFFFFF">
+                android:background="@color/white">
                 <ImageView
                     android:id="@+id/prodact2"
                     android:layout_width="55dp"
@@ -289,7 +276,7 @@
                 android:layout_width="70dp"
                 android:layout_height="80dp"
                 android:gravity="center"
-                android:background="#FFFFFF">
+                android:background="@color/white">
                 <ImageView
                     android:id="@+id/prodact3"
                     android:layout_width="55dp"
@@ -321,7 +308,7 @@
             android:layout_width="70dp"
             android:layout_height="80dp"
             android:gravity="center"
-            android:background="#FFFFFF">
+            android:background="@color/white">
             <ImageView
                 android:id="@+id/prodact4"
                 android:layout_width="55dp"
@@ -377,7 +364,7 @@
             android:layout_column="1"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:layout_gravity="center">
             <ImageView
                 android:id="@+id/kolos"
@@ -395,7 +382,7 @@
             android:layout_column="2"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:layout_gravity="center">
             <ImageView
                 android:id="@+id/vanlav"
@@ -413,7 +400,7 @@
             android:layout_column="3"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="#000000"
+            android:background="@color/black"
             android:layout_gravity="center">
             <ImageView
                 android:id="@+id/keks"
@@ -458,7 +445,7 @@
             android:layout_column="1"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:layout_gravity="center">
             <ImageView
                 android:id="@+id/simplewine"

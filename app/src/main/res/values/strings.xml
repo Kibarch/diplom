@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">diplom</string>
     <string name="kartaurl" translatable="false">https://www.google.ru</string>
-    <string name="karta_api" translatable="false">AIzaSyC707BrcLUDlHNBxQHp06ommRVSp-BjRYM</string>
+    <string name="karta_api" templateMergeStrategy="preserve" translatable="false">AIzaSyC707BrcLUDlHNBxQHp06ommRVSp-BjRYM</string>
     <string name="aboutpril_name">О приложении</string>
     <string name="akcii_name">Акции</string>
     <string name="catalog_name">Каталог</string>
