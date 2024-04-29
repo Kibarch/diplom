@@ -76,7 +76,7 @@
         <TextView
             android:layout_width="170dp"
             android:layout_height="130dp"
-            android:background="#9FDC61"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             android:gravity="center"
             android:text="Имя Фамилия"
             android:textColor="#000000"
@@ -108,7 +108,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"
                 android:onClick="myZakaziClicked"
-                android:background="#8D8D8D" />
+                android:background="@drawable/topcornerslightggrayroundedbackground" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="45dp"
@@ -134,7 +134,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"
                 android:onClick="myKartiClicked"
-                android:background="#8D8D8D" />
+                android:background="@drawable/bottomcornerslightgrayroundedbackground" />
         </LinearLayout>
 
         <LinearLayout
@@ -155,7 +155,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"
                 android:onClick="calendarDostavokClicked"
-                android:background="#8D8D8D" />
+                android:background="@drawable/topcornerslightggrayroundedbackground" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="45dp"
@@ -181,7 +181,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"
                 android:onClick="adresaDostavokClicked"
-                android:background="#8D8D8D" />
+                android:background="@drawable/bottomcornerslightgrayroundedbackground" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -201,7 +201,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"
                 android:onClick="settingsClicked"
-                android:background="#8D8D8D" />
+                android:background="@drawable/topcornerslightggrayroundedbackground" />
             <Button
                 android:layout_width="329dp"
                 android:layout_height="45dp"
@@ -227,7 +227,7 @@
                 android:shadowDy="0"
                 android:shadowRadius="10"
                 android:onClick="infoForClientClicked"
-                android:background="#8D8D8D" />
+                android:background="@drawable/bottomcornerslightgrayroundedbackground" />
         </LinearLayout>
     </LinearLayout>
 

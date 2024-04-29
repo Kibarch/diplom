@@ -238,7 +238,7 @@
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:background="@drawable/allcornersdarkthemeroundedbackground"
-                android:text="колбаса -20% скидки"
+                android:text="колбаса -20% ск  идки"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center"
