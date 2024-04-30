@@ -22,6 +22,14 @@
     <string name="applanguange_name">Язык приложения</string>
     <string name="logout_name">Выйти из приложения</string>
     <string name="deleteaccount_name">Удалить аккаунт</string>
+    <string name="workWithApp_name">Работа с приложением</string>
+    <string name="workWIthAccount_name">Работа с аккаунтом</string>
+    <string name="delivery_name">Доставка</string>
+    <string name="paymentMethods_name">Способы оплаты</string>
+    <string name="vozvratSredstv_name">Возврат средств</string>
+    <string name="politConfid_name">Политика конфиденциальности</string>
+    <string name="aboutUs_name">О нас</string>
+    <string name="contacts_name">Контакты</string>
 
 
 </resources>

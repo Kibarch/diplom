@@ -29,6 +29,7 @@
             android:focusable="true"
             android:scaleX="-1"
             android:layout_weight="1"
+            android:onClick="profClicked"
             android:contentDescription="NULL"
             android:src="@drawable/arrow"/>
         <TextView

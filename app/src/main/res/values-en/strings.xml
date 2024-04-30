@@ -22,4 +22,12 @@
     <string name="applanguange_name">App language</string>
     <string name="logout_name">Log out</string>
     <string name="deleteaccount_name">Delete account</string>
+    <string name="workWithApp_name">Work with application</string>
+    <string name="workWIthAccount_name">Work with account</string>
+    <string name="delivery_name">Delivery</string>
+    <string name="paymentMethods_name">Payment methods</string>
+    <string name="vozvratSredstv_name">Products refund</string>
+    <string name="politConfid_name">Privacy policy</string>
+    <string name="aboutUs_name">About us</string>
+    <string name="contacts_name">Contacts</string>
 </resources>
