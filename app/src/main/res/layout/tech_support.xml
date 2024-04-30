@@ -144,8 +144,8 @@
 
             <ImageView
                 android:id="@+id/mag_to_kor"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:contentDescription="NULL"
