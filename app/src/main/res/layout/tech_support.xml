@@ -17,6 +17,7 @@
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
         android:background="#616161"
+        android:gravity="center"
         android:orientation="horizontal"
         android:layout_gravity="top">
         <TextView
@@ -64,7 +65,7 @@
             android:ems="10"
             android:inputType="text"
             android:background="#FFFFFF"
-            android:text="Введите сообщение..."
+            android:text="    Введите сообщение..."
             android:autofillHints="name"/>
 
     </LinearLayout>
@@ -75,6 +76,7 @@
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
+        android:gravity="center"
         android:orientation="horizontal"
         android:layout_gravity="bottom">
 

@@ -17,6 +17,7 @@
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
         android:background="#616161"
+        android:gravity="center"
         android:orientation="horizontal"
         android:layout_gravity="top">
         <ImageView
@@ -30,20 +31,21 @@
             android:layout_weight="1"
             android:contentDescription="NULL"
             android:src="@drawable/arrow"/>
+
         <TextView
             android:id="@+id/titleM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:gravity="center"
-            android:text="@string/magazini_name"
-            android:textSize="20sp"
-            android:textColor="#FFFFFF"
             android:shadowColor="#000000"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="10"
-            android:layout_weight="2"
-            android:textStyle="bold"/>
+            android:text="@string/magazini_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/chat"
@@ -86,6 +88,7 @@
         android:id="@+id/menuMagazini"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
         android:orientation="horizontal"

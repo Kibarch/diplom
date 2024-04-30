@@ -17,6 +17,7 @@
         android:id="@+id/hatKorzina"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         android:background="#616161"
         android:orientation="horizontal"
@@ -492,6 +493,7 @@
         android:id="@+id/menuKorzina"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
         android:orientation="horizontal">
