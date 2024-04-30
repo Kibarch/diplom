@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">diplom</string>
-    <string name="kartaurl" translatable="false">https://www.google.ru</string>
     <string name="karta_api" templateMergeStrategy="preserve" translatable="false">AIzaSyC707BrcLUDlHNBxQHp06ommRVSp-BjRYM</string>
     <string name="aboutpril_name">О приложении</string>
     <string name="akcii_name">Акции</string>
@@ -17,5 +16,12 @@
     <string name="myzakazi_name">Мои заказы</string>
     <string name="settings_name">Настройки</string>
     <string name="techsupport_name">Техническая поддержка</string>
+    <string name="notifications_name">Уведомления</string>
+    <string name="currency_name">Валюта</string>
+    <string name="apptheme_name">Тема приложения</string>
+    <string name="applanguange_name">Язык приложения</string>
+    <string name="logout_name">Выйти из приложения</string>
+    <string name="deleteaccount_name">Удалить аккаунт</string>
+
 
 </resources>

@@ -33,6 +33,11 @@ class AkciiActivity : ComponentActivity()
         val intent = Intent(this, ProfilActivity::class.java)
         startActivity(intent)
     }
+    fun techClicked(view: View)
+    {
+        val intent = Intent(this, TechSupportActivity::class.java)
+        startActivity(intent)
+    }
 
 
 }

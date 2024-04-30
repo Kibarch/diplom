@@ -54,7 +54,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:clickable="true"
-            android:contentDescription="NULL"
+            android:contentDescription="@string/techsupport_name"
             android:focusable="true"
             android:onClick="techClicked"
             android:src="@drawable/chat" />
@@ -105,10 +105,10 @@
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
                 android:src="@drawable/map" />
             <TextView
@@ -137,7 +137,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -164,7 +164,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="korClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -191,7 +191,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="akClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
@@ -217,7 +217,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="profClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/profil_name"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"

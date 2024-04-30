@@ -54,7 +54,7 @@
             android:clickable="true"
             android:focusable="true"
             android:layout_weight="1"
-            android:contentDescription="NULL"
+            android:contentDescription="@string/hidemagazini_name"
             android:onClick="techClicked"
             android:src="@drawable/chat"/>
     </LinearLayout>
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:text="Скрытые магазины:"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:textColor="#ffffff"
         android:layout_marginStart="20dp"
@@ -87,7 +87,7 @@
             android:layout_width="315dp"
             android:layout_height="40dp"
             android:text="     Название магазина"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:textStyle="bold"
             android:gravity="center_vertical"
@@ -109,7 +109,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="     Адрес магазина"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_gravity="center_vertical"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
@@ -122,6 +122,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="95dp"
+                android:contentDescription="NULL"
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/target" />
 
@@ -129,6 +130,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/galka"
+                android:contentDescription="NULL"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="20dp"/>
@@ -147,7 +149,7 @@
             android:layout_width="315dp"
             android:layout_height="40dp"
             android:text="     Название магазина"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:textStyle="bold"
             android:gravity="center_vertical"
@@ -169,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="     Адрес магазина"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_gravity="center_vertical"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
@@ -183,6 +185,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="95dp"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="NULL"
                 android:src="@drawable/target" />
 
             <ImageView
@@ -191,6 +194,7 @@
                 android:src="@drawable/galka"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
+                android:contentDescription="NULL"
                 android:layout_marginEnd="20dp"/>
         </LinearLayout>
     </LinearLayout>
@@ -207,7 +211,7 @@
             android:layout_width="315dp"
             android:layout_height="40dp"
             android:text="     Название магазина"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:textStyle="bold"
             android:gravity="center_vertical"
@@ -229,7 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="     Адрес магазина"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_gravity="center_vertical"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
@@ -243,6 +247,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="95dp"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="NULL"
                 android:src="@drawable/target" />
 
             <ImageView
@@ -251,8 +256,10 @@
                 android:src="@drawable/galka"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="20dp"
+                android:contentDescription="NULL" />
         </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -267,7 +274,7 @@
             android:layout_width="315dp"
             android:layout_height="40dp"
             android:text="     Название магазина"
-            android:textSize="14dp"
+            android:textSize="14sp"
             android:layout_gravity="center_vertical"
             android:textStyle="bold"
             android:gravity="center_vertical"
@@ -289,7 +296,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="     Адрес магазина"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:layout_gravity="center_vertical"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
@@ -303,6 +310,7 @@
                 android:layout_height="30dp"
                 android:layout_marginStart="95dp"
                 android:layout_gravity="center_vertical"
+                android:contentDescription="NULL"
                 android:src="@drawable/target" />
 
             <ImageView
@@ -311,8 +319,10 @@
                 android:src="@drawable/galka"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="15dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginEnd="20dp"
+                android:contentDescription="NULL" />
         </LinearLayout>
+
     </LinearLayout>
 
 
@@ -338,7 +348,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
                 android:onClick="magClicked"
                 android:src="@drawable/map" />
@@ -368,7 +378,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -395,7 +405,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="korClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -422,7 +432,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="akClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
@@ -448,7 +458,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="profClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/profil_name"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"

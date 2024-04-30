@@ -76,7 +76,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Статус Отзыва:"
+                android:text="Статус отзыва:"
                 android:textSize="12dp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="статус"
+                android:text="Подтвержден"
                 android:gravity="center_horizontal"
                 android:textSize="10dp"
                 android:textColor="@color/black"
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Код Товара:"
+                android:text="Код товара:"
                 android:textSize="12dp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
@@ -109,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="код"
+                android:text="0032"
                 android:gravity="center_horizontal"
                 android:textSize="10dp"
                 android:textColor="@color/black"
@@ -136,7 +136,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:text="рывагщывтщагрывщгцутащгывтмщгшырващгвырамзщгвытмзшыввгмтвыщгоатывавмвмвмммм"
+                android:text="SampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleText"
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 android:textStyle="bold"
@@ -163,7 +163,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Статус Отзыва:"
+                android:text="Статус отзыва:"
                 android:textSize="12dp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
@@ -175,7 +175,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="статус"
+                android:text="В обработке"
                 android:gravity="center_horizontal"
                 android:textSize="10dp"
                 android:textColor="@color/black"
@@ -184,7 +184,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Код Товара:"
+                android:text="Код магазина:"
                 android:textSize="12dp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
@@ -196,7 +196,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="код"
+                android:text="177"
                 android:gravity="center_horizontal"
                 android:textSize="10dp"
                 android:textColor="@color/black"
@@ -223,7 +223,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:text="рывагщывтщагрывщгцутащгывтмщгшырващгвырамзщгвытмзшыввгмтвыщгоатывавмвмвмммм"
+                android:text="SampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleText"
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 android:textStyle="bold"
@@ -378,5 +378,17 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/menuOtzivi"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="deleteAllFeedbackClicked"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="Удалить все отзывы" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

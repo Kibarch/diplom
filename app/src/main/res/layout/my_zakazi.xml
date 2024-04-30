@@ -433,4 +433,16 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/menuMyZakaz"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="clearZakazHistoryClicked"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="Очистить историю заказов" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

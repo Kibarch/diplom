@@ -52,7 +52,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:clickable="true"
-            android:contentDescription="NULL"
+            android:contentDescription="@string/techsupport_name"
             android:focusable="true"
             android:onClick="techClicked"
             android:src="@drawable/chat" />

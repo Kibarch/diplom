@@ -16,4 +16,10 @@
     <string name="myzakazi_name">My orders</string>
     <string name="settings_name">Settings</string>
     <string name="techsupport_name">Technical support</string>
+    <string name="notifications_name">Notifications</string>
+    <string name="currency_name">Currency</string>
+    <string name="apptheme_name">App theme</string>
+    <string name="applanguange_name">App language</string>
+    <string name="logout_name">Log out</string>
+    <string name="deleteaccount_name">Delete account</string>
 </resources>

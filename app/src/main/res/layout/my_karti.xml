@@ -53,7 +53,7 @@
             android:clickable="true"
             android:focusable="true"
             android:layout_weight="1"
-            android:contentDescription="NULL"
+            android:contentDescription="@string/techsupport_name"
             android:onClick="techClicked"
             android:src="@drawable/chat"/>
     </LinearLayout>
@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
                 android:onClick="magClicked"
                 android:src="@drawable/map" />
@@ -203,7 +203,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
@@ -230,7 +230,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="korClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
@@ -297,5 +297,17 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/menuKarti"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="deleteAllCardsClicked"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="Удалить все карты" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
