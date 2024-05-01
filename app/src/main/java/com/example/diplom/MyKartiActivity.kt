@@ -41,5 +41,6 @@ class MyKartiActivity: ComponentActivity()
         val intent = Intent(this, TechSupportActivity::class.java)
         startActivity(intent)
     }
+    fun deleteAllCardsClicked(view: View) {}
 
 }

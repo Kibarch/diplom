@@ -38,7 +38,7 @@
             android:gravity="center"
             android:text="@string/infoforclient_name"
             android:textSize="20sp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:shadowColor="#000000"
             android:shadowDx="0"
             android:shadowDy="0"

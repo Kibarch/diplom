@@ -42,4 +42,6 @@ class MyZakaziActivity: ComponentActivity()
         startActivity(intent)
     }
 
+    fun clearZakazHistoryClicked(view: View) {}
+
 }

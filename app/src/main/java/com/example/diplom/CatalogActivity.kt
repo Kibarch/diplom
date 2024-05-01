@@ -40,4 +40,7 @@ class CatalogActivity : ComponentActivity()
         startActivity(intent)
     }
 
+    fun selectAdressClicked(view: View) {}
+    fun repeatOrderClicked(view: View) {}
+
 }

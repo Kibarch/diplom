@@ -42,5 +42,6 @@ class AdresaDostavokActivity : ComponentActivity()
         val intent = Intent(this, TechSupportActivity::class.java)
         startActivity(intent)
     }
+    fun adresDostAddClicked(view: View) {}
 
 }

@@ -39,5 +39,7 @@ class KorzinaActivity : ComponentActivity()
         startActivity(intent)
     }
 
+    fun payClicked(view: View) {}
+
 
 }

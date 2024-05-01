@@ -42,4 +42,6 @@ class MyOtziviActivity: ComponentActivity()
         startActivity(intent)
     }
 
+    fun deleteAllFeedbackClicked(view: View) {}
+
 }

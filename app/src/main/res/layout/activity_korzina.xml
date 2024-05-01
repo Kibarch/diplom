@@ -646,6 +646,7 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/allcornersdarkthemeroundedbackground"
         android:text="Оплатить"
+        android:onClick="payClicked"
         app:layout_constraintBottom_toTopOf="@id/menuKorzina" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
