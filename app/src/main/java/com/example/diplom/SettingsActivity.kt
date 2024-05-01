@@ -46,21 +46,38 @@ internal class SettingsActivity: ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
-        val logoutButton: TextView = findViewById(R.id.buttonLogOut)
-        logoutButton.setOnClickListener{
-            val dialogBindingg=layoutInflater.inflate(R.layout.logout_dialog_window, null)
-            val myDialog=Dialog(this)
-            myDialog.setContentView(dialogBindingg)
-            myDialog.setCancelable(true)
-            myDialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-            myDialog.show()
-            val btnyes: Button = dialogBindingg.findViewById(R.id.buttonYes)
-            btnyes.setOnClickListener{
-                myDialog.dismiss()
+        val logoutBTN: TextView = findViewById(R.id.buttonLogOut)
+        logoutBTN.setOnClickListener{
+            val dialogLogout=layoutInflater.inflate(R.layout.logout_dialog_window, null)
+            val myDialogLogout=Dialog(this)
+            myDialogLogout.setContentView(dialogLogout)
+            myDialogLogout.setCancelable(true)
+            myDialogLogout.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            myDialogLogout.show()
+            val yesLogBTN = dialogLogout.findViewById<Button>(R.id.buttonYesLogout)
+            yesLogBTN.setOnClickListener{
+                myDialogLogout.dismiss()
             }
-            val btnno: Button = dialogBindingg.findViewById(R.id.buttonNo)
-            btnno.setOnClickListener{
-                myDialog.dismiss()
+            val noLogBTN = dialogLogout.findViewById<Button>(R.id.buttonNoLogout)
+            noLogBTN.setOnClickListener{
+                myDialogLogout.dismiss()
+            }
+        }
+        val delacBTN: TextView = findViewById(R.id.buttonDeleteAccount)
+        delacBTN.setOnClickListener{
+            val dialogDelacc=layoutInflater.inflate(R.layout.deleteaccount_dialog_window, null)
+            val myDialogDelacc=Dialog(this)
+            myDialogDelacc.setContentView(dialogDelacc)
+            myDialogDelacc.setCancelable(true)
+            myDialogDelacc.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            myDialogDelacc.show()
+            val yesDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonYesDeleteAcc)
+            yesDelBTN.setOnClickListener{
+                myDialogDelacc.dismiss()
+            }
+            val noDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonNoDeleteAcc)
+            noDelBTN.setOnClickListener{
+                myDialogDelacc.dismiss()
             }
         }
     }

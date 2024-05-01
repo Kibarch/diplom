@@ -21,28 +21,28 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/constraintDialog"
-            app:layout_constraintBottom_toTopOf="@id/buttonYesLogout"
-            android:text="Вы уверены, что хотите выйти из аккаунта?"
+            app:layout_constraintBottom_toTopOf="@id/buttonYesDeleteAcc"
+            android:text="Вы уверены, что хотите удалить аккаунт?"
             android:textColor="@color/white"/>
         <Button
-            android:id="@+id/buttonYesLogout"
+            android:id="@+id/buttonYesDeleteAcc"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Да"
             android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@id/textVieww"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/buttonNoLogout"
+            app:layout_constraintEnd_toStartOf="@id/buttonNoDeleteAcc"
             android:background="@drawable/bottomleftcornerslightgrayroundedbackground" />
         <Button
-            android:id="@+id/buttonNoLogout"
+            android:id="@+id/buttonNoDeleteAcc"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Нет"
             android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@id/textVieww"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/buttonYesLogout"
+            app:layout_constraintStart_toEndOf="@id/buttonYesDeleteAcc"
             android:background="@drawable/bottomrightcornerlightgrayroundedbackground" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
