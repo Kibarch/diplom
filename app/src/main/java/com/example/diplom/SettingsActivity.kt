@@ -6,7 +6,6 @@ import androidx.activity.ComponentActivity
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
@@ -47,7 +46,7 @@ internal class SettingsActivity: ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
-        val logoutButton: TextView = findViewById(R.id.Button5)
+        val logoutButton: TextView = findViewById(R.id.buttonLogOut)
         logoutButton.setOnClickListener{
             val dialogBindingg=layoutInflater.inflate(R.layout.logout_dialog_window, null)
             val myDialog=Dialog(this)
@@ -65,12 +64,5 @@ internal class SettingsActivity: ComponentActivity()
             }
         }
     }
-
-    fun notificationsClicked(view: View) {}
-    fun currencyClicked(view: View) {}
-    fun appthemeClicked(view: View) {}
-    fun applanguageClicked(view: View) {}
-    fun logOutClicked(view: View) {}
-    fun deleteAccountClicked(view: View) {}
 
 }

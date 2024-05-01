@@ -11,7 +11,7 @@
     tools:context=".AboutPrilActivity">
 
     <LinearLayout
-        android:id="@+id/hatPril"
+        android:id="@+id/hatAboutPril"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -60,21 +60,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="175dp"
-        app:layout_constraintTop_toBottomOf="@+id/hatPril">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatAboutPril"
+        app:layout_constraintBottom_toTopOf="@id/menuAboutPril">
         <TextView
             android:id="@+id/textPril1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Версия приложения"
             android:gravity="center"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:shadowColor="#000000"
+            android:shadowColor="@color/black"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="10"/>
@@ -85,11 +84,11 @@
             android:layout_height="wrap_content"
             android:text="Версия операционной системы"
             android:gravity="center"
-            android:textColor="#ffffff"
-            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="35dp"
-            android:shadowColor="#000000"
+            android:shadowColor="@color/black"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="10"/>

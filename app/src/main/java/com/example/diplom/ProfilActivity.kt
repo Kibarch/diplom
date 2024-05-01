@@ -3,7 +3,7 @@ package com.example.diplom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 
 class ProfilActivity : ComponentActivity()
@@ -42,51 +42,50 @@ class ProfilActivity : ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+        val myZakBTN = findViewById<Button>(R.id.buttonMyZakazi)
+        myZakBTN.setOnClickListener{
+            val intent = Intent(this, MyZakaziActivity::class.java)
+            startActivity(intent)
+        }
+        val myOtzBTN = findViewById<Button>(R.id.buttonMyOtzivi)
+        myOtzBTN.setOnClickListener{
+            val intent = Intent(this, MyOtziviActivity::class.java)
+            startActivity(intent)
+        }
+        val myKartBTN = findViewById<Button>(R.id.buttonMyKarti)
+        myKartBTN.setOnClickListener{
+            val intent = Intent(this, MyKartiActivity::class.java)
+            startActivity(intent)
+        }
+        val calDostBTN = findViewById<Button>(R.id.buttonCalendarDostavok)
+        calDostBTN.setOnClickListener{
+            val intent = Intent(this, CalendarDostavokActivity::class.java)
+            startActivity(intent)
+        }
+        val hideMagBTN = findViewById<Button>(R.id.buttonHideMagazini)
+        hideMagBTN.setOnClickListener{
+            val intent = Intent(this, HideMagaziniActivity::class.java)
+            startActivity(intent)
+        }
+        val adrDostBTN = findViewById<Button>(R.id.buttonAdresaDostavok)
+        adrDostBTN.setOnClickListener{
+            val intent = Intent(this, AdresaDostavokActivity::class.java)
+            startActivity(intent)
+        }
+        val settBTN = findViewById<Button>(R.id.buttonSettings)
+        settBTN.setOnClickListener{
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+        val aboutPrilBTN = findViewById<Button>(R.id.buttonAboutPril)
+        aboutPrilBTN.setOnClickListener{
+            val intent = Intent(this, AboutPrilActivity::class.java)
+            startActivity(intent)
+        }
+        val infForClBTN = findViewById<Button>(R.id.buttonInfoForClient)
+        infForClBTN.setOnClickListener{
+            val intent = Intent(this, InfoForClientActivity::class.java)
+            startActivity(intent)
+        }
     }
-    fun myZakaziClicked(view: View)
-    {
-        val intent = Intent(this, MyZakaziActivity::class.java)
-        startActivity(intent)
-    }
-    fun myOtziviClicked(view: View)
-    {
-        val intent = Intent(this, MyOtziviActivity::class.java)
-        startActivity(intent)
-    }
-    fun myKartiClicked(view: View)
-    {
-        val intent = Intent(this, MyKartiActivity::class.java)
-        startActivity(intent)
-    }
-    fun calendarDostavokClicked(view: View)
-    {
-        val intent = Intent(this, CalendarDostavokActivity::class.java)
-        startActivity(intent)
-    }
-    fun hideMagaziniClicked(view: View)
-    {
-        val intent = Intent(this, HideMagaziniActivity::class.java)
-        startActivity(intent)
-    }
-    fun adresaDostavokClicked(view: View)
-    {
-        val intent = Intent(this, AdresaDostavokActivity::class.java)
-        startActivity(intent)
-    }
-    fun settingsClicked(view: View)
-    {
-        val intent = Intent(this, SettingsActivity::class.java)
-        startActivity(intent)
-    }
-    fun aboutPrilClicked(view: View)
-    {
-        val intent = Intent(this, AboutPrilActivity::class.java)
-        startActivity(intent)
-    }
-    fun infoForClientClicked(view: View)
-    {
-        val intent = Intent(this, InfoForClientActivity::class.java)
-        startActivity(intent)
-    }
-
 }

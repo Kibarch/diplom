@@ -75,7 +75,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Статус отзыва:"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
                 android:shadowDx="0"
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:text="Подтвержден"
                 android:gravity="center_horizontal"
-                android:textSize="10dp"
+                android:textSize="11sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
 
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Код товара:"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
                 android:shadowDx="0"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:text="0032"
                 android:gravity="center_horizontal"
-                android:textSize="10dp"
+                android:textSize="11sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -123,7 +123,7 @@
                 android:layout_height="30dp"
                 android:text=" Отзывы:"
                 android:textColor="@color/white"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:shadowColor="@color/black"
                 android:shadowDx="0"
@@ -136,7 +136,7 @@
                 android:layout_height="120dp"
                 android:text="SampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleText"
                 android:textColor="@color/white"
-                android:textSize="13dp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical"
                 android:background="@drawable/bottomrightcornerlightgrayroundedbackground"/>
@@ -162,7 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Статус отзыва:"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
                 android:shadowDx="0"
@@ -175,7 +175,7 @@
                 android:layout_height="wrap_content"
                 android:text="В обработке"
                 android:gravity="center_horizontal"
-                android:textSize="10dp"
+                android:textSize="11sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
 
@@ -183,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Код магазина:"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 android:textColor="@color/white"
                 android:shadowColor="@color/black"
                 android:shadowDx="0"
@@ -196,7 +196,7 @@
                 android:layout_height="wrap_content"
                 android:text="177"
                 android:gravity="center_horizontal"
-                android:textSize="10dp"
+                android:textSize="11sp"
                 android:textColor="@color/black"
                 android:textStyle="bold"/>
         </LinearLayout>
@@ -210,7 +210,7 @@
                 android:layout_height="30dp"
                 android:text=" Отзывы:"
                 android:textColor="@color/white"
-                android:textSize="16dp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 android:shadowColor="@color/black"
                 android:shadowDx="0"
@@ -223,7 +223,7 @@
                 android:layout_height="120dp"
                 android:text="SampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleTextSampleText"
                 android:textColor="@color/white"
-                android:textSize="13dp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:gravity="center_vertical"
                 android:background="@drawable/bottomrightcornerlightgrayroundedbackground"/>
@@ -231,14 +231,13 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonDeleteAllOtzivi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/menuMyOtzivi"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
-        android:onClick="deleteAllFeedbackClicked"
         android:background="@drawable/allcornersdarkthemeroundedbackground"
         android:text="Удалить все отзывы" />
 

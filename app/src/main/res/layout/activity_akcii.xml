@@ -11,7 +11,7 @@
     tools:context=".AkciiActivity">
 
     <LinearLayout
-        android:id="@+id/Linear1"
+        android:id="@+id/hatAkcii"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,10 +61,11 @@
         android:id="@+id/five"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginTop="5dp"
         android:columnCount="5"
         android:rowCount="3"
-        app:layout_constraintTop_toBottomOf="@+id/Linear1"
+        app:layout_constraintTop_toBottomOf="@+id/hatAkcii"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"

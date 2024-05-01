@@ -12,7 +12,7 @@
 
 
     <LinearLayout
-        android:id="@+id/hatInfo"
+        android:id="@+id/hatInfoForClient"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -57,7 +57,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/Button1"
+        android:id="@+id/buttonWorkWithPril"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/workWithApp_name"
@@ -74,9 +74,9 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/topcornerslightggrayroundedbackground"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hatInfo"/>
+        app:layout_constraintTop_toBottomOf="@+id/hatInfoForClient"/>
     <TextView
-        android:id="@+id/Button2"
+        android:id="@+id/buttonWorkWithAccount"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/workWIthAccount_name"
@@ -92,9 +92,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button1"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkWithPril"/>
     <TextView
-        android:id="@+id/Button3"
+        android:id="@+id/buttonDelivery"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/delivery_name"
@@ -110,9 +110,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button2"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkWithAccount"/>
     <TextView
-        android:id="@+id/Button4"
+        android:id="@+id/buttonPaymentMethods"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/paymentMethods_name"
@@ -128,9 +128,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button3"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonDelivery"/>
     <TextView
-        android:id="@+id/Button5"
+        android:id="@+id/buttonVozvratSredstv"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/vozvratSredstv_name"
@@ -146,9 +146,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button4"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonPaymentMethods"/>
     <TextView
-        android:id="@+id/Button6"
+        android:id="@+id/buttonPolitConfid"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/politConfid_name"
@@ -164,9 +164,9 @@
         android:layout_marginStart="45dp"
         android:background="@drawable/bottomcornerslightgrayroundedbackground"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button5"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonVozvratSredstv"/>
     <TextView
-        android:id="@+id/Button7"
+        android:id="@+id/buttonAboutUs"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/aboutUs_name"
@@ -183,9 +183,9 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/topcornerslightggrayroundedbackground"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button6"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolitConfid"/>
     <TextView
-        android:id="@+id/Button8"
+        android:id="@+id/buttonContacts"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/contacts_name"
@@ -201,7 +201,7 @@
         android:layout_marginStart="45dp"
         android:background="@drawable/bottomcornerslightgrayroundedbackground"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button7"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonAboutUs"/>
 
     <LinearLayout
         android:id="@+id/menuInfoForClient"

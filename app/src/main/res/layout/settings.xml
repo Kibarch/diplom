@@ -57,7 +57,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/Button1"
+        android:id="@+id/buttonNotifications"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/notifications_name"
@@ -77,7 +77,7 @@
         app:layout_constraintTop_toBottomOf="@+id/hatSettings" />
 
     <TextView
-        android:id="@+id/Button2"
+        android:id="@+id/buttonCurrency"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/currency_name"
@@ -93,9 +93,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button1"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotifications"/>
     <TextView
-        android:id="@+id/Button3"
+        android:id="@+id/buttonAppTheme"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/apptheme_name"
@@ -111,9 +111,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button2"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonCurrency"/>
     <TextView
-        android:id="@+id/Button4"
+        android:id="@+id/buttonAppLanguage"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/applanguange_name"
@@ -129,9 +129,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button3"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonAppTheme"/>
     <TextView
-        android:id="@+id/Button5"
+        android:id="@+id/buttonLogOut"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/logout_name"
@@ -147,9 +147,9 @@
         android:layout_marginStart="45dp"
         android:background="@color/lightgray"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button4"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonAppLanguage"/>
     <TextView
-        android:id="@+id/Button6"
+        android:id="@+id/buttonDeleteAccount"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:text="@string/deleteaccount_name"
@@ -165,7 +165,7 @@
         android:layout_marginStart="45dp"
         android:background="@drawable/bottomcornerslightgrayroundedbackground"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Button5"/>
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogOut"/>
 
     <LinearLayout
         android:id="@+id/menuSettings"

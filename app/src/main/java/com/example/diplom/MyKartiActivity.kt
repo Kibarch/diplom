@@ -2,7 +2,6 @@ package com.example.diplom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.view.View
 import android.widget.ImageView
 
 class MyKartiActivity: ComponentActivity()
@@ -42,6 +41,5 @@ class MyKartiActivity: ComponentActivity()
             startActivity(intent)
         }
     }
-    fun deleteAllCardsClicked(view: View) {}
 
 }
