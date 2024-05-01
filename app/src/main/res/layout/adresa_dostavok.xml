@@ -29,7 +29,6 @@
             android:focusable="true"
             android:scaleX="-1"
             android:layout_weight="1"
-            android:onClick="profClicked"
             android:contentDescription="NULL"
             android:src="@drawable/arrow"/>
         <TextView
@@ -48,7 +47,7 @@
             android:textStyle="bold"/>
 
         <ImageView
-            android:id="@+id/chat"
+            android:id="@+id/tech"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
@@ -56,7 +55,6 @@
             android:clickable="true"
             android:contentDescription="@string/techsupport_name"
             android:focusable="true"
-            android:onClick="techClicked"
             android:src="@drawable/chat" />
     </LinearLayout>
 
@@ -137,39 +135,38 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/menuAdresaDostavok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#616161"
         android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#616161"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="15dp"
             android:gravity="center"
+            android:layout_marginEnd="15dp"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:contentDescription="@string/magazini_name"
                 android:focusable="true"
-                android:onClick="magClicked"
                 android:src="@drawable/map" />
-
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
+                android:textColor="@color/black"
                 android:text="@string/magazini_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -177,28 +174,25 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="15dp"
             android:gravity="center"
+            android:layout_marginEnd="15dp"
             android:orientation="vertical">
-
             <ImageView
-                android:id="@+id/mag_to_cat"
+                android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="@string/catalog_name"
                 android:focusable="true"
-                android:onClick="catClicked"
-                android:src="@drawable/catalog" />
-
+                android:contentDescription="@string/catalog_name"
+                android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:text="@string/catalog_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -206,28 +200,25 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="15dp"
             android:gravity="center"
+            android:layout_marginEnd="15dp"
             android:orientation="vertical">
-
             <ImageView
-                android:id="@+id/mag_to_kor"
+                android:id="@+id/kor"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="@string/korzina_name"
                 android:focusable="true"
-                android:onClick="korClicked"
-                android:src="@drawable/korzina" />
-
+                android:contentDescription="@string/korzina_name"
+                android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:text="@string/korzina_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -235,28 +226,25 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginEnd="15dp"
             android:gravity="center"
+            android:layout_marginEnd="15dp"
             android:orientation="vertical">
-
             <ImageView
-                android:id="@+id/mag_to_ak"
+                android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="@string/akcii_name"
                 android:focusable="true"
-                android:onClick="akClicked"
-                android:src="@drawable/akzii" />
-
+                android:contentDescription="@string/akcii_name"
+                android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:text="@string/akcii_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -266,25 +254,22 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:orientation="vertical">
-
             <ImageView
-                android:id="@+id/mag_to_prof"
+                android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="@string/profil_name"
                 android:focusable="true"
-                android:onClick="profClicked"
-                android:src="@drawable/profile" />
-
+                android:contentDescription="@string/profil_name"
+                android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
                 android:text="@string/profil_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>

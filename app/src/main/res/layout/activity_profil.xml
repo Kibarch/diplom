@@ -47,7 +47,7 @@
             android:textStyle="bold"/>
 
         <ImageView
-            android:id="@+id/chat"
+            android:id="@+id/tech"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
@@ -55,7 +55,6 @@
             android:clickable="true"
             android:contentDescription="@string/techsupport_name"
             android:focusable="true"
-            android:onClick="techClicked"
             android:src="@drawable/chat" />
     </LinearLayout>
 
@@ -112,12 +111,11 @@
                 android:text="@string/myzakazi_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="myZakaziClicked"
                 android:background="@drawable/topcornerslightggrayroundedbackground" />
             <Button
                 android:layout_width="329dp"
@@ -125,12 +123,11 @@
                 android:text="@string/myotzivi_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="myOtziviClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
@@ -138,12 +135,11 @@
                 android:text="@string/mykarti_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="myKartiClicked"
                 android:background="@drawable/bottomcornerslightgrayroundedbackground" />
         </LinearLayout>
 
@@ -160,12 +156,11 @@
                 android:text="@string/calendardostavok_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="calendarDostavokClicked"
                 android:background="@drawable/topcornerslightggrayroundedbackground" />
             <Button
                 android:layout_width="329dp"
@@ -173,12 +168,11 @@
                 android:text="@string/hidemagazini_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="hideMagaziniClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
@@ -186,12 +180,11 @@
                 android:text="@string/adresadostavok_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="adresaDostavokClicked"
                 android:background="@drawable/bottomcornerslightgrayroundedbackground" />
         </LinearLayout>
         <LinearLayout
@@ -206,12 +199,11 @@
                 android:text="@string/settings_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="settingsClicked"
                 android:background="@drawable/topcornerslightggrayroundedbackground" />
             <Button
                 android:layout_width="329dp"
@@ -219,12 +211,11 @@
                 android:text="@string/aboutpril_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="aboutPrilClicked"
                 android:background="#8D8D8D" />
             <Button
                 android:layout_width="329dp"
@@ -232,14 +223,14 @@
                 android:text="@string/infoforclient_name"
                 android:textStyle="bold"
                 android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:shadowColor="#000000"
+                android:textColor="@color/white"
+                android:shadowColor="@color/black"
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"
-                android:onClick="infoForClientClicked"
                 android:background="@drawable/bottomcornerslightgrayroundedbackground" />
         </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -249,8 +240,7 @@
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
-        android:orientation="horizontal"
-        android:layout_gravity="end">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -267,7 +257,6 @@
                 android:clickable="true"
                 android:contentDescription="@string/magazini_name"
                 android:focusable="true"
-                android:onClick="magClicked"
                 android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
@@ -275,7 +264,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/magazini_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -288,13 +277,12 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_cat"
+                android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="catClicked"
                 android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
@@ -302,7 +290,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -315,13 +303,12 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_kor"
+                android:id="@+id/kor"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="korClicked"
                 android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
@@ -329,7 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -342,13 +329,12 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_ak"
+                android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="akClicked"
                 android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
@@ -356,7 +342,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -366,10 +352,10 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
-            android:background="@drawable/allcornersdarkthemeroundedbackground"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/allcornersdarkthemeroundedbackground">
             <ImageView
-                android:id="@+id/mag_to_prof"
+                android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
@@ -382,7 +368,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />

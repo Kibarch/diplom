@@ -29,7 +29,6 @@
             android:scaleX="-1"
             android:layout_weight="1"
             android:contentDescription="NULL"
-            android:onClick="profClicked"
             android:src="@drawable/arrow"/>
         <TextView
             android:id="@+id/titleM"
@@ -46,7 +45,7 @@
             android:layout_weight="2"
             android:textStyle="bold"/>
         <ImageView
-            android:id="@+id/chat"
+            android:id="@+id/tech"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
@@ -54,7 +53,6 @@
             android:focusable="true"
             android:layout_weight="1"
             android:contentDescription="NULL"
-            android:onClick="techClicked"
             android:src="@drawable/chat"/>
     </LinearLayout>
 
@@ -284,15 +282,26 @@
         </LinearLayout>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/menuMyZakazi"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="clearZakazHistoryClicked"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="Очистить историю заказов" />
 
     <LinearLayout
-        android:id="@+id/menuMyZakaz"
+        android:id="@+id/menuMyZakazi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -304,22 +313,20 @@
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
-                android:onClick="magClicked"
                 android:src="@drawable/map" />
-
             <TextView
                 android:id="@+id/textMap"
-                android:layout_width="60dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
+                android:textColor="@color/black"
                 android:text="@string/magazini_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -331,21 +338,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_cat"
+                android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -358,21 +364,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_kor"
+                android:id="@+id/kor"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="korClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -385,21 +390,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_ak"
+                android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="akClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -411,21 +415,20 @@
             android:gravity="center"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_prof"
+                android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="profClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/profil_name"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -433,16 +436,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/menuMyZakaz"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:onClick="clearZakazHistoryClicked"
-        android:background="@drawable/allcornersdarkthemeroundedbackground"
-        android:text="Очистить историю заказов" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
