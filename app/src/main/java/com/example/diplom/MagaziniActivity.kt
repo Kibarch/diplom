@@ -17,14 +17,9 @@ internal class MagaziniActivity: FragmentActivity(), OnMapReadyCallback
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_magazini)
+        setContentView(R.layout.magazini)
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
-            startActivity(intent)
-        }
         val catBTN: ImageView = findViewById(R.id.cat)
         catBTN.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)

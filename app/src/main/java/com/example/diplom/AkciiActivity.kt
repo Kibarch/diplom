@@ -10,7 +10,7 @@ class AkciiActivity : ComponentActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_akcii)
+        setContentView(R.layout.akcii)
         val magBTN: ImageView = findViewById(R.id.mag)
         magBTN.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
@@ -24,11 +24,6 @@ class AkciiActivity : ComponentActivity()
         val korBTN: ImageView = findViewById(R.id.kor)
         korBTN.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
-            startActivity(intent)
-        }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
-            val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
         val profBTN: ImageView = findViewById(R.id.prof)

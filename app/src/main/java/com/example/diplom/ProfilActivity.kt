@@ -11,7 +11,7 @@ class ProfilActivity : ComponentActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profil)
+        setContentView(R.layout.profil)
         val magBTN: ImageView = findViewById(R.id.mag)
         magBTN.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
@@ -30,11 +30,6 @@ class ProfilActivity : ComponentActivity()
         val akBTN: ImageView = findViewById(R.id.ak)
         akBTN.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
-            startActivity(intent)
-        }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
-            val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
         val techBTN: ImageView = findViewById(R.id.tech)

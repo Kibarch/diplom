@@ -30,6 +30,19 @@
     <string name="politConfid_name">Политика конфиденциальности</string>
     <string name="aboutUs_name">О нас</string>
     <string name="contacts_name">Контакты</string>
+    <string name="login_name">Вход</string>
+    <string name="vvodDann_name">Ввод данных пользователя</string>
+    <string name="nachStran_name">Приветственная страница</string>
+    <string name="zaregistr_name">Зарегистрироваться</string>
+    <string name="voiti_name">Войти</string>
+    <string name="zaregPoz_name">Зарегистрироваться позже</string>
+    <string name="ima_name">Имя</string>
+    <string name="familia_name">Фамилия</string>
+    <string name="numberTelephone_name">Номер телефона</string>
+    <string name="email_name">Адрес электроной почты</string>
+    <string name="password_name">Пароль</string>
+    <string name="downloadphoto_name">Загрузить фотографию</string>
+
 
 
 </resources>

@@ -10,15 +10,10 @@ class CatalogActivity : ComponentActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_catalog)
+        setContentView(R.layout.catalog)
         val magBTN: ImageView = findViewById(R.id.mag)
         magBTN.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
-            startActivity(intent)
-        }
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
-            val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
         val korBTN: ImageView = findViewById(R.id.kor)
