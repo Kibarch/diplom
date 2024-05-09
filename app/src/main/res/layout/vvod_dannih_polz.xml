@@ -11,6 +11,7 @@
     tools:context=".VvodDannPolzActivity">
 
 
+
     <TextView
         android:id="@+id/textIma"
         android:layout_width="wrap_content"
@@ -23,18 +24,18 @@
 
     <EditText
         android:id="@+id/textFieldIma"
-        tools:ignore="labelFor"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:autofillHints="emailAddress"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Name"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
         android:background="@drawable/allcornerslightgrayroundedbackground"
-        app:layout_constraintStart_toStartOf="parent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textIma"
-        android:layout_marginTop="5dp"/>
+        tools:ignore="labelFor" />
 
     <TextView
         android:id="@+id/textFamiliya"
@@ -53,8 +54,8 @@
         android:layout_height="30dp"
         android:autofillHints=""
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Name"
+        android:inputType="textPersonName"
+        android:text=""
         android:background="@drawable/allcornerslightgrayroundedbackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,10 +77,10 @@
         tools:ignore="labelFor"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:autofillHints="emailAddress"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="phone"
-        android:text="Name"
+        android:text=""
         android:background="@drawable/allcornerslightgrayroundedbackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,10 +102,10 @@
         tools:ignore="labelFor"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:autofillHints="emailAddress"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="Name"
+        android:text=""
         android:background="@drawable/allcornerslightgrayroundedbackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,10 +127,10 @@
         tools:ignore="labelFor"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:autofillHints="emailAddress"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
-        android:text="Name"
+        android:text=""
         android:background="@drawable/allcornerslightgrayroundedbackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -155,5 +156,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textPhotoDownload"/>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

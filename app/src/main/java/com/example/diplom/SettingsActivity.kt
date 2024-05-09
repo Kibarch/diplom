@@ -57,6 +57,8 @@ internal class SettingsActivity: ComponentActivity()
             val yesLogBTN = dialogLogout.findViewById<Button>(R.id.buttonYesLogout)
             yesLogBTN.setOnClickListener{
                 myDialogLogout.dismiss()
+                val intent = Intent(this, NachStranActivity::class.java)
+                startActivity(intent)
             }
             val noLogBTN = dialogLogout.findViewById<Button>(R.id.buttonNoLogout)
             noLogBTN.setOnClickListener{
@@ -74,6 +76,8 @@ internal class SettingsActivity: ComponentActivity()
             val yesDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonYesDeleteAcc)
             yesDelBTN.setOnClickListener{
                 myDialogDelacc.dismiss()
+                val intent = Intent(this, NachStranActivity::class.java)
+                startActivity(intent)
             }
             val noDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonNoDeleteAcc)
             noDelBTN.setOnClickListener{

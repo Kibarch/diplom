@@ -20,7 +20,7 @@
     <string name="currency_name">Валюта</string>
     <string name="apptheme_name">Тема приложения</string>
     <string name="applanguange_name">Язык приложения</string>
-    <string name="logout_name">Выйти из приложения</string>
+    <string name="logout_name">Выйти из аккаунта</string>
     <string name="deleteaccount_name">Удалить аккаунт</string>
     <string name="workWithApp_name">Работа с приложением</string>
     <string name="workWIthAccount_name">Работа с аккаунтом</string>

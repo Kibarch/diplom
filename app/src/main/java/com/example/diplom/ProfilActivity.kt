@@ -1,10 +1,12 @@
 package com.example.diplom
 
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 
 class ProfilActivity : ComponentActivity()
 {
@@ -12,6 +14,28 @@ class ProfilActivity : ComponentActivity()
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profil)
+        val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
+        val ima = sharedPref.getString("ima","")
+        val familiya = sharedPref.getString("familiya","")
+
+        val textIma: TextView = findViewById(R.id.textViewIma)
+        val textFamiliya: TextView = findViewById(R.id.textViewFamiliya)
+        if (ima != "")
+        {
+            textIma.text = ima
+            Global().polzName = ima.toString()
+        }
+        else
+            textIma.text = Global().stockIma
+
+        if (familiya != "")
+        {
+            textFamiliya.text = familiya
+            Global().polzFamil = familiya.toString()
+        }
+        else
+            textFamiliya.text = Global().stockFamiliya
+
         val magBTN: ImageView = findViewById(R.id.mag)
         magBTN.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)

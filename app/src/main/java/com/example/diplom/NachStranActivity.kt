@@ -17,7 +17,7 @@ class NachStranActivity: ComponentActivity()
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val regBTN: Button = findViewById(R.id.buttonRegistration)
+        val regBTN: Button = findViewById(R.id.buttonRegistrationPerehod)
         regBTN.setOnClickListener{
             val intent = Intent(this, VvodDannPolzActivity::class.java)
             startActivity(intent)
