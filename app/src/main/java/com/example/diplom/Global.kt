@@ -8,4 +8,5 @@ class Global : Application()
      var stockFamiliya : String = "Фамилия"
      lateinit var polzName : String
      lateinit var polzFamil : String
+     var flag : Int = 0
 }

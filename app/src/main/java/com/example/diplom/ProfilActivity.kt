@@ -15,27 +15,30 @@ class ProfilActivity : ComponentActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profil)
         val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
-        val ima = sharedPref.getString("ima","")
-        val familiya = sharedPref.getString("familiya","")
+        var ima = sharedPref.getString("ima","")
+        var familiya = sharedPref.getString("familiya","")
 
-        val textIma: TextView = findViewById(R.id.textViewIma)
-        val textFamiliya: TextView = findViewById(R.id.textViewFamiliya)
-        if (ima != "")
+        var textIma: TextView = findViewById(R.id.textViewIma)
+        var textFamiliya: TextView = findViewById(R.id.textViewFamiliya)
+        if (Global().flag == 1)
         {
-            textIma.text = ima
-            Global().polzName = ima.toString()
-        }
-        else
             textIma.text = Global().stockIma
-
-        if (familiya != "")
-        {
-            textFamiliya.text = familiya
-            Global().polzFamil = familiya.toString()
+            textFamiliya.text = Global().stockFamiliya
+            Global().flag = 0
         }
         else
-            textFamiliya.text = Global().stockFamiliya
+            if (ima != "" && familiya != "")
+            {
+                textIma.text = ima
+                Global().polzName = ima.toString()
+                textFamiliya.text = familiya
+                Global().polzFamil = familiya.toString()
 
+                //Global().polzName = ima.toString()
+                //textIma.text = Global().polzName
+                //Global().polzFamil = familiya.toString()
+                //textFamiliya.text = Global().polzFamil
+            }
         val magBTN: ImageView = findViewById(R.id.mag)
         magBTN.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)

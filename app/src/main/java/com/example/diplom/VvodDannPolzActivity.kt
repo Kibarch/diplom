@@ -21,13 +21,10 @@ class VvodDannPolzActivity: ComponentActivity()
 
         val regBTN: Button = findViewById(R.id.buttonRegistration)
         regBTN.setOnClickListener{
-            val ima : String = textIma.text.toString()
-            val familiya : String = textFamiliya.text.toString()
+            var ima : String = textIma.text.toString()
+            var familiya : String = textFamiliya.text.toString()
             val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
             val editor = sharedPref.edit()
-            editor.putString("ima",ima)
-            editor.putString("familiya", familiya)
-            editor.apply()
             if (ima == "" || familiya == "")
             {
                 val dialogNullImaOrFam=layoutInflater.inflate(R.layout.null_ima_or_famil_dialog_window, null)
@@ -43,6 +40,9 @@ class VvodDannPolzActivity: ComponentActivity()
             }
             else
             {
+                editor.putString("ima",ima)
+                editor.putString("familiya", familiya)
+                editor.apply()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }

@@ -14,6 +14,7 @@ class NachStranActivity: ComponentActivity()
         setContentView(R.layout.nachaln_stranica)
         val zaregpozBTN: TextView = findViewById(R.id.textZaregPoz)
         zaregpozBTN.setOnClickListener{
+            Global().flag = 1
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }

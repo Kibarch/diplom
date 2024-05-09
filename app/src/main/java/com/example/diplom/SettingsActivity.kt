@@ -76,6 +76,8 @@ internal class SettingsActivity: ComponentActivity()
             val yesDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonYesDeleteAcc)
             yesDelBTN.setOnClickListener{
                 myDialogDelacc.dismiss()
+                Global().polzName = ""
+                Global().polzFamil = ""
                 val intent = Intent(this, NachStranActivity::class.java)
                 startActivity(intent)
             }
