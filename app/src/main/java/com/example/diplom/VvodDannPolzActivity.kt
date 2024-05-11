@@ -7,25 +7,23 @@ import android.os.Bundle
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.media.Image
 import android.widget.Button
 import android.widget.EditText
+import com.example.diplom.databinding.VvodDannihPolzBinding
 
 class VvodDannPolzActivity: ComponentActivity()
 {
+    private lateinit var vvodDanBinding: VvodDannihPolzBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.vvod_dannih_polz)
-        val textIma : EditText = findViewById(R.id.textFieldIma)
-        val textFamiliya : EditText = findViewById(R.id.textFieldFamiliya)
-
-        val regBTN: Button = findViewById(R.id.buttonRegistration)
-        regBTN.setOnClickListener{
-            var ima : String = textIma.text.toString()
-            var familiya : String = textFamiliya.text.toString()
+        vvodDanBinding = VvodDannihPolzBinding.inflate(layoutInflater)
+        setContentView(vvodDanBinding.root)
+        vvodDanBinding.buttonRegistration.setOnClickListener{
             val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
             val editor = sharedPref.edit()
-            if (ima == "" || familiya == "")
+            if (vvodDanBinding.textFieldIma.text.toString() == "" || vvodDanBinding.textFieldFamiliya.text.toString() == "")
             {
                 val dialogNullImaOrFam=layoutInflater.inflate(R.layout.null_ima_or_famil_dialog_window, null)
                 val myDialogNullImaFam= Dialog(this)
@@ -40,17 +38,20 @@ class VvodDannPolzActivity: ComponentActivity()
             }
             else
             {
-                editor.putString("ima",ima)
-                editor.putString("familiya", familiya)
+                editor.putString("ima",vvodDanBinding.textFieldIma.text.toString())
+                editor.putString("familiya", vvodDanBinding.textFieldFamiliya.text.toString())
+
                 editor.apply()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
         }
-        //val catBTN: ImageView = findViewById(R.id.cat)
-        //catBTN.setOnClickListener{
-        //    val intent = Intent(this, CatalogActivity::class.java)
-        //    startActivity(intent)
-        //}
+        vvodDanBinding.buttonPhotoDownload.setOnClickListener{
+            val sharedIm = getSharedPreferences("mySharedIm", Context.MODE_PRIVATE)
+            val editor = sharedIm.edit()
+            editor.putInt("man",R.drawable.man)
+            editor.apply()
+            vvodDanBinding.buttonPhotoDownload.setImageResource(R.drawable.man)
+        }
     }
 }

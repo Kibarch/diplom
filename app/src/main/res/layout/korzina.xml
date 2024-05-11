@@ -496,7 +496,9 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/allcornersdarkthemeroundedbackground"
         android:text="Оплатить"
-        app:layout_constraintBottom_toTopOf="@id/menuKorzina" />
+        app:layout_constraintBottom_toTopOf="@id/menuKorzina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/menuKorzina"

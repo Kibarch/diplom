@@ -24,24 +24,24 @@
 
     <EditText
         android:id="@+id/textFieldEmail"
-        tools:ignore="labelFor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:autofillHints="emailAddress"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Name"
         android:background="@drawable/allcornerslightgrayroundedbackground"
-        app:layout_constraintStart_toStartOf="parent"
+        android:ems="10"
+        android:hint="example@mail.com"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textEmail"
-        android:layout_marginTop="5dp"/>
+        tools:ignore="labelFor" />
 
     <TextView
         android:id="@+id/textPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email_name"
+        android:text="@string/password_name"
         android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="@id/textFieldEmail"
         app:layout_constraintStart_toStartOf="parent"

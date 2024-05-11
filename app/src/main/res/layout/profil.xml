@@ -57,19 +57,20 @@
             android:focusable="true"
             android:src="@drawable/chat" />
     </LinearLayout>
-        
-        <ImageView
-            android:id="@+id/imageProfil"
-            android:layout_width="144dp"
-            android:layout_height="144dp"
-            android:layout_marginEnd="21dp"
-            android:contentDescription="NULL"
-            app:layout_constraintTop_toBottomOf="@+id/hatProfil"
-            app:layout_constraintEnd_toStartOf="@+id/imaFamilia"
-            app:layout_constraintStart_toStartOf="parent"
-            android:src="@drawable/image1"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
+        android:id="@+id/imageProfil"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="21dp"
+        android:contentDescription="NULL"
+        android:src="@drawable/image1"
+        app:layout_constraintEnd_toStartOf="@+id/imaFamilia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatProfil" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/imaFamilia"
             android:layout_width="wrap_content"
             android:layout_height="140dp"

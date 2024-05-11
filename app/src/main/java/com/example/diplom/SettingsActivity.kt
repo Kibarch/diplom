@@ -9,45 +9,41 @@ import android.graphics.drawable.ColorDrawable
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.diplom.databinding.SettingsBinding
 
 internal class SettingsActivity: ComponentActivity()
 {
+    private lateinit var settBinding: SettingsBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.settings)
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
+        settBinding = SettingsBinding.inflate(layoutInflater)
+        setContentView(settBinding.root)
+        settBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
+        settBinding.cat.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        settBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
+        settBinding.ak.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
+        settBinding.prof.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
-        val techBTN: ImageView = findViewById(R.id.tech)
-        techBTN.setOnClickListener{
+        settBinding.tech.setOnClickListener{
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
-        val logoutBTN: TextView = findViewById(R.id.buttonLogOut)
-        logoutBTN.setOnClickListener{
+        settBinding.buttonLogOut.setOnClickListener{
             val dialogLogout=layoutInflater.inflate(R.layout.logout_dialog_window, null)
             val myDialogLogout=Dialog(this)
             myDialogLogout.setContentView(dialogLogout)
@@ -65,8 +61,7 @@ internal class SettingsActivity: ComponentActivity()
                 myDialogLogout.dismiss()
             }
         }
-        val delacBTN: TextView = findViewById(R.id.buttonDeleteAccount)
-        delacBTN.setOnClickListener{
+        settBinding.buttonDeleteAccount.setOnClickListener{
             val dialogDelacc=layoutInflater.inflate(R.layout.deleteaccount_dialog_window, null)
             val myDialogDelacc=Dialog(this)
             myDialogDelacc.setContentView(dialogDelacc)
@@ -76,8 +71,8 @@ internal class SettingsActivity: ComponentActivity()
             val yesDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonYesDeleteAcc)
             yesDelBTN.setOnClickListener{
                 myDialogDelacc.dismiss()
-                Global().polzName = ""
-                Global().polzFamil = ""
+                Global().polzName = Global().stockIma
+                Global().polzFamil = Global().stockFamiliya
                 val intent = Intent(this, NachStranActivity::class.java)
                 startActivity(intent)
             }

@@ -36,43 +36,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layouttechsupport"
-        android:layout_width="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/menuTechSupport"
-        app:layout_constraintTop_toBottomOf="@+id/hatTechSupport"
-        android:layout_height="690dp"
-        android:orientation="vertical"
-        android:weightSum="5">
-        <TextView
-            android:id="@+id/text_history"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:text="Сейчас история ваших обращений в поддержку пуста!"
-            android:textSize="11sp"
-            android:textColor="#FFFFFF"
-            android:shadowColor="#000000"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:layout_weight="5"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:id="@+id/editTextText"
-            tools:ignore="LabelFor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:background="@color/white"
-            android:text="    Введите сообщение..."
-            android:autofillHints="name"/>
-
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/menuTechSupport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -213,6 +176,32 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textNullHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="История обращений в тех.поддержку пуста!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatTechSupport" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/searchbackground"
+        android:ems="10"
+        android:hint="Введите сообщение..."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/menuTechSupport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

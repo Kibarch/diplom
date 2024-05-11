@@ -7,105 +7,90 @@ import android.content.Intent
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.diplom.databinding.ProfilBinding
 
 class ProfilActivity : ComponentActivity()
 {
+    private lateinit var profBinding: ProfilBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.profil)
+        profBinding = ProfilBinding.inflate(layoutInflater)
+        setContentView(profBinding.root)
         val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
         var ima = sharedPref.getString("ima","")
         var familiya = sharedPref.getString("familiya","")
+        val sharedIm = getSharedPreferences("mySharedIm", Context.MODE_PRIVATE)
 
-        var textIma: TextView = findViewById(R.id.textViewIma)
-        var textFamiliya: TextView = findViewById(R.id.textViewFamiliya)
+        profBinding.imageProfil.setImageResource(sharedIm.getInt("man",R.drawable.image1))
         if (Global().flag == 1)
         {
-            textIma.text = Global().stockIma
-            textFamiliya.text = Global().stockFamiliya
+            profBinding.textViewIma.text = Global().stockIma
+            profBinding.textViewFamiliya.text = Global().stockFamiliya
             Global().flag = 0
         }
         else
             if (ima != "" && familiya != "")
             {
-                textIma.text = ima
+                profBinding.textViewIma.text = ima
                 Global().polzName = ima.toString()
-                textFamiliya.text = familiya
+                profBinding.textViewFamiliya.text = familiya
                 Global().polzFamil = familiya.toString()
 
-                //Global().polzName = ima.toString()
-                //textIma.text = Global().polzName
-                //Global().polzFamil = familiya.toString()
-                //textFamiliya.text = Global().polzFamil
             }
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
+        profBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
+        profBinding.cat.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        profBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
+        profBinding.ak.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
-        val techBTN: ImageView = findViewById(R.id.tech)
-        techBTN.setOnClickListener{
+        profBinding.tech.setOnClickListener{
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
-        val myZakBTN = findViewById<Button>(R.id.buttonMyZakazi)
-        myZakBTN.setOnClickListener{
+        profBinding.buttonMyZakazi.setOnClickListener{
             val intent = Intent(this, MyZakaziActivity::class.java)
             startActivity(intent)
         }
-        val myOtzBTN = findViewById<Button>(R.id.buttonMyOtzivi)
-        myOtzBTN.setOnClickListener{
+        profBinding.buttonMyOtzivi.setOnClickListener{
             val intent = Intent(this, MyOtziviActivity::class.java)
             startActivity(intent)
         }
-        val myKartBTN = findViewById<Button>(R.id.buttonMyKarti)
-        myKartBTN.setOnClickListener{
+        profBinding.buttonMyKarti.setOnClickListener {
             val intent = Intent(this, MyKartiActivity::class.java)
             startActivity(intent)
         }
-        val calDostBTN = findViewById<Button>(R.id.buttonCalendarDostavok)
-        calDostBTN.setOnClickListener{
+        profBinding.buttonCalendarDostavok.setOnClickListener{
             val intent = Intent(this, CalendarDostavokActivity::class.java)
             startActivity(intent)
         }
-        val hideMagBTN = findViewById<Button>(R.id.buttonHideMagazini)
-        hideMagBTN.setOnClickListener{
+        profBinding.buttonHideMagazini.setOnClickListener{
             val intent = Intent(this, HideMagaziniActivity::class.java)
             startActivity(intent)
         }
-        val adrDostBTN = findViewById<Button>(R.id.buttonAdresaDostavok)
-        adrDostBTN.setOnClickListener{
+        profBinding.buttonAdresaDostavok.setOnClickListener{
             val intent = Intent(this, AdresaDostavokActivity::class.java)
             startActivity(intent)
         }
-        val settBTN = findViewById<Button>(R.id.buttonSettings)
-        settBTN.setOnClickListener{
+        profBinding.buttonSettings.setOnClickListener{
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
         }
-        val aboutPrilBTN = findViewById<Button>(R.id.buttonAboutPril)
-        aboutPrilBTN.setOnClickListener{
+        profBinding.buttonAboutPril.setOnClickListener{
             val intent = Intent(this, AboutPrilActivity::class.java)
             startActivity(intent)
         }
-        val infForClBTN = findViewById<Button>(R.id.buttonInfoForClient)
-        infForClBTN.setOnClickListener{
+        profBinding.buttonInfoForClient.setOnClickListener{
             val intent = Intent(this, InfoForClientActivity::class.java)
             startActivity(intent)
         }
