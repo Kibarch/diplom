@@ -2,42 +2,37 @@ package com.example.diplom
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.activity.ComponentActivity
+import com.example.diplom.databinding.CalendarDostavokBinding
 
 class CalendarDostavokActivity: ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.calendar_dostavok)
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
+        val calendarDostavokBinding : CalendarDostavokBinding = CalendarDostavokBinding.inflate(layoutInflater)
+        setContentView(calendarDostavokBinding.root)
+        calendarDostavokBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
+        calendarDostavokBinding.cat.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        calendarDostavokBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
+        calendarDostavokBinding.ak.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
+        calendarDostavokBinding.prof.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
-        val techBTN: ImageView = findViewById(R.id.tech)
-        techBTN.setOnClickListener{
+        calendarDostavokBinding.tech.setOnClickListener{
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }

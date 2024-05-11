@@ -2,36 +2,32 @@ package com.example.diplom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.widget.ImageView
+import com.example.diplom.databinding.TechSupportBinding
 
 class TechSupportActivity: ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tech_support)
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
+        val techSupportBinding : TechSupportBinding = TechSupportBinding.inflate(layoutInflater)
+        setContentView(techSupportBinding.root)
+        techSupportBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
+        techSupportBinding.cat.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        techSupportBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
+        techSupportBinding.ak.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
+        techSupportBinding.prof.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }

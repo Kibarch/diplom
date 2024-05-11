@@ -7,18 +7,15 @@ import android.os.Bundle
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.media.Image
 import android.widget.Button
-import android.widget.EditText
 import com.example.diplom.databinding.VvodDannihPolzBinding
 
 class VvodDannPolzActivity: ComponentActivity()
 {
-    private lateinit var vvodDanBinding: VvodDannihPolzBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        vvodDanBinding = VvodDannihPolzBinding.inflate(layoutInflater)
+        val vvodDanBinding : VvodDannihPolzBinding = VvodDannihPolzBinding.inflate(layoutInflater)
         setContentView(vvodDanBinding.root)
         vvodDanBinding.buttonRegistration.setOnClickListener{
             val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)

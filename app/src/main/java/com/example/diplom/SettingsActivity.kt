@@ -7,17 +7,14 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import com.example.diplom.databinding.SettingsBinding
 
 internal class SettingsActivity: ComponentActivity()
 {
-    private lateinit var settBinding: SettingsBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        settBinding = SettingsBinding.inflate(layoutInflater)
+        val settBinding : SettingsBinding = SettingsBinding.inflate(layoutInflater)
         setContentView(settBinding.root)
         settBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
@@ -53,7 +50,7 @@ internal class SettingsActivity: ComponentActivity()
             val yesLogBTN = dialogLogout.findViewById<Button>(R.id.buttonYesLogout)
             yesLogBTN.setOnClickListener{
                 myDialogLogout.dismiss()
-                val intent = Intent(this, NachStranActivity::class.java)
+                val intent = Intent(this, NachalnStranicaActivity::class.java)
                 startActivity(intent)
             }
             val noLogBTN = dialogLogout.findViewById<Button>(R.id.buttonNoLogout)
@@ -73,7 +70,7 @@ internal class SettingsActivity: ComponentActivity()
                 myDialogDelacc.dismiss()
                 Global().polzName = Global().stockIma
                 Global().polzFamil = Global().stockFamiliya
-                val intent = Intent(this, NachStranActivity::class.java)
+                val intent = Intent(this, NachalnStranicaActivity::class.java)
                 startActivity(intent)
             }
             val noDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonNoDeleteAcc)

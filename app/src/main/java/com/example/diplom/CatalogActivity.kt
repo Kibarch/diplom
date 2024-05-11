@@ -2,37 +2,33 @@ package com.example.diplom
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.activity.ComponentActivity
+import com.example.diplom.databinding.CatalogBinding
 
 class CatalogActivity : ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.catalog)
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
+        val catalogActivityBinding : CatalogBinding = CatalogBinding.inflate(layoutInflater)
+        setContentView(catalogActivityBinding.root)
+        catalogActivityBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        catalogActivityBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
+        catalogActivityBinding.ak.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
+        catalogActivityBinding.prof.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
-        val techBTN: ImageView = findViewById(R.id.tech)
-        techBTN.setOnClickListener{
+        catalogActivityBinding.tech.setOnClickListener{
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }

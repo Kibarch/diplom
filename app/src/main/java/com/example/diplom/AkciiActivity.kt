@@ -3,36 +3,32 @@ package com.example.diplom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.widget.ImageView
+import com.example.diplom.databinding.AkciiBinding
 
 class AkciiActivity : ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.akcii)
-        val magBTN: ImageView = findViewById(R.id.mag)
-        magBTN.setOnClickListener{
+        val akciiBinding : AkciiBinding = AkciiBinding.inflate(layoutInflater)
+        setContentView(akciiBinding.root)
+        akciiBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
+        akciiBinding.cat.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        akciiBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
+        akciiBinding.prof.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
-        val techBTN: ImageView = findViewById(R.id.tech)
-        techBTN.setOnClickListener{
+        akciiBinding.tech.setOnClickListener{
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }

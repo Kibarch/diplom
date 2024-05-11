@@ -1,15 +1,18 @@
 package com.example.diplom
 
 import android.content.Intent
+import android.location.Address
+import android.location.Geocoder
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.fragment.app.FragmentActivity
+import com.example.diplom.databinding.MagaziniBinding
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import java.io.IOException
 
 internal class MagaziniActivity: FragmentActivity(), OnMapReadyCallback
 {
@@ -17,42 +20,67 @@ internal class MagaziniActivity: FragmentActivity(), OnMapReadyCallback
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.magazini)
+        val magaziniBinding : MagaziniBinding = MagaziniBinding.inflate(layoutInflater)
+        setContentView(magaziniBinding.root)
+        val searchMag = magaziniBinding.searchViewMagazini
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+
+        searchMag.setOnQueryTextListener(
+            object : android.widget.SearchView.OnQueryTextListener
+            {
+                override fun onQueryTextSubmit(query: String?): Boolean
+                {
+                    val location: String = searchMag.query.toString()
+                    var adressList: List<Address>? = null
+                    if (location != "" && location.isNotEmpty())
+                    {
+                        val geocoder = Geocoder(this@MagaziniActivity)
+                        try
+                        {
+                            adressList = geocoder.getFromLocationName(location, 1)
+                        }
+                        catch (e: IOException)
+                        {
+                            e.printStackTrace()
+                        }
+                        val address : Address = adressList!![0]
+                        val latLng = LatLng(address.latitude, address.longitude)
+                        myMap.addMarker(MarkerOptions().position(latLng).title(location))
+                        myMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10.0f))
+                    }
+                    return false
+                }
+                override fun onQueryTextChange(newText: String?): Boolean
+                {
+                    return false
+                }
+            }
+        )
         mapFragment.getMapAsync(this)
-        val catBTN: ImageView = findViewById(R.id.cat)
-        catBTN.setOnClickListener{
+        magaziniBinding.cat.setOnClickListener{
             val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
-        val korBTN: ImageView = findViewById(R.id.kor)
-        korBTN.setOnClickListener{
+        magaziniBinding.kor.setOnClickListener{
             val intent = Intent(this, KorzinaActivity::class.java)
             startActivity(intent)
         }
-        val akBTN: ImageView = findViewById(R.id.ak)
-        akBTN.setOnClickListener{
+        magaziniBinding.ak.setOnClickListener{
             val intent = Intent(this, AkciiActivity::class.java)
             startActivity(intent)
         }
-        val profBTN: ImageView = findViewById(R.id.prof)
-        profBTN.setOnClickListener{
+        magaziniBinding.prof.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
-        val techBTN: ImageView = findViewById(R.id.tech)
-        techBTN.setOnClickListener{
+        magaziniBinding.tech.setOnClickListener{
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
     }
     override fun onMapReady(googleMap: GoogleMap) {
         myMap = googleMap
-        val rnd = LatLng(47.14, 39.42)
-        myMap.addMarker(MarkerOptions()
-            .position(rnd)
-            .title("Marker in Rostov-on-Don"))
-        myMap.moveCamera(CameraUpdateFactory.newLatLng(rnd))
     }
+
 }
 

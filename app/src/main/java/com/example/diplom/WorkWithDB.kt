@@ -7,11 +7,10 @@ import com.example.diplom.databinding.WorkWithDbBinding
 
 class WorkWithDB : ComponentActivity()
 {
-    private lateinit var binding: WorkWithDbBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        binding = WorkWithDbBinding.inflate(layoutInflater)
+        val binding : WorkWithDbBinding = WorkWithDbBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val db = MainDB.getDb(this)
         db.getDao().getAllItem().asLiveData().observe(this){list->

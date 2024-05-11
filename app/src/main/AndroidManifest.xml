@@ -194,7 +194,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NachStranActivity"
+            android:name=".NachalnStranicaActivity"
             android:exported="true"
             android:label="@string/nachStran_name"
             android:theme="@style/Theme.Diplom">
@@ -233,28 +233,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ContactsActivity"
-            android:exported="true"
-            android:label="@string/magazini_name"
-            android:theme="@style/Theme.Diplom">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".AboutUsActivity"
-            android:exported="true"
-            android:label="@string/magazini_name"
-            android:theme="@style/Theme.Diplom">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".DeliveryActivity"
             android:exported="true"
             android:label="@string/magazini_name"
@@ -277,7 +255,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PolitConfidActivity"
+            android:name=".PrivacyPolicyActivity"
             android:exported="true"
             android:label="@string/magazini_name"
             android:theme="@style/Theme.Diplom">
@@ -299,7 +277,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WorkWithAccActivity"
+            android:name=".WorkWithAccountActivity"
             android:exported="true"
             android:label="@string/magazini_name"
             android:theme="@style/Theme.Diplom">
@@ -320,7 +298,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

@@ -3,28 +3,25 @@ package com.example.diplom
 import androidx.activity.ComponentActivity
 import android.os.Bundle
 import android.content.Intent
-import android.widget.Button
-import android.widget.TextView
+import com.example.diplom.databinding.NachalnStranicaBinding
 
-class NachStranActivity: ComponentActivity()
+class NachalnStranicaActivity: ComponentActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.nachaln_stranica)
-        val zaregpozBTN: TextView = findViewById(R.id.textZaregPoz)
-        zaregpozBTN.setOnClickListener{
+        val nachalnStranicaBinding : NachalnStranicaBinding = NachalnStranicaBinding.inflate(layoutInflater)
+        setContentView(nachalnStranicaBinding.root)
+        nachalnStranicaBinding.textZaregPoz.setOnClickListener{
             Global().flag = 1
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
-        val regBTN: Button = findViewById(R.id.buttonRegistrationPerehod)
-        regBTN.setOnClickListener{
+        nachalnStranicaBinding.buttonRegistrationPerehod.setOnClickListener{
             val intent = Intent(this, VvodDannPolzActivity::class.java)
             startActivity(intent)
         }
-        val loginBTN: Button = findViewById(R.id.buttonVoiti)
-        loginBTN.setOnClickListener{
+        nachalnStranicaBinding.buttonVoiti.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

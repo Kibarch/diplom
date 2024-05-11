@@ -1,8 +1,8 @@
 package com.example.diplom
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.widget.ImageView
 import com.example.diplom.databinding.InfoForClientBinding
 
 class InfoForClientActivity: ComponentActivity()
@@ -41,7 +41,7 @@ class InfoForClientActivity: ComponentActivity()
             startActivity(intent)
         }
         infoForClientBinding.buttonWorkWithAccount.setOnClickListener{
-            val intent = Intent(this, WorkWithAccActivity::class.java)
+            val intent = Intent(this, WorkWithAccountActivity::class.java)
             startActivity(intent)
         }
         infoForClientBinding.buttonDelivery.setOnClickListener {
@@ -57,16 +57,14 @@ class InfoForClientActivity: ComponentActivity()
             startActivity(intent)
         }
         infoForClientBinding.buttonPolitConfid.setOnClickListener {
-            val intent = Intent(this, PolitConfidActivity::class.java)
+            val intent = Intent(this, PrivacyPolicyActivity::class.java)
             startActivity(intent)
         }
         infoForClientBinding.buttonAboutUs.setOnClickListener {
-            val intent = Intent(this, AboutUsActivity::class.java)
-            startActivity(intent)
+
         }
         infoForClientBinding.buttonContacts.setOnClickListener {
-            val intent = Intent(this, ContactsActivity::class.java)
-            startActivity(intent)
+
         }
     }
 

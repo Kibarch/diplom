@@ -4,18 +4,14 @@ import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
 import com.example.diplom.databinding.ProfilBinding
 
 class ProfilActivity : ComponentActivity()
 {
-    private lateinit var profBinding: ProfilBinding
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-        profBinding = ProfilBinding.inflate(layoutInflater)
+        val profBinding : ProfilBinding = ProfilBinding.inflate(layoutInflater)
         setContentView(profBinding.root)
         val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
         var ima = sharedPref.getString("ima","")
