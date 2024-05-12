@@ -46,7 +46,7 @@ internal class MagaziniActivity: FragmentActivity(), OnMapReadyCallback
                         val address : Address = adressList!![0]
                         val latLng = LatLng(address.latitude, address.longitude)
                         myMap.addMarker(MarkerOptions().position(latLng).title(location))
-                        myMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10.0f))
+                        myMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15.0f))
                     }
                     return false
                 }

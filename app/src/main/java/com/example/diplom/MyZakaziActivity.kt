@@ -39,6 +39,10 @@ class MyZakaziActivity: ComponentActivity()
         myZakaziBinding.buttonDeleteHistoryZakazov.setOnClickListener{
             myZakaziBinding.Zakaz1.removeAllViews()
         }
+        myZakaziBinding.arr.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

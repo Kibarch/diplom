@@ -35,6 +35,10 @@ class HideMagaziniActivity: ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+        hideMagaziniBinding.arr.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

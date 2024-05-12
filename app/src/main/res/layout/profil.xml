@@ -1,50 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#3D3D3D"
-    android:gravity="fill"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="UseCompoundDrawables"
-    tools:context=".ProfilActivity">
+    android:background="#3D3D3D"
+    android:gravity="fill"
+    tools:context=".ProfilActivity"
+    tools:ignore="UseCompoundDrawables">
 
 
     <LinearLayout
         android:id="@+id/hatProfil"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
+        android:layout_gravity="top"
         android:background="#616161"
+        android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_gravity="top">
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/arr"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:clickable="true"
+            android:contentDescription="NULL"
             android:focusable="true"
             android:scaleX="-1"
-            android:layout_weight="1"
-            android:contentDescription="NULL"
-            android:src="@drawable/arrow"/>
+            android:src="@drawable/arrow" />
+
         <TextView
             android:id="@+id/titleM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:gravity="center"
-            android:text="@string/profil_name"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:shadowColor="@color/black"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="10"
-            android:layout_weight="2"
-            android:textStyle="bold"/>
+            android:text="@string/profil_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/tech"
@@ -62,216 +63,218 @@
         android:id="@+id/imageProfil"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="21dp"
         android:contentDescription="NULL"
         android:src="@drawable/image1"
-        app:layout_constraintEnd_toStartOf="@+id/imaFamilia"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMyZakazi"
+        app:layout_constraintStart_toStartOf="@+id/buttonMyZakazi"
         app:layout_constraintTop_toBottomOf="@+id/hatProfil" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/imaFamilia"
-            android:layout_width="wrap_content"
-            android:layout_height="140dp"
-            app:layout_constraintTop_toBottomOf="@id/hatProfil"
-            app:layout_constraintStart_toEndOf="@id/imageProfil"
-            app:layout_constraintEnd_toEndOf="parent">
+        android:id="@+id/imaFamilia"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMyZakazi"
+        app:layout_constraintTop_toBottomOf="@id/hatProfil">
 
-            <TextView
-                android:id="@+id/textViewIma"
-                android:layout_width="144dp"
-                android:layout_height="70dp"
-                android:background="@drawable/topcornersdarkthemeroundedbackground"
-                android:text=""
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toTopOf="@+id/imaFamilia"
-                app:layout_constraintStart_toStartOf="@+id/imaFamilia">
+        <TextView
+            android:id="@+id/textViewIma"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:background="@drawable/topcornersdarkthemeroundedbackground"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/imaFamilia"
+            app:layout_constraintTop_toTopOf="@+id/imaFamilia">
 
-            </TextView>
-            <TextView
-                android:id="@+id/textViewFamiliya"
-                android:layout_width="144dp"
-                android:layout_height="70dp"
-                android:background="@drawable/bottomcornersdarkthemeroundedbackground"
-                android:text=""
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                app:layout_constraintStart_toStartOf="@+id/imaFamilia"
-                app:layout_constraintTop_toBottomOf="@id/textViewIma">
+        </TextView>
 
-            </TextView>
+        <TextView
+            android:id="@+id/textViewFamiliya"
+            android:layout_width="144dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/imaFamilia"
+            app:layout_constraintTop_toBottomOf="@id/textViewIma">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </TextView>
 
-    <LinearLayout
-        android:id="@+id/ProfilButtons"
-        android:layout_width="match_parent"
-        android:layout_height="480dp"
-        android:gravity="center|top"
-        app:layout_constraintTop_toBottomOf="@+id/imageProfil"
-        app:layout_constraintBottom_toTopOf="@id/menuProfil"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:gravity="center|top"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/buttonMyZakazi"
-                android:layout_width="329dp"
-                android:layout_height="55dp"
-                android:text="@string/myzakazi_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="@drawable/topcornerslightggrayroundedbackground" />
-            <Button
-                android:id="@+id/buttonMyOtzivi"
-                android:layout_width="329dp"
-                android:layout_height="45dp"
-                android:text="@string/myotzivi_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="#8D8D8D" />
-            <Button
-                android:id="@+id/buttonMyKarti"
-                android:layout_width="329dp"
-                android:layout_height="50dp"
-                android:text="@string/mykarti_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="@drawable/bottomcornerslightgrayroundedbackground" />
-        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:gravity="center|top"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/buttonCalendarDostavok"
-                android:layout_width="329dp"
-                android:layout_height="55dp"
-                android:text="@string/calendardostavok_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="@drawable/topcornerslightggrayroundedbackground" />
-            <Button
-                android:id="@+id/buttonHideMagazini"
-                android:layout_width="329dp"
-                android:layout_height="47dp"
-                android:text="@string/hidemagazini_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="#8D8D8D" />
-            <Button
-                android:id="@+id/buttonAdresaDostavok"
-                android:layout_width="329dp"
-                android:layout_height="50dp"
-                android:text="@string/adresadostavok_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="@drawable/bottomcornerslightgrayroundedbackground" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:gravity="center|top"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/buttonSettings"
-                android:layout_width="329dp"
-                android:layout_height="55dp"
-                android:text="@string/settings_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="@drawable/topcornerslightggrayroundedbackground" />
-            <Button
-                android:id="@+id/buttonAboutPril"
-                android:layout_width="329dp"
-                android:layout_height="45dp"
-                android:text="@string/aboutpril_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="#8D8D8D" />
-            <Button
-                android:id="@+id/buttonInfoForClient"
-                android:layout_width="329dp"
-                android:layout_height="50dp"
-                android:text="@string/infoforclient_name"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="@color/white"
-                android:shadowColor="@color/black"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="10"
-                android:background="@drawable/bottomcornerslightgrayroundedbackground" />
-        </LinearLayout>
+    <Button
+        android:id="@+id/buttonMyZakazi"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text="@string/myzakazi_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imaFamilia" />
 
-    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMyOtzivi"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:background="#8D8D8D"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/myotzivi_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMyZakazi"
+        app:layout_constraintStart_toStartOf="@+id/buttonMyZakazi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMyZakazi" />
+
+    <Button
+        android:id="@+id/buttonMyKarti"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/mykarti_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMyOtzivi"
+        app:layout_constraintStart_toStartOf="@+id/buttonMyOtzivi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMyOtzivi" />
+
+    <Button
+        android:id="@+id/buttonCalendarDostavok"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text="@string/calendardostavok_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMyKarti"
+        app:layout_constraintStart_toStartOf="@+id/buttonMyKarti"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMyKarti" />
+
+    <Button
+        android:id="@+id/buttonHideMagazini"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:background="#8D8D8D"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/hidemagazini_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCalendarDostavok"
+        app:layout_constraintStart_toStartOf="@+id/buttonCalendarDostavok"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalendarDostavok" />
+
+    <Button
+        android:id="@+id/buttonAdresaDostavok"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/adresadostavok_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonHideMagazini"
+        app:layout_constraintStart_toStartOf="@+id/buttonHideMagazini"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHideMagazini" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/settings_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAdresaDostavok"
+        app:layout_constraintStart_toStartOf="@+id/buttonAdresaDostavok"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdresaDostavok" />
+
+    <Button
+        android:id="@+id/buttonAboutPril"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:background="#8D8D8D"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/aboutpril_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSettings"
+        app:layout_constraintStart_toStartOf="@+id/buttonSettings"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSettings" />
+
+    <Button
+        android:id="@+id/buttonInfoForClient"
+        android:layout_width="329dp"
+        android:layout_height="51dp"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"
+        android:text="@string/infoforclient_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAboutPril"
+        app:layout_constraintStart_toStartOf="@+id/buttonAboutPril"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAboutPril" />
 
     <LinearLayout
         android:id="@+id/menuProfil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:background="#616161"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:gravity="center"
             android:layout_marginEnd="15dp"
+            android:gravity="center"
             android:orientation="vertical">
 
             <ImageView
@@ -283,14 +286,15 @@
                 android:contentDescription="@string/magazini_name"
                 android:focusable="true"
                 android:src="@drawable/map" />
+
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
-                android:textColor="@color/black"
                 android:text="@string/magazini_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -298,25 +302,27 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:gravity="center"
             android:layout_marginEnd="15dp"
+            android:gravity="center"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:focusable="true"
                 android:contentDescription="@string/catalog_name"
-                android:src="@drawable/catalog"/>
+                android:focusable="true"
+                android:src="@drawable/catalog" />
+
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/catalog_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -324,25 +330,27 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:gravity="center"
             android:layout_marginEnd="15dp"
+            android:gravity="center"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/kor"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:focusable="true"
                 android:contentDescription="@string/korzina_name"
-                android:src="@drawable/korzina"/>
+                android:focusable="true"
+                android:src="@drawable/korzina" />
+
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/korzina_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -350,25 +358,27 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:gravity="center"
             android:layout_marginEnd="15dp"
+            android:gravity="center"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:focusable="true"
                 android:contentDescription="@string/akcii_name"
-                android:src="@drawable/akzii"/>
+                android:focusable="true"
+                android:src="@drawable/akzii" />
+
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/akcii_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -376,31 +386,32 @@
         <LinearLayout
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             android:gravity="center"
-            android:orientation="vertical"
-            android:background="@drawable/allcornersdarkthemeroundedbackground">
+            android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:focusable="true"
                 android:contentDescription="@string/profil_name"
-                android:src="@drawable/profile"/>
+                android:focusable="true"
+                android:src="@drawable/profile" />
+
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/profil_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

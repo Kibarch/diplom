@@ -37,6 +37,10 @@ class AboutPrilActivity : ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+        aboutPrilBinding.arr.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

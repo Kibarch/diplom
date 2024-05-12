@@ -40,5 +40,9 @@ class MyOtziviActivity: ComponentActivity()
             myOtziviBinding.Otziv1.removeAllViews()
             myOtziviBinding.Otziv2.removeAllViews()
         }
+        myOtziviBinding.arr.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

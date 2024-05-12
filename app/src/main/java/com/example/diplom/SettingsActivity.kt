@@ -40,6 +40,22 @@ internal class SettingsActivity: ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+        settBinding.buttonAppTheme.setOnClickListener{
+            val dialogAppTheme=layoutInflater.inflate(R.layout.app_theme, null)
+            val myDialogAppTheme=Dialog(this)
+            myDialogAppTheme.setContentView(dialogAppTheme)
+            myDialogAppTheme.setCancelable(true)
+            myDialogAppTheme.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            myDialogAppTheme.show()
+        }
+        settBinding.buttonNotifications.setOnClickListener{
+            val dialogNotifications=layoutInflater.inflate(R.layout.notofications, null)
+            val myDialogNotifications=Dialog(this)
+            myDialogNotifications.setContentView(dialogNotifications)
+            myDialogNotifications.setCancelable(true)
+            myDialogNotifications.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+            myDialogNotifications.show()
+        }
         settBinding.buttonLogOut.setOnClickListener{
             val dialogLogout=layoutInflater.inflate(R.layout.logout_dialog_window, null)
             val myDialogLogout=Dialog(this)
@@ -77,6 +93,10 @@ internal class SettingsActivity: ComponentActivity()
             noDelBTN.setOnClickListener{
                 myDialogDelacc.dismiss()
             }
+        }
+        settBinding.arr.setOnClickListener{
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
         }
     }
 

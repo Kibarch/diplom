@@ -40,6 +40,10 @@ class MyKartiActivity: ComponentActivity()
             myKartiBinding.IspKarta.removeAllViews()
             myKartiBinding.SohKarta1.removeAllViews()
         }
+        myKartiBinding.arr.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

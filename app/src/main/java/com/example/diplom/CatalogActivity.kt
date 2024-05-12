@@ -32,5 +32,9 @@ class CatalogActivity : ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+        catalogActivityBinding.adres.setOnClickListener{
+            val intent = Intent(this, AdresaDostavokActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
