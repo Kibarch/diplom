@@ -16,6 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
         android:orientation="horizontal"
         android:gravity="center">
@@ -77,41 +79,23 @@
         app:layout_constraintTop_toBottomOf="@+id/hatSettings" />
 
     <TextView
-        android:id="@+id/buttonCurrency"
-        android:layout_width="320dp"
-        android:layout_height="50dp"
-        android:text="@string/currency_name"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:shadowColor="@color/black"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:gravity="center_vertical"
-        android:shadowRadius="10"
-        android:layout_weight="2"
-        android:textStyle="bold"
-        android:layout_marginStart="45dp"
-        android:background="@color/lightgray"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNotifications"/>
-    <TextView
         android:id="@+id/buttonAppTheme"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:text="@string/apptheme_name"
-        android:textSize="16sp"
-        android:textColor="@color/white"
+        android:layout_weight="2"
+        android:background="@color/lightgray"
+        android:gravity="center_vertical"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
-        android:gravity="center_vertical"
         android:shadowRadius="10"
-        android:layout_weight="2"
+        android:text="@string/apptheme_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginStart="45dp"
-        android:background="@color/lightgray"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCurrency"/>
+        app:layout_constraintEnd_toEndOf="@+id/buttonNotifications"
+        app:layout_constraintStart_toStartOf="@+id/buttonNotifications"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNotifications" />
 
     <TextView
         android:id="@+id/buttonLogOut"
@@ -131,24 +115,25 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonAppTheme"
         app:layout_constraintStart_toStartOf="@+id/buttonAppTheme"
         app:layout_constraintTop_toBottomOf="@+id/buttonAppTheme" />
+
     <TextView
         android:id="@+id/buttonDeleteAccount"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:text="@string/deleteaccount_name"
-        android:textSize="16sp"
-        android:textColor="@color/red"
+        android:layout_weight="2"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        android:gravity="center_vertical"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
-        android:gravity="center_vertical"
         android:shadowRadius="10"
-        android:layout_weight="2"
+        android:text="@string/deleteaccount_name"
+        android:textColor="@color/red"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:layout_marginStart="45dp"
-        android:background="@drawable/bottomcornerslightgrayroundedbackground"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogOut"/>
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogOut"
+        app:layout_constraintStart_toStartOf="@+id/buttonLogOut"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogOut" />
 
     <LinearLayout
         android:id="@+id/menuSettings"
@@ -156,6 +141,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
         android:orientation="horizontal">
 

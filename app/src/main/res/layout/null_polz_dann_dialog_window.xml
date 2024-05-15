@@ -20,7 +20,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/constraintDialog"
-            android:text="Внимание! Имя или фамилия не заполнены!"
+            android:text="Внимание! Не все поля заполнены!"
             android:textColor="@color/white"/>
         <Button
             android:id="@+id/buttonOkNullImaFam"

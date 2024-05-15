@@ -36,5 +36,9 @@ class CatalogActivity : ComponentActivity()
             val intent = Intent(this, AdresaDostavokActivity::class.java)
             startActivity(intent)
         }
+        catalogActivityBinding.povtor.setOnClickListener {
+            val intent = Intent(this, MyZakaziActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

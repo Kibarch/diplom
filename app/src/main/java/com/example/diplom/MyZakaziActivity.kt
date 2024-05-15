@@ -43,6 +43,10 @@ class MyZakaziActivity: ComponentActivity()
             val intent = Intent(this, ProfilActivity::class.java)
             startActivity(intent)
         }
+        myZakaziBinding.buttonPovtorZakaza.setOnClickListener {
+            val intent = Intent(this, KorzinaActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

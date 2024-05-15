@@ -19,7 +19,9 @@
         android:background="#616161"
         android:orientation="horizontal"
         android:layout_gravity="top"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:id="@+id/arr"
             android:layout_width="35dp"
@@ -330,6 +332,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
         android:orientation="horizontal">
 

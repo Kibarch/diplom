@@ -49,7 +49,7 @@ internal class SettingsActivity: ComponentActivity()
             myDialogAppTheme.show()
         }
         settBinding.buttonNotifications.setOnClickListener{
-            val dialogNotifications=layoutInflater.inflate(R.layout.notofications, null)
+            val dialogNotifications=layoutInflater.inflate(R.layout.notifications, null)
             val myDialogNotifications=Dialog(this)
             myDialogNotifications.setContentView(dialogNotifications)
             myDialogNotifications.setCancelable(true)
@@ -86,6 +86,7 @@ internal class SettingsActivity: ComponentActivity()
                 myDialogDelacc.dismiss()
                 Global().polzName = Global().stockIma
                 Global().polzFamil = Global().stockFamiliya
+                Global().userId--
                 val intent = Intent(this, NachalnStranicaActivity::class.java)
                 startActivity(intent)
             }

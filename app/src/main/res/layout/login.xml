@@ -23,7 +23,7 @@
         android:layout_marginTop="140dp" />
 
     <EditText
-        android:id="@+id/textFieldEmail"
+        android:id="@+id/textFieldLoginEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -43,13 +43,13 @@
         android:layout_height="wrap_content"
         android:text="@string/password_name"
         android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="@id/textFieldEmail"
+        app:layout_constraintTop_toTopOf="@id/textFieldLoginEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="60dp" />
 
     <EditText
-        android:id="@+id/textFieldPassword"
+        android:id="@+id/textFieldLoginPassword"
         tools:ignore="labelFor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,6 +72,6 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textFieldPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/textFieldLoginPassword"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,7 +18,9 @@
         android:gravity="center"
         android:background="#616161"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:id="@+id/arr"
             android:layout_width="35dp"
@@ -86,8 +88,6 @@
                     android:textSize="12sp"
                     android:textColor="@color/white"
                     android:shadowColor="@color/black"
-                    android:shadowDx="0"
-                    android:shadowDy="0"
                     android:shadowRadius="10"
                     android:textStyle="bold"
                     android:layout_marginTop="40dp"/>
@@ -99,6 +99,15 @@
                     android:textSize="11sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/buttonPovtorZakaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/allcornersdarkthemeroundedbackground"
+                    android:text="Повторить" />
 
             </LinearLayout>
             <LinearLayout
@@ -301,6 +310,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
         android:orientation="horizontal">
 

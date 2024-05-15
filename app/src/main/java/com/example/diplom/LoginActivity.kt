@@ -1,8 +1,12 @@
 package com.example.diplom
 
+import android.app.Dialog
 import androidx.activity.ComponentActivity
 import android.os.Bundle
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.widget.Button
 import com.example.diplom.databinding.LoginBinding
 
 class LoginActivity: ComponentActivity()

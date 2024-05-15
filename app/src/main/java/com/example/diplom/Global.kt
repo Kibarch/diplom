@@ -10,5 +10,7 @@ class Global : Application()
      lateinit var polzName : String
      lateinit var polzFamil : String
      var imProf : Int = R.drawable.image1
+     var userId : Int = 0
+     var upToDateUserId by Delegates.notNull<Int>()
      var flag : Int = 0
 }
