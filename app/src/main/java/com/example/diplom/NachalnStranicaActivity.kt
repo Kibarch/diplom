@@ -13,7 +13,6 @@ class NachalnStranicaActivity: ComponentActivity()
         val nachalnStranicaBinding : NachalnStranicaBinding = NachalnStranicaBinding.inflate(layoutInflater)
         setContentView(nachalnStranicaBinding.root)
         nachalnStranicaBinding.textZaregPoz.setOnClickListener{
-            Global().flag = 1
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }
@@ -23,6 +22,10 @@ class NachalnStranicaActivity: ComponentActivity()
         }
         nachalnStranicaBinding.buttonVoiti.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+        nachalnStranicaBinding.button4.setOnClickListener {
+            val intent = Intent(this, WorkWithDB::class.java)
             startActivity(intent)
         }
     }

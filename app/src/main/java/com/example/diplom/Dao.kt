@@ -1,7 +1,6 @@
 package com.example.diplom
 
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
@@ -14,16 +13,16 @@ interface Dao
     @Query("SELECT * FROM users")
     fun getAllItem(): Flow<List<Users>>
     @Query("SELECT name FROM users WHERE id = :id")
-    fun getName(id: Int): String
+    fun getName(id: Int?): String
     @Query("SELECT famil FROM users WHERE id = :id")
-    fun getFamil(id: Int): String
+    fun getFamil(id: Int?): String
     @Query("SELECT email FROM users WHERE id = :id")
-    fun getEmail(id: Int): String
+    fun getEmail(id: Int?): String
     @Query("SELECT password FROM users WHERE id = :id")
-    fun getPassword(id: Int): String
+    fun getPassword(id: Int?): String
     @Query("SELECT email, password FROM users WHERE id = :id")
-    fun getEmPas(id: Int): Flow<List<Users>>
+    fun getEmPas(id: Int?): Flow<List<Users>>
     @Query("DELETE FROM users WHERE id = :id")
-    fun deleteItem(id: Int)
+    fun deleteItem(id: Int?)
 
 }

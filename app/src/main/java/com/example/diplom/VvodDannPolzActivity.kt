@@ -58,8 +58,6 @@ class VvodDannPolzActivity: ComponentActivity()
                     Thread{
                         db.getDao().insertItem(users)
                     }.start()
-                    Global().userId++
-                    Global().upToDateUserId = Global().userId
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                 }

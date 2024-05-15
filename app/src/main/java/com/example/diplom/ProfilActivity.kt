@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
+import androidx.lifecycle.asLiveData
 import com.example.diplom.databinding.ProfilBinding
 
 class ProfilActivity : ComponentActivity()
@@ -14,28 +15,30 @@ class ProfilActivity : ComponentActivity()
         val profBinding : ProfilBinding = ProfilBinding.inflate(layoutInflater)
         setContentView(profBinding.root)
         val db = MainDB.getDb(this)
-        //db.getDao().getName()
-        val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
-        var ima = sharedPref.getString("ima","")
-        var familiya = sharedPref.getString("familiya","")
-        val sharedIm = getSharedPreferences("mySharedIm", Context.MODE_PRIVATE)
+        db.getDao().getAllItem().asLiveData().observe(this){list->
+            list.forEach{
+                if (it.id == Global().getUserId())
+                {
+                    profBinding.textViewIma.text = db.getDao().getName(it.id)
+                    profBinding.textViewFamiliya.text = db.getDao().getFamil(it.id)
+                    Global().polzName = profBinding.textViewIma.text.toString()
+                    Global().polzFamil = profBinding.textViewFamiliya.text.toString()
+                }
+                //val text = "Id: ${it.id} Name: ${it.name} Famil: ${it.famil} Tel:${it.telephone} Email:${it.email} Passw:${it.password}\n"
+            }
+        }
+        //val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
+        //var ima = sharedPref.getString("ima","")
+        //var familiya = sharedPref.getString("familiya","")
+        //val sharedIm = getSharedPreferences("mySharedIm", Context.MODE_PRIVATE)
 
-        profBinding.imageProfil.setImageResource(sharedIm.getInt("man",R.drawable.image1))
+        //profBinding.imageProfil.setImageResource(sharedIm.getInt("man",R.drawable.image1))
         if (Global().flag == 1)
         {
             profBinding.textViewIma.text = Global().stockIma
             profBinding.textViewFamiliya.text = Global().stockFamiliya
             Global().flag = 0
         }
-        else
-            if (ima != "" && familiya != "")
-            {
-                profBinding.textViewIma.text = ima
-                Global().polzName = ima.toString()
-                profBinding.textViewFamiliya.text = familiya
-                Global().polzFamil = familiya.toString()
-
-            }
         profBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)

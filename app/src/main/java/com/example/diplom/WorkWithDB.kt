@@ -22,7 +22,6 @@ class WorkWithDB : ComponentActivity()
             }
         }
         binding.button2.setOnClickListener{
-            //Global().idPlus()
             val users = Users(null, binding.poleIma.text.toString(), binding.poleFamiliya.text.toString(), binding.poleTel.text.toString(), binding.poleEmail.text.toString(), binding.polePassw.text.toString())
             Thread{
                 db.getDao().insertItem(users)
