@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#3D3D3D"
+    android:gravity="fill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UseCompoundDrawables"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="@string/email_name"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textFieldLoginEmail"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="example@mail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        tools:ignore="labelFor" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_name"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/textFieldLoginEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:id="@+id/textFieldLoginPassword"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="password"
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="password123"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPassword"
+        tools:ignore="TextFields,labelFor" />
+
+    <Button
+        android:id="@+id/buttonVoiti"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="@string/voiti_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFieldLoginPassword" />
+
+    <Button
+        android:id="@+id/buttonHidePass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Скрыть пароль"
+        app:layout_constraintStart_toStartOf="@+id/textFieldLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldLoginPassword" />
+
+    <Button
+        android:id="@+id/buttonPozakPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Показать пароль"
+        app:layout_constraintEnd_toEndOf="@+id/textFieldLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldLoginPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

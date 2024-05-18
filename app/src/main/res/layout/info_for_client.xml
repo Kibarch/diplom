@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#3D3D3D"
     android:gravity="fill"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="UseCompoundDrawables"
@@ -13,12 +12,15 @@
 
 
     <LinearLayout
+        android:id="@+id/hatInfoForClient"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
         android:background="#616161"
         android:orientation="horizontal"
-        android:layout_gravity="top">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:id="@+id/arr"
             android:layout_width="35dp"
@@ -29,7 +31,6 @@
             android:scaleX="-1"
             android:layout_weight="1"
             android:contentDescription="NULL"
-            android:onClick="profClicked"
             android:src="@drawable/arrow"/>
         <TextView
             android:id="@+id/titleM"
@@ -38,7 +39,7 @@
             android:gravity="center"
             android:text="@string/infoforclient_name"
             android:textSize="20sp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:shadowColor="#000000"
             android:shadowDx="0"
             android:shadowDy="0"
@@ -46,7 +47,7 @@
             android:layout_weight="2"
             android:textStyle="bold"/>
         <ImageView
-            android:id="@+id/chat"
+            android:id="@+id/tech"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
@@ -54,18 +55,166 @@
             android:focusable="true"
             android:layout_weight="1"
             android:contentDescription="NULL"
-            android:onClick="techClicked"
             android:src="@drawable/chat"/>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/buttonWorkWithPril"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/workWithApp_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatInfoForClient"/>
+    <TextView
+        android:id="@+id/buttonWorkWithAccount"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/workWIthAccount_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:background="@color/lightgray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkWithPril"/>
+    <TextView
+        android:id="@+id/buttonDelivery"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/delivery_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:background="@color/lightgray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWorkWithAccount"/>
+    <TextView
+        android:id="@+id/buttonPaymentMethods"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/paymentMethods_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:background="@color/lightgray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDelivery"/>
+    <TextView
+        android:id="@+id/buttonVozvratSredstv"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/vozvratSredstv_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:background="@color/lightgray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPaymentMethods"/>
+    <TextView
+        android:id="@+id/buttonPolitConfid"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/politConfid_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVozvratSredstv"/>
+    <TextView
+        android:id="@+id/buttonAboutUs"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/aboutUs_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPolitConfid"/>
+    <TextView
+        android:id="@+id/buttonContacts"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="@string/contacts_name"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:gravity="center_vertical"
+        android:shadowRadius="10"
+        android:layout_weight="2"
+        android:textStyle="bold"
+        android:layout_marginStart="45dp"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAboutUs"/>
 
     <LinearLayout
+        android:id="@+id/menuInfoForClient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
-        android:orientation="horizontal"
-        android:layout_gravity="end">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -77,12 +226,11 @@
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
-                android:onClick="magClicked"
                 android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
@@ -90,7 +238,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/magazini_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -103,21 +251,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_cat"
+                android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -130,21 +277,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_kor"
+                android:id="@+id/kor"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="korClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -157,21 +303,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_ak"
+                android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="akClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -183,21 +328,20 @@
             android:gravity="center"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_prof"
+                android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="profClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/profil_name"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -205,4 +349,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

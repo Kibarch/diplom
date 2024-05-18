@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#3D3D3D"
     android:gravity="fill"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="UseCompoundDrawables"
@@ -13,12 +12,15 @@
 
 
     <LinearLayout
+        android:id="@+id/hatMyZakazi"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
         android:background="#616161"
         android:orientation="horizontal"
-        android:layout_gravity="top">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
         <ImageView
             android:id="@+id/arr"
             android:layout_width="35dp"
@@ -29,7 +31,6 @@
             android:scaleX="-1"
             android:layout_weight="1"
             android:contentDescription="NULL"
-            android:onClick="profClicked"
             android:src="@drawable/arrow"/>
         <TextView
             android:id="@+id/titleM"
@@ -38,15 +39,15 @@
             android:gravity="center"
             android:text="@string/myzakazi_name"
             android:textSize="20sp"
-            android:textColor="#FFFFFF"
-            android:shadowColor="#000000"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="10"
             android:layout_weight="2"
             android:textStyle="bold"/>
         <ImageView
-            android:id="@+id/chat"
+            android:id="@+id/tech"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
@@ -54,18 +55,265 @@
             android:focusable="true"
             android:layout_weight="1"
             android:contentDescription="NULL"
-            android:onClick="techClicked"
             android:src="@drawable/chat"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/Zakaz1"
+        android:layout_width="320dp"
+        android:layout_height="292dp"
+        android:orientation="vertical"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatMyZakazi">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@drawable/topcornerslightggrayroundedbackground"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bottomleftcornerslightgrayroundedbackground">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Статус заказа:"
+                    android:gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="10"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="статус"
+                    android:gravity="center_horizontal"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <Button
+                    android:id="@+id/buttonPovtorZakaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/allcornersdarkthemeroundedbackground"
+                    android:text="Повторить" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="  Состав заказа:"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:shadowColor="@color/black"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="10"
+                    android:gravity="center_vertical"
+                    android:background="@color/lightgray"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/lightgray">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="товар1"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="10"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="товар2"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="10"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="товар3"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="10"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/lightgray">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="шт/кг"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="10"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="шт/кг"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="10"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="шт/кг"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:shadowColor="@color/black"
+                            android:shadowDx="0"
+                            android:shadowDy="0"
+                            android:shadowRadius="10"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="87dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/darkthemebackgroundcolor">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="стоимость1"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="стоимость2"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="стоимость3"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="20dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bottomrightcornerlightgrayroundedbackground">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   Итог:"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:gravity="center_vertical"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3453453 РУБЛЕЙ"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="10"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDeleteHistoryZakazov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="Очистить историю заказов"
+        app:layout_constraintBottom_toTopOf="@id/menuMyZakazi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
+        android:id="@+id/menuMyZakazi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
-        android:orientation="horizontal"
-        android:layout_gravity="end">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -77,22 +325,20 @@
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
-                android:onClick="magClicked"
                 android:src="@drawable/map" />
-
             <TextView
                 android:id="@+id/textMap"
-                android:layout_width="60dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
+                android:textColor="@color/black"
                 android:text="@string/magazini_name"
-                android:textColor="#000000"
                 android:textSize="11sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -104,21 +350,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_cat"
+                android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -131,21 +376,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_kor"
+                android:id="@+id/kor"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="korClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/korzina_name"
                 android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -158,21 +402,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_ak"
+                android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="akClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -184,21 +427,20 @@
             android:gravity="center"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_prof"
+                android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="profClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/profil_name"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -206,4 +448,6 @@
 
     </LinearLayout>
 
-</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
