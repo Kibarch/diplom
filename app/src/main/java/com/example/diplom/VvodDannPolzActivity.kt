@@ -19,8 +19,6 @@ class VvodDannPolzActivity: ComponentActivity()
         setContentView(vvodDanBinding.root)
         val db = MainDB.getDb(this)
         vvodDanBinding.buttonRegistration.setOnClickListener{
-            val sharedPref = getSharedPreferences("mySharedPref", Context.MODE_PRIVATE)
-            val editor = sharedPref.edit()
             if (vvodDanBinding.textFieldIma.text.toString() == "" || vvodDanBinding.textFieldFamiliya.text.toString() == "" || vvodDanBinding.textFieldLoginEmail.text.toString() == "" || vvodDanBinding.textFieldPhone.text.toString() == "" || vvodDanBinding.textFieldLoginPassword.text.toString() == "")
             {
                 val dialogNullImaOrFam=layoutInflater.inflate(R.layout.null_polz_dann_dialog_window, null)
@@ -51,23 +49,16 @@ class VvodDannPolzActivity: ComponentActivity()
                 }
                 else
                 {
-                    editor.putString("ima",vvodDanBinding.textFieldIma.text.toString())
-                    editor.putString("familiya", vvodDanBinding.textFieldFamiliya.text.toString())
-                    editor.apply()
                     val users = Users(null, vvodDanBinding.textFieldIma.text.toString(), vvodDanBinding.textFieldFamiliya.text.toString(), vvodDanBinding.textFieldPhone.text.toString(), vvodDanBinding.textFieldLoginEmail.text.toString(), vvodDanBinding.textFieldLoginPassword.text.toString())
-                    Thread{
-                        db.getDao().insertItem(users)
-                    }.start()
+                    val thread  = Thread{db.getDao().insertItem(users)}
+                    thread.start()
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
+                    thread.stop()
                 }
             }
         }
         vvodDanBinding.buttonPhotoDownload.setOnClickListener{
-            val sharedIm = getSharedPreferences("mySharedIm", Context.MODE_PRIVATE)
-            val editor = sharedIm.edit()
-            editor.putInt("man",R.drawable.man)
-            editor.apply()
             vvodDanBinding.buttonPhotoDownload.setImageResource(R.drawable.man)
         }
     }

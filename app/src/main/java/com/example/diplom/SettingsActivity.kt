@@ -1,12 +1,16 @@
 package com.example.diplom
 
 import android.app.Dialog
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.widget.Button
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.diplom.databinding.SettingsBinding
 
 internal class SettingsActivity: ComponentActivity()
@@ -47,6 +51,24 @@ internal class SettingsActivity: ComponentActivity()
             myDialogAppTheme.setCancelable(true)
             myDialogAppTheme.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             myDialogAppTheme.show()
+            fun setLightTheme(){
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+            fun setDarkTheme(){
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }
+            fun getSavedThemeState(): Boolean{
+                val sharedPreferences: SharedPreferences = getSharedPreferences("ThemePrefs", Context.MODE_PRIVATE)
+                return sharedPreferences.getBoolean("isDarktheme", false)
+            }
+            fun saveThemeState(isDarkTheme: Boolean){
+                val sharedPreferences: SharedPreferences = getSharedPreferences("ThemePrefs", Context.MODE_PRIVATE)
+                val editor: SharedPreferences.Editor? = sharedPreferences.edit()
+                editor?.putBoolean("isDarkTheme", isDarkTheme)
+                editor?.apply()
+            }
+
+
         }
         settBinding.buttonNotifications.setOnClickListener{
             val dialogNotifications=layoutInflater.inflate(R.layout.notifications, null)
@@ -84,9 +106,6 @@ internal class SettingsActivity: ComponentActivity()
             val yesDelBTN = dialogDelacc.findViewById<Button>(R.id.buttonYesDeleteAcc)
             yesDelBTN.setOnClickListener{
                 myDialogDelacc.dismiss()
-                Global().polzName = Global().stockIma
-                Global().polzFamil = Global().stockFamiliya
-                Global().userId--
                 val intent = Intent(this, NachalnStranicaActivity::class.java)
                 startActivity(intent)
             }

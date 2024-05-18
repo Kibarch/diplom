@@ -12,5 +12,4 @@ data class Users(
     @ColumnInfo(name = "telephone") var telephone: String?,
     @ColumnInfo(name = "email") var email: String?,
     @ColumnInfo(name = "password") var password: String?
-
 )
