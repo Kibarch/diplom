@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#3D3D3D"
     android:gravity="fill"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="UseCompoundDrawables"
@@ -12,10 +12,14 @@
 
 
     <LinearLayout
+        android:id="@+id/hatTechSupport"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
+        android:gravity="center"
         android:orientation="horizontal"
         android:layout_gravity="top">
         <TextView
@@ -33,47 +37,16 @@
             android:textStyle="bold"/>
     </LinearLayout>
 
-
     <LinearLayout
+        android:id="@+id/menuTechSupport"
         android:layout_width="match_parent"
-        android:layout_height="615dp"
-        android:orientation="vertical"
-        android:weightSum="5">
-        <TextView
-            android:id="@+id/text_history"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:text="Сейчас история ваших обращений в поддержку пуста!"
-            android:textSize="11sp"
-            android:textColor="#FFFFFF"
-            android:shadowColor="#000000"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:layout_weight="5"
-            android:textStyle="bold"/>
-
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:background="#FFFFFF"
-            android:text="Введите сообщение..."
-            android:autofillHints="name"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:background="#616161"
-        android:orientation="horizontal"
-        android:layout_gravity="bottom">
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="60dp"
@@ -81,23 +54,23 @@
             android:gravity="center"
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
+
             <ImageView
                 android:id="@+id/mag"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:clickable="true"
+                android:contentDescription="@string/magazini_name"
                 android:focusable="true"
-                android:onClick="magClicked"
-                android:contentDescription="NULL"
-                android:src="@drawable/map"/>
+                android:src="@drawable/map" />
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="-10dp"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/magazini_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -110,21 +83,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_cat"
+                android:id="@+id/cat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="catClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/catalog_name"
                 android:src="@drawable/catalog"/>
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/catalog_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -136,23 +108,21 @@
             android:gravity="center"
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
-
             <ImageView
-                android:id="@+id/mag_to_kor"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/kor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:contentDescription="NULL"
                 android:focusable="true"
-                android:onClick="korClicked"
-                android:src="@drawable/korzina" />
+                android:contentDescription="@string/korzina_name"
+                android:src="@drawable/korzina"/>
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/korzina_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -165,21 +135,20 @@
             android:layout_marginEnd="15dp"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_ak"
+                android:id="@+id/ak"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:clickable="true"
                 android:focusable="true"
-                android:onClick="akClicked"
-                android:contentDescription="NULL"
+                android:contentDescription="@string/akcii_name"
                 android:src="@drawable/akzii"/>
             <TextView
                 android:id="@+id/textAkz"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/akcii_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -191,19 +160,20 @@
             android:gravity="center"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/mag_to_prof"
+                android:id="@+id/prof"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:contentDescription="NULL"
-                android:onClick="profClicked"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/profil_name"
                 android:src="@drawable/profile"/>
             <TextView
                 android:id="@+id/textPro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:text="@string/profil_name"
                 android:textSize="11sp"
                 android:textStyle="bold" />
@@ -211,4 +181,31 @@
 
     </LinearLayout>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textNullHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="История обращений в тех.поддержку пуста!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatTechSupport" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/searchbackground"
+        android:ems="10"
+        android:hint="Введите сообщение..."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/menuTechSupport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

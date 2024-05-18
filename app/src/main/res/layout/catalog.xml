@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#3D3D3D"
+    android:gravity="fill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UseCompoundDrawables"
+    tools:context=".CatalogActivity">
+
+    <LinearLayout
+        android:id="@+id/hatCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:background="#616161"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arr"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="NULL"
+            android:focusable="true"
+            android:scaleX="-1"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/titleM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="@string/catalog_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tech"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:contentDescription="@string/techsupport_name"
+            android:focusable="true"
+            android:src="@drawable/chat" />
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/searchbackground"
+        android:queryHint="Поиск"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatCatalog" />
+
+
+    <Button
+        android:id="@+id/adres"
+        android:layout_width="171dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:drawableEnd="@drawable/target"
+        android:drawablePadding="-10dp"
+        android:gravity="center_horizontal|center"
+        android:text="Выберите адрес...."
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    <Button
+        android:id="@+id/povtor"
+        android:layout_width="171dp"
+        android:layout_height="80dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:gravity="center"
+        android:text="Повторить заказ"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/adres" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Крупные сети:"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/adres"
+        app:layout_constraintTop_toBottomOf="@+id/adres" />
+
+    <ImageView
+        android:id="@+id/piat"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/piat"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/magnit"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/magnit"
+        app:layout_constraintEnd_toStartOf="@+id/okey"
+        app:layout_constraintStart_toEndOf="@+id/piat"
+        app:layout_constraintTop_toTopOf="@+id/piat" />
+
+    <ImageView
+        android:id="@+id/okey"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/okey"
+        app:layout_constraintEnd_toEndOf="@+id/povtor"
+        app:layout_constraintTop_toTopOf="@+id/magnit" />
+
+    <ImageView
+        android:id="@+id/flaver"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/flaver"
+        app:layout_constraintStart_toStartOf="@+id/piat"
+        app:layout_constraintTop_toBottomOf="@+id/piat" />
+
+
+    <ImageView
+        android:id="@+id/perekrest"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/perekrest"
+        app:layout_constraintEnd_toStartOf="@+id/ashan"
+        app:layout_constraintStart_toEndOf="@+id/flaver"
+        app:layout_constraintTop_toTopOf="@+id/flaver" />
+
+    <ImageView
+        android:id="@+id/ashan"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/ashan"
+        app:layout_constraintEnd_toEndOf="@+id/okey"
+        app:layout_constraintTop_toTopOf="@+id/perekrest" />
+
+    <LinearLayout
+        android:id="@+id/tovar1"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/flaver">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/prodact1"
+                android:layout_width="55dp"
+                android:layout_height="63dp"
+                android:clickable="true"
+                android:contentDescription="NULL"
+                android:focusable="true"
+
+                android:src="@drawable/prodact1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:lines="2"
+            android:text="Рис Макфа 100 рублей"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tovar2"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/tovar1"
+        app:layout_constraintTop_toTopOf="@+id/tovar1">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/prodact2"
+                android:layout_width="55dp"
+                android:layout_height="63dp"
+                android:clickable="true"
+                android:contentDescription="NULL"
+                android:focusable="true"
+                android:src="@drawable/prodact2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:lines="3"
+            android:text="Энергетический напиток 330 рублей"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tovar3"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/tovar2"
+        app:layout_constraintTop_toTopOf="@+id/tovar2">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/prodact3"
+                android:layout_width="55dp"
+                android:layout_height="63dp"
+                android:clickable="true"
+                android:contentDescription="NULL"
+                android:focusable="true"
+                android:src="@drawable/prodact3" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:lines="3"
+            android:text="Завтрак Nesquick 120 рублей"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tovar4"
+        android:layout_width="70dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/ashan"
+        app:layout_constraintStart_toEndOf="@+id/tovar3"
+        app:layout_constraintTop_toTopOf="@+id/tovar3">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/prodact4"
+                android:layout_width="55dp"
+                android:layout_height="63dp"
+                android:clickable="true"
+                android:contentDescription="NULL"
+                android:focusable="true"
+                android:src="@drawable/prodact4" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:lines="4"
+            android:text="Батончик MilkyWay 120 рублей"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textConditer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Кондитерские:"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tovar1" />
+
+
+    <ImageView
+        android:id="@+id/kolos"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/kolos"
+        app:layout_constraintStart_toStartOf="@+id/textConditer"
+        app:layout_constraintTop_toBottomOf="@+id/textConditer" />
+
+
+    <ImageView
+        android:id="@+id/vanlav"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/vanlav"
+        app:layout_constraintEnd_toStartOf="@+id/keks"
+        app:layout_constraintStart_toEndOf="@+id/kolos"
+        app:layout_constraintTop_toTopOf="@+id/kolos" />
+
+
+    <ImageView
+        android:id="@+id/keks"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/keks"
+        app:layout_constraintEnd_toEndOf="@+id/ashan"
+        app:layout_constraintTop_toTopOf="@+id/vanlav" />
+
+    <TextView
+        android:id="@+id/textAlco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Алкомаркеты:"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textConditer"
+        app:layout_constraintTop_toBottomOf="@+id/kolos" />
+
+    <ImageView
+        android:id="@+id/simplewine"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:contentDescription="NULL"
+        android:focusable="true"
+        android:src="@drawable/simplewine"
+        app:layout_constraintStart_toStartOf="@+id/textAlco"
+        app:layout_constraintTop_toBottomOf="@+id/textAlco" />
+
+    <LinearLayout
+        android:id="@+id/menuCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#616161"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mag"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="@string/magazini_name"
+                android:focusable="true"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:id="@+id/textMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-10dp"
+                android:text="@string/magazini_name"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="@string/catalog_name"
+                android:focusable="true"
+                android:src="@drawable/catalog" />
+
+            <TextView
+                android:id="@+id/textCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/catalog_name"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/kor"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="@string/korzina_name"
+                android:focusable="true"
+                android:src="@drawable/korzina" />
+
+            <TextView
+                android:id="@+id/textKor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/korzina_name"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ak"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="@string/akcii_name"
+                android:focusable="true"
+                android:src="@drawable/akzii" />
+
+            <TextView
+                android:id="@+id/textAkz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/akcii_name"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/prof"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="@string/profil_name"
+                android:focusable="true"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/profil_name"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.MANAGE_DEVICE_POLICY_AIRPLANE_MODE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
 
     <application
@@ -63,17 +65,6 @@
             android:name=".ProfilActivity"
             android:exported="true"
             android:label="@string/profil_name"
-            android:theme="@style/Theme.Diplom">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".TechSupportActivity"
-            android:exported="true"
-            android:label="@string/techsupport_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -180,6 +171,134 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TechSupportActivity"
+            android:exported="true"
+            android:label="@string/techsupport_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/login_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NachalnStranicaActivity"
+            android:exported="true"
+            android:label="@string/nachStran_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VvodDannPolzActivity"
+            android:exported="true"
+            android:label="@string/vvodDann_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Global"
+            android:exported="true"
+            android:label="Глобальный"
+            android:theme="@style/Theme.Diplom">
+        </activity>
+        <activity
+            android:name=".WorkWithDB"
+            android:exported="true"
+            android:label="Работа с БД"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeliveryActivity"
+            android:exported="true"
+            android:label="@string/magazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PaymentMethodsActivity"
+            android:exported="true"
+            android:label="@string/magazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PrivacyPolicyActivity"
+            android:exported="true"
+            android:label="@string/magazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VozvratSredstvActivity"
+            android:exported="true"
+            android:label="@string/magazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkWithAccountActivity"
+            android:exported="true"
+            android:label="@string/magazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WorkWithPrilActivity"
+            android:exported="true"
+            android:label="@string/magazini_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" >

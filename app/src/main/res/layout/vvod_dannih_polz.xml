@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#3D3D3D"
+    android:gravity="fill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UseCompoundDrawables"
+    tools:context=".VvodDannPolzActivity">
+
+
+    <TextView
+        android:id="@+id/textIma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/ima_name"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textFieldIma"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textFieldIma"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="Александр"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIma"
+        tools:ignore="labelFor" />
+
+    <TextView
+        android:id="@+id/textFamiliya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/familia_name"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textFieldFamiliya"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldIma" />
+
+    <EditText
+        android:id="@+id/textFieldFamiliya"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="Петров"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFamiliya"
+        tools:ignore="labelFor" />
+
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numberTelephone_name"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textFieldPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldFamiliya" />
+
+    <EditText
+        android:id="@+id/textFieldPhone"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="89185551234"
+        android:inputType="phone"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPhone"
+        tools:ignore="labelFor" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_name"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textFieldLoginEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldPhone" />
+
+    <EditText
+        android:id="@+id/textFieldLoginEmail"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="example@mail.com"
+        android:inputType="textEmailAddress"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        tools:ignore="labelFor" />
+
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_name"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textFieldLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldLoginEmail" />
+
+    <EditText
+        android:id="@+id/textFieldLoginPassword"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:ems="10"
+        android:hint="******"
+        android:inputType="textPassword"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPassword"
+        tools:ignore="labelFor" />
+
+    <TextView
+        android:id="@+id/textPhotoDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/downloadphoto_name"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textFieldLoginPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textFieldLoginPassword" />
+
+    <ImageButton
+        android:id="@+id/buttonPhotoDownload"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/allcornerslightgrayroundedbackground"
+        android:contentDescription="Загрузить фотографию"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/textPhotoDownload"
+        app:layout_constraintTop_toBottomOf="@+id/textPhotoDownload" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="170dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="60dp"
+        android:text="Требования к загружаемому изображению:\n\n Формат: PNG или JPG\n Вес: до 8 МБ\n Разрешение: не менее 128*128"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegistration"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonPhotoDownload"
+        app:layout_constraintTop_toTopOf="@+id/buttonPhotoDownload" />
+
+    <Button
+        android:id="@+id/buttonRegistration"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="@string/zaregistr_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkPolitConfid" />
+
+    <CheckBox
+        android:id="@+id/checkPolitConfid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Я согласен(-на) с политикой конфиденциальности"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textPhotoDownload"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
