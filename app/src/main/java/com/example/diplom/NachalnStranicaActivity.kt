@@ -13,7 +13,7 @@ class NachalnStranicaActivity: ComponentActivity()
         val nachalnStranicaBinding : NachalnStranicaBinding = NachalnStranicaBinding.inflate(layoutInflater)
         setContentView(nachalnStranicaBinding.root)
         nachalnStranicaBinding.textZaregPoz.setOnClickListener{
-            Global.flag = 1
+            Global.flagZaregPoz = 1
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)
         }

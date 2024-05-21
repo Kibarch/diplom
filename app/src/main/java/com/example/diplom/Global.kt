@@ -11,7 +11,8 @@ class Global : Application()
           lateinit var polzFamil : String
           var imProf : Int = R.drawable.image1
           var userId = 0
-          var flag : Int = 0
+          var flagZaregPoz : Int = 0
+          var flagImaFamCheck : Int = 0
           var password  = ""
      }
 

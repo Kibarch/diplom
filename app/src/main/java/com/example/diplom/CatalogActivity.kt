@@ -16,7 +16,6 @@ class CatalogActivity : ComponentActivity()
         val sharedAdress = getSharedPreferences("mySharedAdress", Context.MODE_PRIVATE)
         var adress = sharedAdress.getString("adress", "")
         catalogActivityBinding.adres.text = adress
-
         catalogActivityBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)

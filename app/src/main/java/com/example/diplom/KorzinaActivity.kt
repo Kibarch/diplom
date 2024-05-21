@@ -56,4 +56,4 @@ class KorzinaActivity : ComponentActivity()
         korzinaBinding.number1.text = cost1.toString()
         korzinaBinding.number2.text = cost2.toString()
     }
-}
+    }

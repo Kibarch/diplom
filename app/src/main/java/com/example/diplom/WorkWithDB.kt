@@ -23,16 +23,22 @@ class WorkWithDB : ComponentActivity()
         }
         binding.button2.setOnClickListener{
             val users = Users(null, binding.poleIma.text.toString(), binding.poleFamiliya.text.toString(), binding.poleTel.text.toString(), binding.poleEmail.text.toString(), binding.polePassw.text.toString())
-            Thread{
+            val th = Thread{
                 db.getDao().insertItem(users)
-            }.start()
+            }
+            th.start()
+            if (!th.isInterrupted)
+                th.interrupt()
         }
         binding.button3.setOnClickListener {
-            Thread{
+            val thh = Thread{
                 var textId: String = binding.poleID.text.toString()
                 var id: Int = textId.toInt()
                 db.getDao().deleteItem(id)
-            }.start()
+            }
+            thh.start()
+            if (!thh.isInterrupted)
+                thh.interrupt()
         }
     }
 }

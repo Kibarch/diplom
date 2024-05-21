@@ -50,11 +50,12 @@ class VvodDannPolzActivity: ComponentActivity()
                 else
                 {
                     val users = Users(null, vvodDanBinding.textFieldIma.text.toString(), vvodDanBinding.textFieldFamiliya.text.toString(), vvodDanBinding.textFieldPhone.text.toString(), vvodDanBinding.textFieldLoginEmail.text.toString(), vvodDanBinding.textFieldLoginPassword.text.toString())
-                    val thread  = Thread{db.getDao().insertItem(users)}
+                    val thread = Thread{db.getDao().insertItem(users)}
                     thread.start()
                     val intent = Intent(this, LoginActivity::class.java)
+                    if (!thread.isInterrupted)
+                        thread.interrupt()
                     startActivity(intent)
-                    thread.stop()
                 }
             }
         }

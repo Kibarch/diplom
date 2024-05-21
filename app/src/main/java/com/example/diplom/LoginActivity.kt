@@ -1,9 +1,11 @@
 package com.example.diplom
 
 import android.app.Dialog
+import android.content.Context
 import androidx.activity.ComponentActivity
 import android.os.Bundle
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.widget.Button
@@ -32,38 +34,46 @@ class LoginActivity: ComponentActivity()
         }
         loginBinding.buttonVoiti.setOnClickListener{
             var flag = 0
-            db.getDao().getAllItem().asLiveData().observe(this){list->
-                //loginBinding.textView3.text = ""
-                list.forEach{
-                    //val text = "flag: $flag Id: ${it.id} GlobalId: ${Global.userId} emailtext:${loginBinding.textFieldLoginEmail.text} passwordText: ${loginBinding.textFieldLoginPassword.text} Email:${it.email} Passw:${it.password}\n"
-                    //loginBinding.textView3.append(text)
-                    if (it.email.toString().compareTo(loginBinding.textFieldLoginEmail.text.toString()) == 0 && it.password.toString().compareTo(loginBinding.textFieldLoginPassword.text.toString()) == 0)
-                    {
+            val thread1 = Thread{db.getDao().getAllItem().asLiveData().observe(this) { list ->
+                list.forEach {
+                    if (it.email.toString()
+                            .compareTo(loginBinding.textFieldLoginEmail.text.toString()) == 0 && it.password.toString()
+                            .compareTo(loginBinding.textFieldLoginPassword.text.toString()) == 0
+                    ) {
+                        //Global.flagImaFamCheck = 1
                         flag = 1
                         Global.userId = it.id!!
-                        //loginBinding.textView3.append("currentID: ${it.id} GlobalId: ${Global.userId} flag: $flag")
+                        val sharedFlag : SharedPreferences = getSharedPreferences("sharedflag", Context.MODE_PRIVATE)
+                        val editor = sharedFlag.edit()
+                        editor.putInt("flag",flag)
+                        editor.apply()
                     }
-                    //val text = "Id: ${it.id} Name: ${it.name} Famil: ${it.famil} Tel:${it.telephone} Email:${it.email} Passw:${it.password}\n"
                 }
-                if (flag == 1)
+            }}
+            thread1.start()
+            val sharedFlag : SharedPreferences = getSharedPreferences("sharedflag", Context.MODE_PRIVATE)
+            if (!thread1.isInterrupted)
+            {
+                thread1.interrupt()
+                if (flag == 0)
                 {
-                    val intent = Intent(this, MagaziniActivity::class.java)
-                    startActivity(intent)
-                    //loginBinding.textView3.append("globalid: ${Global.userId}")
-                }
-                else
-                {
-                    val dialogPolzNotFound=layoutInflater.inflate(R.layout.null_fields_login_dialog_window, null)
-                    val myDialogPolzNotFound= Dialog(this)
+                    val dialogPolzNotFound = layoutInflater.inflate(R.layout.null_fields_login_dialog_window, null)
+                    val myDialogPolzNotFound = Dialog(this)
                     myDialogPolzNotFound.setContentView(dialogPolzNotFound)
                     myDialogPolzNotFound.setCancelable(true)
                     myDialogPolzNotFound.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
                     myDialogPolzNotFound.show()
                     val okBTN = dialogPolzNotFound.findViewById<Button>(R.id.buttonOkNevLogPar)
-                    okBTN.setOnClickListener{
+                    okBTN.setOnClickListener {
                         myDialogPolzNotFound.dismiss()
                     }
                 }
+                else
+                {
+                    val intent = Intent(this, MagaziniActivity::class.java)
+                    startActivity(intent)
+                }
+                //sharedFlag.getInt("flag",0)
             }
         }
     }

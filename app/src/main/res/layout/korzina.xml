@@ -209,42 +209,45 @@
                     android:background="#8D8D8D"
                     android:layout_row="2"
                     android:layout_column="1"/>
+
                 <TextView
                     android:id="@+id/prodactcost1"
                     android:layout_width="94dp"
                     android:layout_height="40dp"
-                    android:text="100"
-                    android:gravity="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:background="@color/darkthemebackgroundcolor"
                     android:layout_row="0"
-                    android:layout_column="2"/>
+                    android:layout_column="2"
+                    android:background="@color/darkthemebackgroundcolor"
+                    android:gravity="center"
+                    android:text="100 "
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/prodactcost2"
                     android:layout_width="94dp"
                     android:layout_height="40dp"
-                    android:text="150"
-                    android:gravity="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:background="@color/darkthemebackgroundcolor"
                     android:layout_row="1"
-                    android:layout_column="2"/>
+                    android:layout_column="2"
+                    android:background="@color/darkthemebackgroundcolor"
+                    android:gravity="center"
+                    android:text="150 "
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/prodactcost3"
                     android:layout_width="94dp"
                     android:layout_height="40dp"
-                    android:text="50"
-                    android:gravity="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:background="@drawable/bottomrightcornerdarkthemeroundedbackground"
                     android:layout_row="2"
-                    android:layout_column="2"/>
+                    android:layout_column="2"
+                    android:background="@drawable/bottomrightcornerdarkthemeroundedbackground"
+                    android:gravity="center"
+                    android:text="50 "
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
             </GridLayout>
         </LinearLayout>
 
@@ -267,16 +270,17 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"/>
+
             <TextView
                 android:id="@+id/number1"
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:background="@drawable/bottomcornersdarkthemeroundedbackground"
-                android:text="300"
-                android:textStyle="bold"
-                android:textSize="16sp"
                 android:gravity="center"
-                android:textColor="#000000"/>
+                android:text="300 "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
@@ -425,42 +429,45 @@
                     android:background="#8D8D8D"
                     android:layout_row="2"
                     android:layout_column="1"/>
+
                 <TextView
                     android:id="@+id/prodactcost4"
                     android:layout_width="94dp"
                     android:layout_height="40dp"
-                    android:text="150"
-                    android:gravity="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:background="@color/darkthemebackgroundcolor"
                     android:layout_row="0"
-                    android:layout_column="2"/>
+                    android:layout_column="2"
+                    android:background="@color/darkthemebackgroundcolor"
+                    android:gravity="center"
+                    android:text="150 "
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/prodactcost5"
                     android:layout_width="94dp"
                     android:layout_height="40dp"
-                    android:text="200"
-                    android:gravity="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:background="@color/darkthemebackgroundcolor"
                     android:layout_row="1"
-                    android:layout_column="2"/>
+                    android:layout_column="2"
+                    android:background="@color/darkthemebackgroundcolor"
+                    android:gravity="center"
+                    android:text="200 "
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/prodactcost6"
                     android:layout_width="94dp"
                     android:layout_height="40dp"
-                    android:text="350"
-                    android:gravity="center"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000"
-                    android:background="@drawable/bottomrightcornerdarkthemeroundedbackground"
                     android:layout_row="2"
-                    android:layout_column="2"/>
+                    android:layout_column="2"
+                    android:background="@drawable/bottomrightcornerdarkthemeroundedbackground"
+                    android:gravity="center"
+                    android:text="350 "
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
             </GridLayout>
         </LinearLayout>
 
@@ -483,16 +490,17 @@
                 android:shadowDx="0"
                 android:shadowDy="0"
                 android:shadowRadius="10"/>
+
             <TextView
                 android:id="@+id/number2"
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:background="@drawable/bottomcornersdarkthemeroundedbackground"
-                android:text="700"
-                android:textStyle="bold"
-                android:textSize="16sp"
                 android:gravity="center"
-                android:textColor="#000000"/>
+                android:text="700"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
@@ -503,9 +511,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/allcornersdarkthemeroundedbackground"
-        android:text="Оформить"
+        android:text="Оплатить"
         app:layout_constraintBottom_toTopOf="@id/menuKorzina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

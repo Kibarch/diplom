@@ -12,7 +12,7 @@ abstract class MainDB : RoomDatabase()
     companion object{
         fun getDb(context: Context): MainDB
         {
-            return Room.databaseBuilder(context.applicationContext,MainDB::class.java,"main.db").fallbackToDestructiveMigration().build()
+            return Room.databaseBuilder(context.applicationContext,MainDB::class.java,"main.db").build()
         }
     }
 }
