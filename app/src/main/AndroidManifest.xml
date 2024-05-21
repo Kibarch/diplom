@@ -235,7 +235,7 @@
         <activity
             android:name=".DeliveryActivity"
             android:exported="true"
-            android:label="@string/magazini_name"
+            android:label="@string/delivery_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -246,7 +246,7 @@
         <activity
             android:name=".PaymentMethodsActivity"
             android:exported="true"
-            android:label="@string/magazini_name"
+            android:label="@string/paymentMethods_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -257,7 +257,7 @@
         <activity
             android:name=".PrivacyPolicyActivity"
             android:exported="true"
-            android:label="@string/magazini_name"
+            android:label="@string/politConfid_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -268,7 +268,7 @@
         <activity
             android:name=".VozvratSredstvActivity"
             android:exported="true"
-            android:label="@string/magazini_name"
+            android:label="@string/vozvratSredstv_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -279,7 +279,7 @@
         <activity
             android:name=".WorkWithAccountActivity"
             android:exported="true"
-            android:label="@string/magazini_name"
+            android:label="@string/workWIthAccount_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -290,7 +290,18 @@
         <activity
             android:name=".WorkWithPrilActivity"
             android:exported="true"
-            android:label="@string/magazini_name"
+            android:label="@string/workWithApp_name"
+            android:theme="@style/Theme.Diplom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OformlenieZakazaActivity"
+            android:exported="true"
+            android:label="@string/oformzeniezakaza_name"
             android:theme="@style/Theme.Diplom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
