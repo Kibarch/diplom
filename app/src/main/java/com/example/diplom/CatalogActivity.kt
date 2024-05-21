@@ -1,5 +1,6 @@
 package com.example.diplom
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,6 +13,10 @@ class CatalogActivity : ComponentActivity()
         super.onCreate(savedInstanceState)
         val catalogActivityBinding : CatalogBinding = CatalogBinding.inflate(layoutInflater)
         setContentView(catalogActivityBinding.root)
+        val sharedAdress = getSharedPreferences("mySharedAdress", Context.MODE_PRIVATE)
+        var adress = sharedAdress.getString("adress", "")
+        catalogActivityBinding.adres.text = adress
+
         catalogActivityBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)

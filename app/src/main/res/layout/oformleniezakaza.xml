@@ -10,7 +10,7 @@
     android:gravity="fill"
     android:layout_gravity="clip_horizontal|clip_vertical"
     tools:ignore="UseCompoundDrawables"
-    tools:context=".KorzinaActivity">
+    tools:context=".OformlenieZakazaActivity">
 
     <LinearLayout
         android:id="@+id/hatOformlenieZakaza"

@@ -98,7 +98,7 @@
         android:id="@+id/textAdres2"
         android:layout_width="316dp"
         android:layout_height="48dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/allcornerslightgrayroundedbackground"
         android:gravity="center_vertical"
         android:shadowColor="@color/black"
@@ -109,6 +109,88 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textAdres1"
         app:layout_constraintTop_toBottomOf="@+id/textAdres1" />
+
+    <TextView
+        android:id="@+id/textAdres3"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transperent"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdres2"
+        app:layout_constraintTop_toBottomOf="@+id/textAdres2" />
+
+    <TextView
+        android:id="@+id/textAdres4"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transperent"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdres3"
+        app:layout_constraintTop_toBottomOf="@+id/textAdres3" />
+
+    <TextView
+        android:id="@+id/textAdres5"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transperent"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdres4"
+        app:layout_constraintTop_toBottomOf="@+id/textAdres4" />
+
+    <TextView
+        android:id="@+id/textAdres6"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transperent"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdres5"
+        app:layout_constraintTop_toBottomOf="@+id/textAdres5" />
+
+    <TextView
+        android:id="@+id/textAdres7"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transperent"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAdres6"
+        app:layout_constraintTop_toBottomOf="@+id/textAdres6" />
+
+
 
     <LinearLayout
         android:layout_width="63dp"
