@@ -14,28 +14,28 @@ class ProfilActivity : ComponentActivity()
         val profBinding : ProfilBinding = ProfilBinding.inflate(layoutInflater)
         setContentView(profBinding.root)
         val db = MainDB.getDb(this)
-        if (Global.flagZaregPoz == 1)
-        {
+        //if (Global.flagZaregPoz == 1)
+        //{
             profBinding.textViewIma.text = Global.stockIma
             profBinding.textViewFamiliya.text = Global.stockFamiliya
-            Global.flagZaregPoz = 0
-        }
-        else
-        {
-            val thread3 = Thread{db.getDao().getAllItem().asLiveData().observe(this) { list ->
-                list.forEach {
-                    if (it.id == Global.userId) {
-                        Global.polzName = db.getDao().getName(it.id)
-                        profBinding.textViewIma.text = Global.polzName
-                        Global.polzFamil = db.getDao().getFamil(it.id)
-                        profBinding.textViewFamiliya.text = Global.polzFamil
-                    }
-                }
-            }}
-            thread3.start()
-            if (!thread3.isInterrupted)
-                thread3.interrupt()
-        }
+            //Global.flagZaregPoz = 0
+        //}
+        //else
+       // {
+           // val thread3 = Thread{db.getDao().getAllItem().asLiveData().observe(this) { list ->
+                //list.forEach {
+                    //if (it.id == Global.userId) {
+                       // Global.polzName = db.getDao().getName(it.id)
+                       // profBinding.textViewIma.text = Global.polzName
+                       // Global.polzFamil = db.getDao().getFamil(it.id)
+                       // profBinding.textViewFamiliya.text = Global.polzFamil
+                   // }
+                //}
+           // }}
+           // thread3.start()
+            //if (!thread3.isInterrupted)
+              //  thread3.interrupt()
+        //}
         profBinding.mag.setOnClickListener{
             val intent = Intent(this, MagaziniActivity::class.java)
             startActivity(intent)

@@ -24,7 +24,6 @@ internal class MagaziniActivity: FragmentActivity(), OnMapReadyCallback
         setContentView(magaziniBinding.root)
         val searchMag = magaziniBinding.searchViewMagazini
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
-
         searchMag.setOnQueryTextListener(
             object : android.widget.SearchView.OnQueryTextListener
             {
