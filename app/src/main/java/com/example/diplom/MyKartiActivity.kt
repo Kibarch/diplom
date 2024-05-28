@@ -13,7 +13,7 @@ class MyKartiActivity: ComponentActivity()
         val myKartiBinding : MyKartiBinding = MyKartiBinding.inflate(layoutInflater)
         setContentView(myKartiBinding.root)
         myKartiBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         myKartiBinding.cat.setOnClickListener{

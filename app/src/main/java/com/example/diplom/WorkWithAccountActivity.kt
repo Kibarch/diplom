@@ -11,7 +11,7 @@ class WorkWithAccountActivity : ComponentActivity()
         val workWithAccountBinding : WorkWithAccountBinding = WorkWithAccountBinding.inflate(layoutInflater)
         setContentView(workWithAccountBinding.root)
         workWithAccountBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         workWithAccountBinding.cat.setOnClickListener{

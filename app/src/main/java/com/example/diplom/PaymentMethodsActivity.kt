@@ -11,7 +11,7 @@ class PaymentMethodsActivity : ComponentActivity()
         val paymentMethodsBinding : PaymentMethodsBinding = PaymentMethodsBinding.inflate(layoutInflater)
         setContentView(paymentMethodsBinding.root)
         paymentMethodsBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         paymentMethodsBinding.cat.setOnClickListener{

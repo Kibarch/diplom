@@ -2,7 +2,6 @@ package com.example.diplom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import android.widget.ImageView
 import com.example.diplom.databinding.MyZakaziBinding
 
 class MyZakaziActivity: ComponentActivity()
@@ -13,7 +12,7 @@ class MyZakaziActivity: ComponentActivity()
         val myZakaziBinding : MyZakaziBinding = MyZakaziBinding.inflate(layoutInflater)
         setContentView(myZakaziBinding.root)
         myZakaziBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         myZakaziBinding.cat.setOnClickListener{

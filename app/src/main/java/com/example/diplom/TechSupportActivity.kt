@@ -12,7 +12,7 @@ class TechSupportActivity: ComponentActivity()
         val techSupportBinding : TechSupportBinding = TechSupportBinding.inflate(layoutInflater)
         setContentView(techSupportBinding.root)
         techSupportBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         techSupportBinding.cat.setOnClickListener{

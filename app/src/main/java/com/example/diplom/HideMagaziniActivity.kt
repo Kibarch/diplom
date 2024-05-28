@@ -12,7 +12,7 @@ class HideMagaziniActivity: ComponentActivity()
         val hideMagaziniBinding : HideMagaziniBinding = HideMagaziniBinding.inflate(layoutInflater)
         setContentView(hideMagaziniBinding.root)
         hideMagaziniBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         hideMagaziniBinding.cat.setOnClickListener{

@@ -11,8 +11,10 @@ class OformlenieZakazaActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         val oformleniezakazaBinding: OformleniezakazaBinding = OformleniezakazaBinding.inflate(layoutInflater)
         setContentView(oformleniezakazaBinding.root)
+        if (oformleniezakazaBinding.adres.text == "")
+            oformleniezakazaBinding.adres.text = "Выбрать адрес доставки"
         oformleniezakazaBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         oformleniezakazaBinding.cat.setOnClickListener{
@@ -37,6 +39,10 @@ class OformlenieZakazaActivity : ComponentActivity() {
         }
         oformleniezakazaBinding.arr.setOnClickListener{
             val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
+        oformleniezakazaBinding.adres.setOnClickListener{
+            val intent = Intent(this, AdresaDostavokActivity::class.java)
             startActivity(intent)
         }
         val sharedAdress = getSharedPreferences("mySharedAdress", Context.MODE_PRIVATE)

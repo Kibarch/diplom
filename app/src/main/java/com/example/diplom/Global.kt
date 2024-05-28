@@ -4,7 +4,8 @@ import android.app.Application
 
 class Global : Application()
 {
-     companion object{
+     companion object
+     {
           var stockIma : String = "Имя"
           var stockFamiliya : String = "Фамилия"
           lateinit var polzName : String

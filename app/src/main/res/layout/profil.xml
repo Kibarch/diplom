@@ -162,26 +162,11 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonMyOtzivi" />
 
     <Button
-        android:id="@+id/buttonCalendarDostavok"
-        android:layout_width="329dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/topcornerslightggrayroundedbackground"
-        android:shadowColor="@color/black"
-        android:shadowRadius="10"
-        android:text="@string/calendardostavok_name"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/buttonMyKarti"
-        app:layout_constraintStart_toStartOf="@+id/buttonMyKarti"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMyKarti" />
-
-    <Button
         android:id="@+id/buttonHideMagazini"
         android:layout_width="329dp"
         android:layout_height="51dp"
-        android:background="#8D8D8D"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
@@ -190,15 +175,15 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/buttonCalendarDostavok"
-        app:layout_constraintStart_toStartOf="@+id/buttonCalendarDostavok"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCalendarDostavok" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonMyKarti"
+        app:layout_constraintStart_toStartOf="@+id/buttonMyKarti"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMyKarti" />
 
     <Button
         android:id="@+id/buttonAdresaDostavok"
         android:layout_width="329dp"
         android:layout_height="51dp"
-        android:background="@drawable/bottomcornerslightgrayroundedbackground"
+        android:background="#8D8D8D"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
@@ -215,8 +200,7 @@
         android:id="@+id/buttonSettings"
         android:layout_width="329dp"
         android:layout_height="51dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/topcornerslightggrayroundedbackground"
+        android:background="@drawable/bottomcornerslightgrayroundedbackground"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"
@@ -226,6 +210,7 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/buttonAdresaDostavok"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/buttonAdresaDostavok"
         app:layout_constraintTop_toBottomOf="@+id/buttonAdresaDostavok" />
 
@@ -233,7 +218,8 @@
         android:id="@+id/buttonAboutPril"
         android:layout_width="329dp"
         android:layout_height="51dp"
-        android:background="#8D8D8D"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/topcornerslightggrayroundedbackground"
         android:shadowColor="@color/black"
         android:shadowDx="0"
         android:shadowDy="0"

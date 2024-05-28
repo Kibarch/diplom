@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:ignore="UseCompoundDrawables"
-    tools:context=".MagaziniActivity">
+    tools:context=".KartaMagazinovActivity">
 
 
     <LinearLayout
@@ -62,28 +62,28 @@
     </LinearLayout>
 
     <SearchView
-            android:id="@+id/searchViewMagazini"
-            app:layout_constraintTop_toBottomOf="@+id/hatMagazini"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/map"
-            android:layout_width="326dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/searchbackground"
-            android:layout_marginBottom="15dp"
-            android:queryHint="Поиск" />
+        android:id="@+id/searchViewMagazini"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/searchbackground"
+        android:queryHint="Поиск"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatMagazini" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toTopOf="@id/menuMagazini"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchViewMagazini">
-    </androidx.fragment.app.FragmentContainerView>
+        app:layout_constraintTop_toBottomOf="@+id/searchViewMagazini"></androidx.fragment.app.FragmentContainerView>
 
     <LinearLayout
         android:id="@+id/menuMagazini"
@@ -229,5 +229,20 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/adres"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:gravity="center_horizontal|center"
+        android:text="Выберите адрес...."
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchViewMagazini"
+        app:layout_constraintTop_toTopOf="@+id/searchViewMagazini" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

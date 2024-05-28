@@ -18,7 +18,7 @@ class AdresaDostavokActivity : ComponentActivity() {
             AdresaDostavokBinding.inflate(layoutInflater)
         setContentView(adresaDostavokBinding.root)
         adresaDostavokBinding.mag.setOnClickListener {
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         adresaDostavokBinding.cat.setOnClickListener {

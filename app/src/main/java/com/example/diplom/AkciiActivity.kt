@@ -15,7 +15,7 @@ class AkciiActivity : ComponentActivity()
         val akciiBinding: AkciiBinding = AkciiBinding.inflate(layoutInflater)
         setContentView(akciiBinding.root)
         akciiBinding.mag.setOnClickListener {
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         akciiBinding.cat.setOnClickListener {

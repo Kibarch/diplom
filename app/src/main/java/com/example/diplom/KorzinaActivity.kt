@@ -15,7 +15,7 @@ class KorzinaActivity : ComponentActivity()
         val korzinaBinding : KorzinaBinding = KorzinaBinding.inflate(layoutInflater)
         setContentView(korzinaBinding.root)
         korzinaBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         korzinaBinding.cat.setOnClickListener{
@@ -34,6 +34,18 @@ class KorzinaActivity : ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+
+        val prodact1 = korzinaBinding.prodactcost1.text.toString()
+        val prodact2 = korzinaBinding.prodactcost2.text.toString()
+        val prodact3 = korzinaBinding.prodactcost3.text.toString()
+        val prodact4 = korzinaBinding.prodactcost4.text.toString()
+        val prodact5 = korzinaBinding.prodactcost5.text.toString()
+        val prodact6 = korzinaBinding.prodactcost6.text.toString()
+        val cost1 : Float = prodact1.toFloat() + prodact2.toFloat() + prodact3.toFloat()
+        val cost2 : Float = prodact4.toFloat() + prodact5.toFloat() + prodact6.toFloat()
+        korzinaBinding.number1.text = cost1.toString()
+        korzinaBinding.number2.text = cost2.toString()
+
         korzinaBinding.oform.setOnClickListener {
             val intent = Intent(this, OformlenieZakazaActivity::class.java)
             startActivity(intent)
@@ -45,15 +57,10 @@ class KorzinaActivity : ComponentActivity()
             editor.putString("sum",sum.toString())
             editor.apply()
         }
-        val prodact1 = korzinaBinding.prodactcost1.text.toString()
-        val prodact2 = korzinaBinding.prodactcost2.text.toString()
-        val prodact3 = korzinaBinding.prodactcost3.text.toString()
-        val prodact4 = korzinaBinding.prodactcost4.text.toString()
-        val prodact5 = korzinaBinding.prodactcost5.text.toString()
-        val prodact6 = korzinaBinding.prodactcost6.text.toString()
-        val cost1 : Float = prodact1.toFloat() + prodact2.toFloat() + prodact3.toFloat()
-        val cost2 : Float = prodact4.toFloat() + prodact5.toFloat() + prodact6.toFloat()
-        korzinaBinding.number1.text = cost1.toString()
-        korzinaBinding.number2.text = cost2.toString()
+        korzinaBinding.povtor.setOnClickListener {
+            val intent = Intent(this, MyZakaziActivity::class.java)
+            startActivity(intent)
+        }
+
     }
     }

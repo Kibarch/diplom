@@ -14,7 +14,7 @@ class AboutPrilActivity : ComponentActivity()
         val aboutPrilBinding : AboutPrilBinding = AboutPrilBinding.inflate(layoutInflater)
         setContentView(aboutPrilBinding.root)
         aboutPrilBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         aboutPrilBinding.cat.setOnClickListener{

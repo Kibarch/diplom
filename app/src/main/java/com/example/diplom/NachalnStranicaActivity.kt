@@ -14,7 +14,7 @@ class NachalnStranicaActivity: ComponentActivity()
         setContentView(nachalnStranicaBinding.root)
         nachalnStranicaBinding.textZaregPoz.setOnClickListener{
             Global.flagZaregPoz = 1
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         nachalnStranicaBinding.buttonRegistrationPerehod.setOnClickListener{

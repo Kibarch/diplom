@@ -70,7 +70,7 @@ class LoginActivity: ComponentActivity()
                 }
                 else
                 {
-                    val intent = Intent(this, MagaziniActivity::class.java)
+                    val intent = Intent(this, KartaMagazinovActivity::class.java)
                     startActivity(intent)
                 }
                 //sharedFlag.getInt("flag",0)

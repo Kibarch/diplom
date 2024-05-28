@@ -13,7 +13,7 @@ class InfoForClientActivity: ComponentActivity()
         val infoForClientBinding : InfoForClientBinding = InfoForClientBinding.inflate(layoutInflater)
         setContentView(infoForClientBinding.root)
         infoForClientBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         infoForClientBinding.cat.setOnClickListener{

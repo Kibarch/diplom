@@ -3,7 +3,6 @@ package com.example.diplom
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
-import androidx.lifecycle.asLiveData
 import com.example.diplom.databinding.ProfilBinding
 
 class ProfilActivity : ComponentActivity()
@@ -37,7 +36,7 @@ class ProfilActivity : ComponentActivity()
               //  thread3.interrupt()
         //}
         profBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         profBinding.cat.setOnClickListener{
@@ -66,10 +65,6 @@ class ProfilActivity : ComponentActivity()
         }
         profBinding.buttonMyKarti.setOnClickListener {
             val intent = Intent(this, MyKartiActivity::class.java)
-            startActivity(intent)
-        }
-        profBinding.buttonCalendarDostavok.setOnClickListener{
-            val intent = Intent(this, CalendarDostavokActivity::class.java)
             startActivity(intent)
         }
         profBinding.buttonHideMagazini.setOnClickListener{

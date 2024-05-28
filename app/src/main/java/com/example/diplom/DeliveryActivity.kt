@@ -13,7 +13,7 @@ class DeliveryActivity : ComponentActivity()
         val deliveryBinding : DeliveryBinding = DeliveryBinding.inflate(layoutInflater)
         setContentView(deliveryBinding.root)
         deliveryBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         deliveryBinding.cat.setOnClickListener{

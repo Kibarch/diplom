@@ -505,19 +505,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/oform"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/allcornersdarkthemeroundedbackground"
-        android:text="Оплатить"
-        app:layout_constraintBottom_toTopOf="@id/menuKorzina"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <LinearLayout
         android:id="@+id/menuKorzina"
         android:layout_width="match_parent"
@@ -550,7 +537,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="-5dp"
                 android:textColor="@color/black"
                 android:text="@string/magazini_name"
                 android:textSize="11sp"
@@ -663,6 +650,32 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/povtor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:gravity="center"
+        android:text="Повторить заказ"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oform"
+        app:layout_constraintTop_toTopOf="@+id/oform" />
+
+    <Button
+        android:id="@+id/oform"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/allcornersdarkthemeroundedbackground"
+        android:text="Оплатить"
+        app:layout_constraintBottom_toTopOf="@id/menuKorzina"
+        app:layout_constraintEnd_toStartOf="@id/povtor"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

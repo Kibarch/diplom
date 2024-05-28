@@ -10,7 +10,6 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.widget.Button
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.compose.ui.tooling.preview.PreviewLightDark
 import com.example.diplom.databinding.SettingsBinding
 
 internal class SettingsActivity: ComponentActivity()
@@ -21,7 +20,7 @@ internal class SettingsActivity: ComponentActivity()
         val settBinding : SettingsBinding = SettingsBinding.inflate(layoutInflater)
         setContentView(settBinding.root)
         settBinding.mag.setOnClickListener{
-            val intent = Intent(this, MagaziniActivity::class.java)
+            val intent = Intent(this, KartaMagazinovActivity::class.java)
             startActivity(intent)
         }
         settBinding.cat.setOnClickListener{
