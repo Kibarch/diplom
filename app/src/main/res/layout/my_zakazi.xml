@@ -11,52 +11,54 @@
     tools:context=".MyZakaziActivity">
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatMyZakazi"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:gravity="center"
+        android:layout_gravity="top"
         android:background="#616161"
+        android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/arr"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:clickable="true"
-            android:focusable="true"
-            android:scaleX="-1"
-            android:layout_weight="1"
+            style="@style/imageNavigate"
+            android:layout_marginStart="10dp"
             android:contentDescription="NULL"
-            android:src="@drawable/arrow"/>
+            android:scaleX="-1"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/titleM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/myzakazi_name"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:shadowColor="@color/black"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="10"
-            android:layout_weight="2"
-            android:textStyle="bold"/>
+            android:text="@string/contacts_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tech"
+            app:layout_constraintStart_toEndOf="@+id/arr"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/tech"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_weight="1"
-            android:contentDescription="NULL"
-            android:src="@drawable/chat"/>
-    </LinearLayout>
+            style="@style/imageNavigate"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/contacts_name"
+            android:src="@drawable/chat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/Zakaz1"
@@ -304,149 +306,189 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menuMyZakazi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#616161"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="#616161"
-        android:orientation="horizontal">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerKarta"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
             android:gravity="center"
-            android:layout_marginEnd="15dp"
-            android:orientation="vertical">
+            app:layout_constraintEnd_toStartOf="@+id/containerCatalog"
+            app:layout_constraintStart_toStartOf="@+id/menuMyZakazi"
+            app:layout_constraintTop_toTopOf="@+id/menuMyZakazi">
 
             <ImageView
                 android:id="@+id/mag"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:clickable="true"
+                style="@style/imageNavigate"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/magazini_name"
-                android:focusable="true"
-                android:src="@drawable/map" />
+                android:src="@drawable/map"
+                app:layout_constraintBottom_toBottomOf="@+id/containerKarta"
+                app:layout_constraintEnd_toEndOf="@+id/containerKarta"
+                app:layout_constraintStart_toStartOf="@+id/containerKarta"
+                app:layout_constraintTop_toTopOf="@+id/containerKarta" />
+
             <TextView
                 android:id="@+id/textMap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="-10dp"
-                android:textColor="@color/black"
                 android:text="@string/magazini_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/mag"
+                app:layout_constraintStart_toStartOf="@+id/mag"
+                app:layout_constraintTop_toBottomOf="@+id/mag" />
 
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerCatalog"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:gravity="center"
-            android:layout_marginEnd="15dp"
-            android:orientation="vertical">
+            app:layout_constraintEnd_toStartOf="@+id/containerKorzina"
+            app:layout_constraintStart_toEndOf="@+id/containerKarta"
+            app:layout_constraintTop_toTopOf="@+id/menuMyZakazi">
+
             <ImageView
                 android:id="@+id/cat"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
+                style="@style/imageNavigate"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/catalog_name"
-                android:src="@drawable/catalog"/>
+                android:src="@drawable/catalog"
+                app:layout_constraintBottom_toBottomOf="@+id/containerCatalog"
+                app:layout_constraintEnd_toEndOf="@+id/containerCatalog"
+                app:layout_constraintStart_toStartOf="@+id/containerCatalog"
+                app:layout_constraintTop_toTopOf="@+id/containerCatalog" />
+
             <TextView
                 android:id="@+id/textCat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/catalog_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/cat"
+                app:layout_constraintStart_toStartOf="@+id/cat"
+                app:layout_constraintTop_toBottomOf="@+id/cat" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerKorzina"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:gravity="center"
-            android:layout_marginEnd="15dp"
-            android:orientation="vertical">
+            app:layout_constraintEnd_toStartOf="@+id/containerAkcii"
+            app:layout_constraintStart_toEndOf="@+id/containerCatalog"
+            app:layout_constraintTop_toTopOf="@+id/menuMyZakazi">
+
             <ImageView
                 android:id="@+id/kor"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
+                style="@style/imageNavigate"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/korzina_name"
-                android:src="@drawable/korzina"/>
+                android:src="@drawable/korzina"
+                app:layout_constraintBottom_toBottomOf="@+id/containerKorzina"
+                app:layout_constraintEnd_toEndOf="@+id/containerKorzina"
+                app:layout_constraintStart_toStartOf="@+id/containerKorzina"
+                app:layout_constraintTop_toTopOf="@+id/containerKorzina" />
+
             <TextView
                 android:id="@+id/textKor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/korzina_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/kor"
+                app:layout_constraintStart_toStartOf="@+id/kor"
+                app:layout_constraintTop_toBottomOf="@+id/kor" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerAkcii"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:gravity="center"
-            android:layout_marginEnd="15dp"
-            android:orientation="vertical">
+            app:layout_constraintEnd_toStartOf="@+id/containerProfil"
+            app:layout_constraintStart_toEndOf="@+id/containerKorzina"
+            app:layout_constraintTop_toTopOf="@+id/menuMyZakazi">
+
             <ImageView
                 android:id="@+id/ak"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
+                style="@style/imageNavigate"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/akcii_name"
-                android:src="@drawable/akzii"/>
+                android:src="@drawable/akzii"
+                app:layout_constraintBottom_toBottomOf="@+id/containerAkcii"
+                app:layout_constraintEnd_toEndOf="@+id/containerAkcii"
+                app:layout_constraintStart_toStartOf="@+id/containerAkcii"
+                app:layout_constraintTop_toTopOf="@+id/containerAkcii" />
+
             <TextView
-                android:id="@+id/textAkz"
+                android:id="@+id/textAk"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/akcii_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/ak"
+                app:layout_constraintStart_toStartOf="@+id/ak"
+                app:layout_constraintTop_toBottomOf="@+id/ak" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerProfil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
             android:gravity="center"
-            android:orientation="vertical">
+            app:layout_constraintEnd_toEndOf="@+id/menuMyZakazi"
+            app:layout_constraintStart_toEndOf="@+id/containerAkcii"
+            app:layout_constraintTop_toTopOf="@+id/menuMyZakazi">
+
             <ImageView
                 android:id="@+id/prof"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:clickable="true"
-                android:focusable="true"
+                style="@style/imageNavigate"
+                android:layout_marginBottom="10dp"
                 android:contentDescription="@string/profil_name"
-                android:src="@drawable/profile"/>
+                android:src="@drawable/profile"
+                app:layout_constraintBottom_toBottomOf="@+id/containerProfil"
+                app:layout_constraintEnd_toEndOf="@+id/containerProfil"
+                app:layout_constraintStart_toStartOf="@+id/containerProfil"
+                app:layout_constraintTop_toTopOf="@+id/containerProfil" />
+
             <TextView
-                android:id="@+id/textPro"
+                android:id="@+id/textProf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:text="@string/profil_name"
+                android:textColor="@color/black"
                 android:textSize="11sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/prof"
+                app:layout_constraintStart_toStartOf="@+id/prof"
+                app:layout_constraintTop_toBottomOf="@+id/prof" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
