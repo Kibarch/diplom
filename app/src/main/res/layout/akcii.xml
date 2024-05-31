@@ -13,8 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatAkcii"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
+        android:layout_height="70dp"
         android:background="#616161"
         android:gravity="center"
         android:orientation="horizontal"
@@ -374,7 +373,7 @@
             android:id="@+id/containerAkcii"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:gravity="center"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             app:layout_constraintEnd_toStartOf="@+id/containerProfil"
             app:layout_constraintStart_toEndOf="@+id/containerKorzina"
             app:layout_constraintTop_toTopOf="@+id/menuAkcii">

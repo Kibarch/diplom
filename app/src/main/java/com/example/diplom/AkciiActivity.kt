@@ -1,5 +1,6 @@
 package com.example.diplom
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,6 +11,7 @@ import com.example.diplom.databinding.AkciiBinding
 
 class AkciiActivity : ComponentActivity()
 {
+    @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val akciiBinding: AkciiBinding = AkciiBinding.inflate(layoutInflater)
@@ -35,7 +37,7 @@ class AkciiActivity : ComponentActivity()
             startActivity(intent)
         }
         akciiBinding.promo1.setOnClickListener {
-            val dialogPromoInfo = layoutInflater.inflate(R.layout.promokefir, null)
+            val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
             mydialogPromoInfo.setCancelable(true)
@@ -43,7 +45,7 @@ class AkciiActivity : ComponentActivity()
             mydialogPromoInfo.show()
         }
         akciiBinding.promo2.setOnClickListener {
-            val dialogPromoInfo = layoutInflater.inflate(R.layout.promokefir, null)
+            val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
             mydialogPromoInfo.setCancelable(true)
@@ -51,7 +53,7 @@ class AkciiActivity : ComponentActivity()
             mydialogPromoInfo.show()
         }
         akciiBinding.promo3.setOnClickListener {
-            val dialogPromoInfo = layoutInflater.inflate(R.layout.promokefir, null)
+            val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
             mydialogPromoInfo.setCancelable(true)
@@ -59,7 +61,7 @@ class AkciiActivity : ComponentActivity()
             mydialogPromoInfo.show()
         }
         akciiBinding.promo4.setOnClickListener {
-            val dialogPromoInfo = layoutInflater.inflate(R.layout.promokefir, null)
+            val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
             mydialogPromoInfo.setCancelable(true)
@@ -67,7 +69,7 @@ class AkciiActivity : ComponentActivity()
             mydialogPromoInfo.show()
         }
         akciiBinding.promo5.setOnClickListener {
-            val dialogPromoInfo = layoutInflater.inflate(R.layout.promokefir, null)
+            val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
             mydialogPromoInfo.setCancelable(true)

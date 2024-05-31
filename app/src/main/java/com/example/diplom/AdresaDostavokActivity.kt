@@ -1,5 +1,6 @@
 package com.example.diplom
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
@@ -12,6 +13,7 @@ import android.graphics.Color
 import com.example.diplom.databinding.AdresaDostavokBinding
 
 class AdresaDostavokActivity : ComponentActivity() {
+    @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val adresaDostavokBinding: AdresaDostavokBinding =
@@ -293,6 +295,7 @@ class AdresaDostavokActivity : ComponentActivity() {
                         }
                     }
                 }
+                mydialogNewAdres.dismiss()
             }
         }
     }

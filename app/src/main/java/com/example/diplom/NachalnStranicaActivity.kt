@@ -25,9 +25,5 @@ class NachalnStranicaActivity: ComponentActivity()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
-        nachalnStranicaBinding.button4.setOnClickListener {
-            val intent = Intent(this, WorkWithDB::class.java)
-            startActivity(intent)
-        }
     }
 }

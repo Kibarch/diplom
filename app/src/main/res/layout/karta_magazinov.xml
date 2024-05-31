@@ -14,8 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatMagazini"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
+        android:layout_height="70dp"
         android:background="#616161"
         android:gravity="center"
         android:orientation="horizontal"
@@ -97,7 +96,9 @@
         app:layout_constraintBottom_toTopOf="@id/menuMagazini"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchViewMagazini"></androidx.fragment.app.FragmentContainerView>
+        app:layout_constraintTop_toBottomOf="@+id/searchViewMagazini">
+
+    </androidx.fragment.app.FragmentContainerView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menuMagazini"
@@ -114,7 +115,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginStart="10dp"
-            android:gravity="center"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             app:layout_constraintEnd_toStartOf="@+id/containerCatalog"
             app:layout_constraintStart_toStartOf="@+id/menuMagazini"
             app:layout_constraintTop_toTopOf="@+id/menuMagazini">

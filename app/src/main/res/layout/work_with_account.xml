@@ -13,11 +13,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatWorkWithAccount"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
+        android:layout_height="70dp"
         android:background="#616161"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">

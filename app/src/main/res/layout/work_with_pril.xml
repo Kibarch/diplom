@@ -13,11 +13,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatWorkWithPril"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
+        android:layout_height="70dp"
         android:background="#616161"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -87,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1.  Найдите и добавьте\n    в корзину интересующие\n    вас товары."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"
@@ -96,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2.  Выберите адрес\n    доставки и способ оплаты."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>
@@ -104,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3.  Отслеживайте заказ\n    в личном кабинете."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>
@@ -137,7 +134,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  В блоке “Мои заказы”\nвы можете работать\nсо своими заказами.\nПросмотр, отслеживание,\nотмена и т.д."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"
@@ -146,7 +143,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  В блоке “Мои отзывы”\nвы можете работать\nсо своими отзывами."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>
@@ -154,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  В блоке “Мои карты”\nвы можете рабатать\nсо своими картами.\nПросмотр, добавление,\nудаление и т.д."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>
@@ -162,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  В блоке “Календарь доставок”\nвы можете работать\nс будущими покупками.\nПросмотр, добавление,\nизменение, отмена и т.д."
-            android:textSize="12dp"
+            android:textSize="12sp"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:layout_marginStart="20dp"/>

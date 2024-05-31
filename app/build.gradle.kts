@@ -54,6 +54,8 @@ android {
 
 dependencies {
 
+    //implementation(libs.androidx.credentials)
+    //implementation(libs.androidx.credentials.play.services.auth)
     implementation (libs.kotlinx.serialization.json)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)

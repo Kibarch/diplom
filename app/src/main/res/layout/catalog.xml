@@ -12,8 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatCatalog"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
+        android:layout_height="70dp"
         android:background="#616161"
         android:gravity="center"
         android:orientation="horizontal"
@@ -290,7 +289,7 @@
             android:id="@+id/containerCatalog"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:gravity="center"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             app:layout_constraintEnd_toStartOf="@+id/containerKorzina"
             app:layout_constraintStart_toEndOf="@+id/containerKarta"
             app:layout_constraintTop_toTopOf="@+id/menuCatalog">

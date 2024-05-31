@@ -48,23 +48,23 @@
             app:layout_constraintStart_toStartOf="@+id/textLightTheme"
             app:layout_constraintTop_toBottomOf="@+id/textLightTheme" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchLightTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
             android:layout_marginStart="40dp"
             app:layout_constraintStart_toEndOf="@+id/textLightTheme"
-            app:layout_constraintTop_toTopOf="@+id/textLightTheme"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toTopOf="@+id/textLightTheme">
 
-        <Switch
+        </androidx.appcompat.widget.SwitchCompat>
+
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchDarkTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
             app:layout_constraintStart_toStartOf="@+id/switchLightTheme"
-            app:layout_constraintTop_toTopOf="@+id/textDarkTheme"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            app:layout_constraintTop_toTopOf="@+id/textDarkTheme" >
+        </androidx.appcompat.widget.SwitchCompat>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

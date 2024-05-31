@@ -16,8 +16,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/hatKorzina"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="top"
+        android:layout_height="70dp"
         android:background="#616161"
         android:gravity="center"
         android:orientation="horizontal"
@@ -528,6 +527,7 @@
         android:layout_marginBottom="15dp"
         android:background="@drawable/allcornersdarkthemeroundedbackground"
         android:text="Оплатить"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/menuKorzina"
         app:layout_constraintEnd_toStartOf="@id/povtor"
         app:layout_constraintStart_toStartOf="parent" />
@@ -615,7 +615,7 @@
             android:id="@+id/containerKorzina"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:gravity="center"
+            android:background="@drawable/allcornersdarkthemeroundedbackground"
             app:layout_constraintEnd_toStartOf="@+id/containerAkcii"
             app:layout_constraintStart_toEndOf="@+id/containerCatalog"
             app:layout_constraintTop_toTopOf="@+id/menuKorzina">

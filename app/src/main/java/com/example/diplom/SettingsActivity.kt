@@ -10,6 +10,7 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.widget.Button
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.widget.SwitchCompat
 import com.example.diplom.databinding.SettingsBinding
 
 internal class SettingsActivity: ComponentActivity()
@@ -43,6 +44,12 @@ internal class SettingsActivity: ComponentActivity()
             val intent = Intent(this, TechSupportActivity::class.java)
             startActivity(intent)
         }
+        fun setLightTheme(){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+        fun setDarkTheme(){
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        }
         settBinding.buttonAppTheme.setOnClickListener{
             val dialogAppTheme=layoutInflater.inflate(R.layout.app_theme, null)
             val myDialogAppTheme=Dialog(this)
@@ -50,24 +57,28 @@ internal class SettingsActivity: ComponentActivity()
             myDialogAppTheme.setCancelable(true)
             myDialogAppTheme.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             myDialogAppTheme.show()
-            fun setLightTheme(){
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            }
-            fun setDarkTheme(){
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            }
-            fun getSavedThemeState(): Boolean{
-                val sharedPreferences: SharedPreferences = getSharedPreferences("ThemePrefs", Context.MODE_PRIVATE)
-                return sharedPreferences.getBoolean("isDarktheme", false)
-            }
-            fun saveThemeState(isDarkTheme: Boolean){
-                val sharedPreferences: SharedPreferences = getSharedPreferences("ThemePrefs", Context.MODE_PRIVATE)
-                val editor: SharedPreferences.Editor? = sharedPreferences.edit()
-                editor?.putBoolean("isDarkTheme", isDarkTheme)
-                editor?.apply()
-            }
+            val switchDarkThem = myDialogAppTheme.findViewById<SwitchCompat>(R.id.switchDarkTheme)
+            val switchLightThem = myDialogAppTheme.findViewById<SwitchCompat>(R.id.switchLightTheme)
+            if (switchDarkThem.isChecked)
+                setDarkTheme()
+            else
+                setLightTheme()
+            if (switchLightThem.isChecked)
+                setLightTheme()
+            else
+                setDarkTheme()
+        }
 
 
+        fun getSavedThemeState(): Boolean{
+            val sharedPreferences: SharedPreferences = getSharedPreferences("ThemePrefs", Context.MODE_PRIVATE)
+            return sharedPreferences.getBoolean("isDarktheme", false)
+        }
+        fun saveThemeState(isDarkTheme: Boolean){
+            val sharedPreferences: SharedPreferences = getSharedPreferences("ThemePrefs", Context.MODE_PRIVATE)
+            val editor: SharedPreferences.Editor? = sharedPreferences.edit()
+            editor?.putBoolean("isDarkTheme", isDarkTheme)
+            editor?.apply()
         }
         settBinding.buttonNotifications.setOnClickListener{
             val dialogNotifications=layoutInflater.inflate(R.layout.notifications, null)
