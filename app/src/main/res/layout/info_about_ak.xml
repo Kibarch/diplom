@@ -29,7 +29,7 @@
             android:layout_width="267dp"
             android:layout_height="wrap_content"
             android:background="@drawable/toprightcornerlightgrayroundedbackground"
-            android:text=""
+            android:text=" "
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/tovarAk"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,7 +48,7 @@
             android:layout_width="258dp"
             android:layout_height="wrap_content"
             android:background="@color/lightgray"
-            android:text=""
+            android:text=" "
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/valueAk"
             app:layout_constraintTop_toBottomOf="@+id/textTovarAk" />
@@ -67,7 +67,7 @@
             android:layout_width="209dp"
             android:layout_height="wrap_content"
             android:background="@color/lightgray"
-            android:text=""
+            android:text=" "
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/srokAk"
             app:layout_constraintTop_toBottomOf="@id/textValueAk" />
@@ -107,10 +107,10 @@
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:background="@drawable/bottomrightcornerlightgrayroundedbackground"
-            android:text=""
+            android:text=" "
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@+id/magaziniAk"
-            app:layout_constraintTop_toBottomOf="@id/uslovieAk" />
+            app:layout_constraintTop_toBottomOf="@id/textUslovieAk" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
