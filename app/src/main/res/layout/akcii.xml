@@ -58,203 +58,225 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <GridLayout
-        android:id="@+id/five"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:columnCount="5"
-        android:rowCount="3"
-        app:layout_constraintTop_toBottomOf="@+id/hatAkcii"
+    <TextView
+        android:id="@+id/textAkPiat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Пятерочка:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatAkcii" />
+
+    <TextView
+        android:id="@+id/textAllAkPiat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Все акции"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center">
+        app:layout_constraintTop_toTopOf="@+id/textAkPiat" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/promo1"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textAkPiat"
+        app:layout_constraintTop_toBottomOf="@+id/textAkPiat">
+
+        <ImageView
+            android:id="@+id/imagePromo1"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/topcornerswhiteroundedbackground"
+            android:contentDescription="NULL"
+            android:src="@drawable/prodact1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/////"
-            android:textColor="#3D3D3D"
-            android:layout_row="0"
-            android:layout_column="0"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Пятерочка:"
+            android:id="@+id/textPromo1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/darkthemebackgroundcolor"
             android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:layout_row="0"
-            android:layout_column="1"/>
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="20dp"
-            android:layout_row="0"
-            android:layout_column="3"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="bottom"
-            android:gravity="end|bottom">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Все акции"
-                android:textSize="11sp"
-                android:clickable="true"
-                android:focusable="true"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"/>
-        </LinearLayout>
+            android:text="Рис"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/imagePromo1"
+            app:layout_constraintTop_toBottomOf="@+id/imagePromo1" />
 
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/promo1"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:background="@drawable/allcornersdarkthemeroundedbackground"
-                android:text="кефир -50% скидки"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/promo2"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:background="@drawable/allcornersdarkthemeroundedbackground"
-                android:text="молоко -30% скидки"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_row="1"
-            android:layout_column="3"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/promo3"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:background="@drawable/allcornersdarkthemeroundedbackground"
-                android:text="хлеб -30% скидки"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-        </LinearLayout>
-
-    </GridLayout>
-
-    <GridLayout
-        android:id="@+id/magnit"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:columnCount="5"
-        android:rowCount="3"
-        app:layout_constraintTop_toBottomOf="@+id/five"
-        android:gravity="center">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/////"
-            android:textColor="#3D3D3D"
-            android:layout_row="0"
-            android:layout_column="0"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="//////"
-            android:textColor="#3D3D3D"
-            android:layout_row="0"
-            android:layout_column="4"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Магнит:"
+            android:id="@+id/textPromo12"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
             android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:layout_row="0"
-            android:layout_column="1"/>
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/promo4"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:background="@drawable/allcornersdarkthemeroundedbackground"
-                android:text="йогурт -40% скидки"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/promo5"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:background="@drawable/allcornersdarkthemeroundedbackground"
-                android:text="колбаса -20% ск  идки"
-                android:clickable="true"
-                android:focusable="true"
-                android:gravity="center"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-        </LinearLayout>
+            android:text="30%"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textPromo1" />
 
-    </GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/promo2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/promo3"
+        app:layout_constraintStart_toEndOf="@+id/promo1"
+        app:layout_constraintTop_toTopOf="@+id/promo1">
+
+        <ImageView
+            android:id="@+id/imagePromo2"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/topcornerswhiteroundedbackground"
+            android:contentDescription="NULL"
+            android:src="@drawable/prodact2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPromo2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/darkthemebackgroundcolor"
+            android:gravity="center"
+            android:text="Энергетик"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/imagePromo2"
+            app:layout_constraintTop_toBottomOf="@+id/imagePromo2" />
+
+        <TextView
+            android:id="@+id/textPromo22"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:text="25%"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textPromo2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/promo3"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textAllAkPiat"
+        app:layout_constraintTop_toTopOf="@+id/promo2">
+
+        <ImageView
+            android:id="@+id/imagePromo3"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/topcornerswhiteroundedbackground"
+            android:contentDescription="NULL"
+            android:src="@drawable/prodact3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPromo3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/darkthemebackgroundcolor"
+            android:gravity="center"
+            android:text="Сухой завтрак"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/imagePromo3"
+            app:layout_constraintTop_toBottomOf="@+id/imagePromo3" />
+
+        <TextView
+            android:id="@+id/textPromo32"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:text="40%"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textPromo3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textAkMag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Магнит:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textAkPiat"
+        app:layout_constraintTop_toBottomOf="@+id/promo1" />
+
+    <TextView
+        android:id="@+id/textAllAkMag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Все акции"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textAllAkPiat"
+        app:layout_constraintTop_toTopOf="@+id/textAkMag" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/promo4"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/promo1"
+        app:layout_constraintTop_toBottomOf="@+id/textAkMag">
+
+        <ImageView
+            android:id="@+id/imagePromo4"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:background="@drawable/topcornerswhiteroundedbackground"
+            android:contentDescription="NULL"
+            android:src="@drawable/prodact4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPromo4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/darkthemebackgroundcolor"
+            android:gravity="center"
+            android:text="Батончик"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/imagePromo4"
+            app:layout_constraintTop_toBottomOf="@+id/imagePromo4" />
+
+        <TextView
+            android:id="@+id/textPromo42"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/bottomcornersdarkthemeroundedbackground"
+            android:gravity="center"
+            android:text="50%"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/textPromo4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/menuAkcii"

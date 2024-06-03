@@ -2,6 +2,7 @@ package com.example.diplom
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import android.content.Intent
@@ -37,12 +38,18 @@ class AkciiActivity : ComponentActivity()
             startActivity(intent)
         }
         akciiBinding.promo1.setOnClickListener {
+            //val sharedAdress = getSharedPreferences("mySharedAdress", Context.MODE_PRIVATE)
+            //val editor = sharedAdress.edit()
+            //editor.putString("adress", adresaDostavokBinding.textAdres1.text.toString())
+            //editor.apply()
             val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
             mydialogPromoInfo.setCancelable(true)
             mydialogPromoInfo.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             mydialogPromoInfo.show()
+            //val sharedAdress = getSharedPreferences("mySharedAdress", Context.MODE_PRIVATE)
+            //var adress = sharedAdress.getString("adress", "")
         }
         akciiBinding.promo2.setOnClickListener {
             val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
@@ -61,14 +68,6 @@ class AkciiActivity : ComponentActivity()
             mydialogPromoInfo.show()
         }
         akciiBinding.promo4.setOnClickListener {
-            val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
-            val mydialogPromoInfo = Dialog(this)
-            mydialogPromoInfo.setContentView(dialogPromoInfo)
-            mydialogPromoInfo.setCancelable(true)
-            mydialogPromoInfo.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-            mydialogPromoInfo.show()
-        }
-        akciiBinding.promo5.setOnClickListener {
             val dialogPromoInfo = layoutInflater.inflate(R.layout.info_about_ak, null)
             val mydialogPromoInfo = Dialog(this)
             mydialogPromoInfo.setContentView(dialogPromoInfo)
